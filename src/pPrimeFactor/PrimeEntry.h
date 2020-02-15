@@ -7,7 +7,11 @@
 
 #include <string>
 #include <vector>
-#include <cstdint>
+#include <cmath>
+#include <iostream>
+#include <algorithm>
+#include <sstream>
+#include "/Users/liumk/moos-ivp/MOOS_Jul0519/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h"
 
 #ifndef PRIME_ENTRY_HEADER
 #define PRIME_ENTRY_HEADER
@@ -19,27 +23,29 @@ class PrimeEntry
   PrimeEntry();
   ~PrimeEntry() {};
 
-  void setOriginalVal(unsigned long int v) {m_orig=v};
-  void setReceivedIndex(unsigned int v)    {m_received_index=v;};
-  void setCalculatedIndex(unsigned int v)  {m_calculated_index=v;};
-  void setStartTime(unsigned int v)        {m_start_index=v;};
-  void setCurrentValue(unsigned int v)     {m_current=v;};
-  void setDone(bool v)                     {m_done=v};
-
-  bool done() {return(m_done);};
-
-  bool factor(unsigned long int max_steps);
-
-  std::string getReport();
+  void setOriginalVal(unsigned long int v); //Set original value
+  void setReceivedIndex(unsigned int v);
+  void setCalculatedIndex(unsigned int v);
+  void setDone(bool v);
+  bool done();
+  long unsigned int iter_calc();
+  void factor(unsigned long int max_steps); //Factoring function for a certain number of steps
+  std::string getReport(); // String to print out report
 
  protected:
-  uint64_t     m_orig;
-  unsigned int m_received_index;
-  unsigned int m_calculated_index;
-  uint64_t     m_start_index;
-  uint64_t     m_current;
-  bool         m_done;
-  
-  std::vector<uint64_t> m_factors;
+  unsigned long int m_N; //Updated number to factor
+  unsigned long int m_orig; //Original prime number
+  bool m_done; //True or false if done with factoring
+  unsigned long int m_received_index;
+  unsigned long int m_calculated_index;
+  unsigned long int m_finished_iter;
+  unsigned long int m_maxiter;
+  unsigned long int m_ii;
+  unsigned long int m_k_start;
+  unsigned long int m_k;
+  double m_start_time;
+  double m_finish_time;
+  double m_solve_time;
+  std::vector<unsigned long int> m_factors; //Vector of all the factors so far
 };
 #endif

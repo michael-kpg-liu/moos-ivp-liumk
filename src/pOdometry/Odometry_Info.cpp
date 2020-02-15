@@ -112,4 +112,3 @@ void showReleaseInfoAndExit()
   showReleaseInfo("pOdometry", "gpl");
   exit(0);
 }
-

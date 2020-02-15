@@ -9,8 +9,11 @@
 #define PrimeFactor_HEADER
 
 #include "MOOS/libMOOS/MOOSLib.h"
-
-using namespace std;
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <list>
+#include "PrimeEntry.h"
 
 class PrimeFactor : public CMOOSApp
 {
@@ -28,11 +31,15 @@ class PrimeFactor : public CMOOSApp
    void RegisterVariables();
 
  private: // Configuration variables
-
+  bool m_even;
+  long unsigned int m_ival;
+  long unsigned int m_max_iter;
+  int m_index; // Tracks number of primes numbers to factor
+  int m_calc;  // Track number of calculated prime numbers
+  std::string m_result_str;
+  std::list<PrimeEntry> m_mail_list;
+  
  private: // State variables
-  //list<List_of_Prime_Numbers> m_prime_numbers_list;
-  double m_received_index;
-  double m_calculated_index;
 };
 
 #endif 

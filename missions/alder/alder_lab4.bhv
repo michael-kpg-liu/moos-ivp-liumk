@@ -25,7 +25,7 @@ Behavior = BHV_Waypoint
 {
   name       = waypt_return
   pwt        = 100
-  condition  = (RETURN = true) or (ODOMETRY_DIST >= 30) // Line added 3.4.3 in Lab 4
+  condition  = (RETURN = true) or (ODOMETRY_DIST >= 30) // Line added 3.4.3 in Lab 4.  Changed >=50 to >=30 to more easily see return condition feature.
   condition  = (DEPLOY = true)
 
   activeflag = RETURN = true /* Line added to terminate the Simple Waypoint Behavior. */

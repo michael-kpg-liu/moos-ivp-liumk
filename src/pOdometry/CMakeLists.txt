@@ -16,4 +16,3 @@ TARGET_LINK_LIBRARIES(pOdometry
    mbutil
    m
    pthread)
-

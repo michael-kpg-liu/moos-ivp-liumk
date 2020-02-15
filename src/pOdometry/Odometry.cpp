@@ -37,7 +37,7 @@ Odometry::~Odometry()
 
 bool Odometry::OnNewMail(MOOSMSG_LIST &NewMail)
 {
-  AppCastingMOOSApp::OnNewMail(NewMail); /* The superclass will handle the APPCAST_REQ mail. */
+  AppCastingMOOSApp::OnNewMail(NewMail); //Appcast
   MOOSMSG_LIST::iterator p;
    
   for(p=NewMail.begin(); p!=NewMail.end(); p++) {
@@ -85,7 +85,7 @@ bool Odometry::OnConnectToServer()
 
 bool Odometry::Iterate()
 {
-  AppCastingMOOSApp::Iterate(); // Updates the current MOOSTime and # of iterations
+  AppCastingMOOSApp::Iterate(); // Appcast
   double distance;
   distance = sqrt((m_current_x-m_previous_x)*(m_current_x-m_previous_x)+(m_current_y-m_previous_y)*(m_current_y-m_previous_y));
   
@@ -95,11 +95,10 @@ bool Odometry::Iterate()
   }
   if (m_first_reading != true) {
     m_total_distance = m_total_distance + distance;
-    Notify("ODOMETRY_DIST",m_total_distance); /* Publishes ODOMETRY_DIST to MOOSDB,
-						 where m_total_distance is the value inputted into the variable ODOMETRY_DIST */
+    Notify("ODOMETRY_DIST",m_total_distance); // Publishes ODOMETRY_DIST to MOOSDB
     
   }
-  AppCastingMOOSApp::PostReport(); // Deterimines if AppCast is warranted, and invokes buildReport() if so.
+  AppCastingMOOSApp::PostReport(); // Appcast
   return(true);
 }
 
@@ -109,7 +108,7 @@ bool Odometry::Iterate()
 
 bool Odometry::OnStartUp()
 {
-  AppCastingMOOSApp::OnStartUp(); /* This superclass will register for APCAST_REQ, indicating another app, like uMAC, is interested in appcasts from this app. */
+  AppCastingMOOSApp::OnStartUp(); // Appcast
   list<string> sParams;
   m_MissionReader.EnableVerbatimQuoting(false);
   if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
@@ -137,7 +136,7 @@ bool Odometry::OnStartUp()
 
 void Odometry::RegisterVariables()
 {
-  AppCastingMOOSApp::RegisterVariables(); /* Superclass will register for APPCAST_REQ, indicating another app, like uMAC, is intereseted in appcasts from this app. */
+  AppCastingMOOSApp::RegisterVariables(); //Appcast
   Register("NAV_X", 0);
   Register("NAV_Y", 0);
   // Register("FOOBAR", 0);

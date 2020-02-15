@@ -150,19 +150,6 @@ pExampleApp/fast:
 .PHONY : pExampleApp/fast
 
 #=============================================================================
-# Target rules for targets named pPrimeFactor
-
-# Build rule for target.
-pPrimeFactor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pPrimeFactor
-.PHONY : pPrimeFactor
-
-# fast build rule for target.
-pPrimeFactor/fast:
-	$(MAKE) -f src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/build.make src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/build
-.PHONY : pPrimeFactor/fast
-
-#=============================================================================
 # Target rules for targets named pOdometry
 
 # Build rule for target.
@@ -186,7 +173,6 @@ help:
 	@echo "... BHV_SimpleWaypoint"
 	@echo "... pXRelayTest"
 	@echo "... pExampleApp"
-	@echo "... pPrimeFactor"
 	@echo "... pOdometry"
 .PHONY : help
 
