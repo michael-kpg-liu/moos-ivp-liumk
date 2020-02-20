@@ -1,5 +1,9 @@
 //--------    FILE: alder.bhv   -------------
 
+// Helm is configured within this file.
+// Adjustment adds a third condition that is dependent on distance.
+// Distance adjusted from 50m in problem statement to 30m for clearer observation.
+
 initialize   DEPLOY = false
 initialize   RETURN = false
 
@@ -8,6 +12,7 @@ Behavior = BHV_SimpleWaypoint
 { 
   name      = waypt_to_point
   pwt       = 100
+  // Deploy/Return tells UUV to go to waypoint / cancel waypoint.
   condition = RETURN = false
   condition = DEPLOY = true
   condition = (ODOMETRY_DIST < 50) // Line added 3.4.3 in Lab 4

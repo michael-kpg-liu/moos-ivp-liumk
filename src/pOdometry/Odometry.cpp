@@ -5,6 +5,8 @@
 /*    DATE: 13 FEB 2020                                                */
 /************************************************************/
 
+//pOdometry Lab #4:  Calculates the distance traveled by the UUV.
+
 #include <iterator>
 #include "MBUtils.h"
 #include "Odometry.h"
@@ -88,7 +90,8 @@ bool Odometry::Iterate()
   AppCastingMOOSApp::Iterate(); // Appcast
   double distance;
   distance = sqrt((m_current_x-m_previous_x)*(m_current_x-m_previous_x)+(m_current_y-m_previous_y)*(m_current_y-m_previous_y));
-  
+
+  // Odometry distance outputs once the vehicle is running.
   if (m_first_reading == true) {
     m_total_distance = distance;
     m_first_reading = false;
