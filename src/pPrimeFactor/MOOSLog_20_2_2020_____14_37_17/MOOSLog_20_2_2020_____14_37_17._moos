@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_20_2_2020_____14_37_17/MOOSLog_20_2_2020_____14_37_17._moos
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1582227437.14
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //------------------------------------------
 // Antler configuration  block
 ProcessConfig = ANTLER
@@ -62,3 +67,4 @@ ProcessConfig = uXMS
    var = NUM_VALUE, NUM_RESULT
 
 }
+

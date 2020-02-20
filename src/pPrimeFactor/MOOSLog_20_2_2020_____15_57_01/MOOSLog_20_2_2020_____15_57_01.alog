@@ -1,0 +1,1782 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_20_2_2020_____15_57_01/MOOSLog_20_2_2020_____15_57_01.alog
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1582232220.99
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+0.398           DB_EVENT             MOOSDB_#1       connected=uXMS_546 
+0.661           LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+0.818           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=3.8147e-05, primes=0, username=liumk
+ 
+1.069           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-0.250787, primes=0, username=liumk
+ 
+1.323           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-0.504932, primes=0, username=liumk
+ 
+1.573           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-0.755115, primes=0, username=liumk
+ 
+1.721           DB_TIME              MOOSDB_#1       1582232222.70842 
+1.721           DB_UPTIME            MOOSDB_#1       2.13164      
+1.721           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+1.722           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:02.708         MOOSDB_#1            0.0 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:00.576         MOOSDB#1             0.0 Hz S  
+DB_RWSUMMARY         15:57:00.576         MOOSDB#1             0.0 Hz S  
+DB_TIME              15:57:02.708         MOOSDB_#1            0.0 Hz D  1582232222.7
+DB_UPTIME            15:57:02.708         MOOSDB_#1            0.0 Hz D  2.1
+DB_VARSUMMARY        15:57:00.576         MOOSDB#1             0.0 Hz S  
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:02.560         pPrimeFactor         2.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:01.850         pLogger              0.0 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:01.805         pPrimeFactor         0.0 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:02.708         uXMS_546             0.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:02.708         uXMS_546             2.5 Hz D  0.0
+UXMS_546_STATUS      15:57:02.100         uXMS_546             0.0 Hz S  AppErrorFlag=false,Upt...
+ 
+1.722           DB_QOS               MOOSDB_#1       pLogger=0:0.313044:0.101089:0,pPrimeFactor=0:0.197887:0.120878:0,uXMS_546=0:0.252962:0.111818:0, 
+1.722           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+1.825           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-1.00691, primes=0, username=liumk
+ 
+0.398           DB_EVENT             MOOSDB_#1       connected=uXMS_546 
+0.661           LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+1.114           APPCAST              uXMS_546        proc=uXMS_546!@#iter=1!@#iter=1!@#messages=VarName     (S)  (T)  (C)  VarValue (SCOPING:[7;32mEVENTS[0m)!@----------  ---  ---  ---  -------------------------!@NUM_RESULT                 "orig=0, received=0, calculated=0,solve_time=-0.250787, primes=0, username=liumk!@"!@NUM_VALUE                  n/a!@!@#!@#events_total=0!@#!@#run_warning_total=0!@# 
+1.721           DB_TIME              MOOSDB_#1       1582232222.70842 
+1.721           DB_UPTIME            MOOSDB_#1       2.13164      
+1.721           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+1.722           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:02.708         MOOSDB_#1            0.0 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:00.576         MOOSDB#1             0.0 Hz S  
+DB_RWSUMMARY         15:57:00.576         MOOSDB#1             0.0 Hz S  
+DB_TIME              15:57:02.708         MOOSDB_#1            0.0 Hz D  1582232222.7
+DB_UPTIME            15:57:02.708         MOOSDB_#1            0.0 Hz D  2.1
+DB_VARSUMMARY        15:57:00.576         MOOSDB#1             0.0 Hz S  
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:02.560         pPrimeFactor         2.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:01.850         pLogger              0.0 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:01.805         pPrimeFactor         0.0 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:02.708         uXMS_546             0.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:02.708         uXMS_546             2.5 Hz D  0.0
+UXMS_546_STATUS      15:57:02.100         uXMS_546             0.0 Hz S  AppErrorFlag=false,Upt...
+ 
+1.722           DB_QOS               MOOSDB_#1       pLogger=0:0.313044:0.101089:0,pPrimeFactor=0:0.197887:0.120878:0,uXMS_546=0:0.252962:0.111818:0, 
+1.722           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+2.080           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-1.26201, primes=0, username=liumk
+ 
+2.080           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-1.26201, primes=0, username=liumk
+ 
+2.123           UXMS_546_ITER_GAP    uXMS_546        1.00379      
+2.123           UXMS_546_ITER_LEN    uXMS_546        0.00013      
+2.326           UXMS_546_ITER_GAP    uXMS_546        1.01635      
+2.326           UXMS_546_ITER_LEN    uXMS_546        0.00028      
+2.335           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-1.51716, primes=0, username=liumk
+ 
+2.531           UXMS_546_ITER_GAP    uXMS_546        1.02733      
+2.531           UXMS_546_ITER_LEN    uXMS_546        0.00022      
+2.590           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-1.77225, primes=0, username=liumk
+ 
+2.732           UXMS_546_ITER_GAP    uXMS_546        1.00347      
+2.732           UXMS_546_ITER_LEN    uXMS_546        0.00023      
+2.842           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-2.02442, primes=0, username=liumk
+ 
+2.937           UXMS_546_ITER_GAP    uXMS_546        1.02670      
+2.937           UXMS_546_ITER_LEN    uXMS_546        0.00023      
+3.093           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-2.27524, primes=0, username=liumk
+ 
+3.143           UXMS_546_ITER_GAP    uXMS_546        1.02610      
+3.143           UXMS_546_ITER_LEN    uXMS_546        0.00005      
+3.345           UXMS_546_ITER_GAP    uXMS_546        1.01171      
+3.345           UXMS_546_ITER_LEN    uXMS_546        0.00028      
+3.345           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-2.52719, primes=0, username=liumk
+ 
+3.550           UXMS_546_ITER_GAP    uXMS_546        1.02512      
+3.550           UXMS_546_ITER_LEN    uXMS_546        0.00022      
+3.595           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-2.77765, primes=0, username=liumk
+ 
+3.755           UXMS_546_ITER_GAP    uXMS_546        1.02686      
+3.755           UXMS_546_ITER_LEN    uXMS_546        0.00021      
+3.756           DB_TIME              MOOSDB_#1       1582232224.74269 
+3.756           DB_UPTIME            MOOSDB_#1       4.16591      
+3.756           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+3.756           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:04.742         MOOSDB_#1            0.2 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:02.709         MOOSDB_#1            0.0 Hz S  pLogger=0:0.313044:0.1...
+DB_RWSUMMARY         15:57:02.709         MOOSDB_#1            0.0 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:04.742         MOOSDB_#1            0.2 Hz D  1582232224.7
+DB_UPTIME            15:57:04.742         MOOSDB_#1            0.2 Hz D  4.2
+DB_VARSUMMARY        15:57:02.709         MOOSDB_#1            0.0 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:04.582         pPrimeFactor         3.8 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:03.879         pLogger              0.2 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:03.829         pPrimeFactor         0.2 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:04.742         uXMS_546             4.6 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:04.742         uXMS_546             4.6 Hz D  0.0
+UXMS_546_STATUS      15:57:04.129         uXMS_546             0.2 Hz S  AppErrorFlag=false,Upt...
+ 
+3.756           DB_QOS               MOOSDB_#1       pLogger=0:0.338078:0.101089:0,pPrimeFactor=0:0.238895:0.120878:0,uXMS_546=0:0.308037:0.111818:0, 
+3.756           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+3.846           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-3.02817, primes=0, username=liumk
+ 
+3.960           UXMS_546_ITER_GAP    uXMS_546        1.02567      
+3.960           UXMS_546_ITER_LEN    uXMS_546        0.00022      
+4.097           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-3.27916, primes=0, username=liumk
+ 
+4.164           UXMS_546_ITER_GAP    uXMS_546        1.01732      
+4.164           UXMS_546_ITER_LEN    uXMS_546        0.00020      
+4.348           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-3.53008, primes=0, username=liumk
+ 
+4.365           UXMS_546_ITER_GAP    uXMS_546        1.00374      
+4.365           UXMS_546_ITER_LEN    uXMS_546        0.00018      
+4.565           UXMS_546_ITER_GAP    uXMS_546        1.00342      
+4.565           UXMS_546_ITER_LEN    uXMS_546        0.00031      
+4.599           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-3.78105, primes=0, username=liumk
+ 
+4.766           UXMS_546_ITER_GAP    uXMS_546        1.00441      
+4.766           UXMS_546_ITER_LEN    uXMS_546        0.00018      
+4.850           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-4.03212, primes=0, username=liumk
+ 
+4.967           UXMS_546_ITER_GAP    uXMS_546        1.00215      
+4.967           UXMS_546_ITER_LEN    uXMS_546        0.00057      
+5.104           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-4.28653, primes=0, username=liumk
+ 
+5.168           UXMS_546_ITER_GAP    uXMS_546        1.00581      
+5.168           UXMS_546_ITER_LEN    uXMS_546        0.00005      
+5.359           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-4.54169, primes=0, username=liumk
+ 
+5.371           UXMS_546_ITER_GAP    uXMS_546        1.01450      
+5.371           UXMS_546_ITER_LEN    uXMS_546        0.00031      
+5.576           UXMS_546_ITER_GAP    uXMS_546        1.02568      
+5.576           UXMS_546_ITER_LEN    uXMS_546        0.00067      
+5.610           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-4.79234, primes=0, username=liumk
+ 
+5.781           UXMS_546_ITER_GAP    uXMS_546        1.02738      
+5.781           UXMS_546_ITER_LEN    uXMS_546        0.00023      
+5.782           DB_TIME              MOOSDB_#1       1582232226.76869 
+5.782           DB_UPTIME            MOOSDB_#1       6.19191      
+5.782           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+5.782           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:06.768         MOOSDB_#1            0.4 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:04.742         MOOSDB_#1            0.2 Hz S  pLogger=0:0.338078:0.1...
+DB_RWSUMMARY         15:57:04.742         MOOSDB_#1            0.2 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:06.768         MOOSDB_#1            0.4 Hz D  1582232226.8
+DB_UPTIME            15:57:06.768         MOOSDB_#1            0.4 Hz D  6.2
+DB_VARSUMMARY        15:57:04.742         MOOSDB_#1            0.2 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:06.597         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:05.887         pLogger              0.4 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:05.837         pPrimeFactor         0.4 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:06.768         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:06.768         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:06.155         uXMS_546             0.4 Hz S  AppErrorFlag=false,Upt...
+ 
+5.782           DB_QOS               MOOSDB_#1       pLogger=0.18096:0.338078:0.101089:0.247002,pPrimeFactor=0.251055:0.251055:0.120878:0.206137,uXMS_546=0.270128:0.308037:0.111818:0.237417, 
+5.782           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+5.861           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-5.04363, primes=0, username=liumk
+ 
+5.986           UXMS_546_ITER_GAP    uXMS_546        1.02582      
+5.987           UXMS_546_ITER_LEN    uXMS_546        0.00055      
+6.116           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-5.29872, primes=0, username=liumk
+ 
+6.191           UXMS_546_ITER_GAP    uXMS_546        1.02319      
+6.191           UXMS_546_ITER_LEN    uXMS_546        0.00024      
+6.372           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-5.5538, primes=0, username=liumk
+ 
+6.396           UXMS_546_ITER_GAP    uXMS_546        1.02576      
+6.396           UXMS_546_ITER_LEN    uXMS_546        0.00023      
+6.597           UXMS_546_ITER_GAP    uXMS_546        1.00250      
+6.597           UXMS_546_ITER_LEN    uXMS_546        0.00021      
+6.626           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-5.80803, primes=0, username=liumk
+ 
+6.802           UXMS_546_ITER_GAP    uXMS_546        1.02502      
+6.802           UXMS_546_ITER_LEN    uXMS_546        0.00022      
+6.881           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-6.06323, primes=0, username=liumk
+ 
+7.007           UXMS_546_ITER_GAP    uXMS_546        1.02681      
+7.007           UXMS_546_ITER_LEN    uXMS_546        0.00023      
+7.131           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-6.31334, primes=0, username=liumk
+ 
+7.209           UXMS_546_ITER_GAP    uXMS_546        1.00963      
+7.209           UXMS_546_ITER_LEN    uXMS_546        0.00005      
+7.386           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-6.56845, primes=0, username=liumk
+ 
+7.410           UXMS_546_ITER_GAP    uXMS_546        1.00338      
+7.410           UXMS_546_ITER_LEN    uXMS_546        0.00018      
+7.610           UXMS_546_ITER_GAP    uXMS_546        1.00338      
+7.610           UXMS_546_ITER_LEN    uXMS_546        0.00030      
+7.641           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-6.8233, primes=0, username=liumk
+ 
+7.811           UXMS_546_ITER_GAP    uXMS_546        1.00404      
+7.811           UXMS_546_ITER_LEN    uXMS_546        0.00033      
+7.811           DB_TIME              MOOSDB_#1       1582232228.79844 
+7.811           DB_UPTIME            MOOSDB_#1       8.22165      
+7.811           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+7.812           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:08.798         MOOSDB_#1            0.4 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:06.768         MOOSDB_#1            0.4 Hz S  pLogger=0.18096:0.3380...
+DB_RWSUMMARY         15:57:06.768         MOOSDB_#1            0.4 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:08.798         MOOSDB_#1            0.4 Hz D  1582232228.8
+DB_UPTIME            15:57:08.798         MOOSDB_#1            0.4 Hz D  8.2
+DB_VARSUMMARY        15:57:06.768         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:08.628         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:07.911         pLogger              0.4 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:07.868         pPrimeFactor         0.4 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:08.798         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:08.597         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:08.196         uXMS_546             0.4 Hz S  AppErrorFlag=false,Upt...
+ 
+7.812           DB_QOS               MOOSDB_#1       pLogger=0.298977:0.338078:0.101089:0.270605,pPrimeFactor=0.197172:0.251055:0.120878:0.19536,uXMS_546=0.311136:0.311136:0.111818:0.245619, 
+7.812           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+7.895           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-7.07717, primes=0, username=liumk
+ 
+8.013           UXMS_546_ITER_GAP    uXMS_546        1.01124      
+8.014           UXMS_546_ITER_LEN    uXMS_546        0.00028      
+8.146           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-7.32811, primes=0, username=liumk
+ 
+8.219           UXMS_546_ITER_GAP    uXMS_546        1.02690      
+8.219           UXMS_546_ITER_LEN    uXMS_546        0.00022      
+8.397           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-7.57907, primes=0, username=liumk
+ 
+8.424           UXMS_546_ITER_GAP    uXMS_546        1.02512      
+8.424           UXMS_546_ITER_LEN    uXMS_546        0.00020      
+8.627           UXMS_546_ITER_GAP    uXMS_546        1.01563      
+8.627           UXMS_546_ITER_LEN    uXMS_546        0.00028      
+8.648           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-7.83002, primes=0, username=liumk
+ 
+8.831           UXMS_546_ITER_GAP    uXMS_546        1.02023      
+8.831           UXMS_546_ITER_LEN    uXMS_546        0.00030      
+8.899           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-8.08108, primes=0, username=liumk
+ 
+9.033           UXMS_546_ITER_GAP    uXMS_546        1.00798      
+9.033           UXMS_546_ITER_LEN    uXMS_546        0.00026      
+9.153           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-8.33478, primes=0, username=liumk
+ 
+9.234           UXMS_546_ITER_GAP    uXMS_546        1.00445      
+9.234           UXMS_546_ITER_LEN    uXMS_546        0.00006      
+9.407           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-8.58928, primes=0, username=liumk
+ 
+9.434           UXMS_546_ITER_GAP    uXMS_546        1.00342      
+9.434           UXMS_546_ITER_LEN    uXMS_546        0.00011      
+9.635           UXMS_546_ITER_GAP    uXMS_546        1.00340      
+9.635           UXMS_546_ITER_LEN    uXMS_546        0.00058      
+9.660           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-8.84256, primes=0, username=liumk
+ 
+9.835           UXMS_546_ITER_GAP    uXMS_546        1.00221      
+9.835           UXMS_546_ITER_LEN    uXMS_546        0.00010      
+9.835           DB_TIME              MOOSDB_#1       1582232230.82247 
+9.835           DB_UPTIME            MOOSDB_#1       10.24569     
+9.835           DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+9.836           DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:10.822         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:08.798         MOOSDB_#1            0.4 Hz S  pLogger=0.298977:0.338...
+DB_RWSUMMARY         15:57:08.798         MOOSDB_#1            0.4 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:10.822         MOOSDB_#1            0.5 Hz D  1582232230.8
+DB_UPTIME            15:57:10.822         MOOSDB_#1            0.5 Hz D  10.2
+DB_VARSUMMARY        15:57:08.798         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:01.648         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:10.647         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:09.919         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:09.886         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:10.822         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:10.822         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:10.220         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+9.836           DB_QOS               MOOSDB_#1       pLogger=0.233889:0.338078:0.101089:0.257587,pPrimeFactor=0.205994:0.251055:0.120878:0.197124,uXMS_546=0.256062:0.380993:0.111818:0.234604, 
+9.836           DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+9.915           NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-9.09771, primes=0, username=liumk
+ 
+10.036          UXMS_546_ITER_GAP    uXMS_546        1.00584      
+10.037          UXMS_546_ITER_LEN    uXMS_546        0.00037      
+10.137          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+10.166          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-9.34804, primes=0, username=liumk
+ 
+10.237          UXMS_546_ITER_GAP    uXMS_546        1.00416      
+10.237          UXMS_546_ITER_LEN    uXMS_546        0.00019      
+10.416          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-9.59817, primes=0, username=liumk
+ 
+10.439          UXMS_546_ITER_GAP    uXMS_546        1.00608      
+10.439          UXMS_546_ITER_LEN    uXMS_546        0.00010      
+10.642          UXMS_546_ITER_GAP    uXMS_546        1.01922      
+10.642          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+10.670          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-9.85231, primes=0, username=liumk
+ 
+10.848          UXMS_546_ITER_GAP    uXMS_546        1.02602      
+10.848          UXMS_546_ITER_LEN    uXMS_546        0.00018      
+10.923          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-10.1054, primes=0, username=liumk
+ 
+11.049          UXMS_546_ITER_GAP    uXMS_546        1.00642      
+11.049          UXMS_546_ITER_LEN    uXMS_546        0.00019      
+11.176          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-10.3584, primes=0, username=liumk
+ 
+11.253          UXMS_546_ITER_GAP    uXMS_546        1.01900      
+11.253          UXMS_546_ITER_LEN    uXMS_546        0.00006      
+11.431          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-10.6135, primes=0, username=liumk
+ 
+11.458          UXMS_546_ITER_GAP    uXMS_546        1.02723      
+11.458          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+11.659          UXMS_546_ITER_GAP    uXMS_546        1.00631      
+11.659          UXMS_546_ITER_LEN    uXMS_546        0.00019      
+11.686          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-10.8687, primes=0, username=liumk
+ 
+11.860          UXMS_546_ITER_GAP    uXMS_546        1.00376      
+11.860          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+11.860          DB_TIME              MOOSDB_#1       1582232232.84742 
+11.860          DB_UPTIME            MOOSDB_#1       12.27063     
+11.860          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+11.861          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:12.847         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:10.822         MOOSDB_#1            0.5 Hz S  pLogger=0.233889:0.338...
+DB_RWSUMMARY         15:57:10.822         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:12.847         MOOSDB_#1            0.5 Hz D  1582232232.8
+DB_UPTIME            15:57:12.847         MOOSDB_#1            0.5 Hz D  12.3
+DB_VARSUMMARY        15:57:10.822         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:11.124         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:12.673         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:11.935         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:11.910         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:12.847         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:12.646         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:12.239         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+11.861          DB_QOS               MOOSDB_#1       pLogger=0.167131:0.338078:0.101089:0.244236,pPrimeFactor=0.236034:0.302076:0.120878:0.203133,uXMS_546=0.191927:0.380993:0.111818:0.221777, 
+11.861          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+11.942          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-11.1238, primes=0, username=liumk
+ 
+12.061          UXMS_546_ITER_GAP    uXMS_546        1.00400      
+12.061          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+12.195          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-11.377, primes=0, username=liumk
+ 
+12.262          UXMS_546_ITER_GAP    uXMS_546        1.00382      
+12.262          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+12.448          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-11.6301, primes=0, username=liumk
+ 
+12.462          UXMS_546_ITER_GAP    uXMS_546        1.00312      
+12.462          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+12.663          UXMS_546_ITER_GAP    uXMS_546        1.00483      
+12.663          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+12.699          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-11.8808, primes=0, username=liumk
+ 
+12.864          UXMS_546_ITER_GAP    uXMS_546        1.00182      
+12.864          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+12.954          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-12.136, primes=0, username=liumk
+ 
+13.065          UXMS_546_ITER_GAP    uXMS_546        1.00594      
+13.065          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+13.209          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-12.3911, primes=0, username=liumk
+ 
+13.266          UXMS_546_ITER_GAP    uXMS_546        1.00417      
+13.266          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+13.464          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-12.6462, primes=0, username=liumk
+ 
+13.466          UXMS_546_ITER_GAP    uXMS_546        1.00335      
+13.466          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+13.667          UXMS_546_ITER_GAP    uXMS_546        1.00399      
+13.667          UXMS_546_ITER_LEN    uXMS_546        0.00030      
+13.717          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-12.8996, primes=0, username=liumk
+ 
+13.868          UXMS_546_ITER_GAP    uXMS_546        1.00433      
+13.868          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+13.868          DB_TIME              MOOSDB_#1       1582232234.85533 
+13.868          DB_UPTIME            MOOSDB_#1       14.27854     
+13.868          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+13.868          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:14.855         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:12.847         MOOSDB_#1            0.5 Hz S  pLogger=0.167131:0.338...
+DB_RWSUMMARY         15:57:12.847         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:14.855         MOOSDB_#1            0.5 Hz D  1582232234.9
+DB_UPTIME            15:57:14.855         MOOSDB_#1            0.5 Hz D  14.3
+DB_VARSUMMARY        15:57:12.847         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:11.124         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:14.704         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:13.951         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:13.941         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:14.855         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:14.855         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:14.252         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+13.868          DB_QOS               MOOSDB_#1       pLogger=0.310898:0.338078:0.101089:0.272989,pPrimeFactor=0.205994:0.302076:0.120878:0.197124,uXMS_546=0.237942:0.380993:0.111818:0.23098, 
+13.869          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+13.968          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-13.1506, primes=0, username=liumk
+ 
+14.069          UXMS_546_ITER_GAP    uXMS_546        1.00381      
+14.069          UXMS_546_ITER_LEN    uXMS_546        0.00025      
+14.221          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-13.4035, primes=0, username=liumk
+ 
+14.269          UXMS_546_ITER_GAP    uXMS_546        1.00358      
+14.270          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+14.470          UXMS_546_ITER_GAP    uXMS_546        1.00356      
+14.470          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+14.472          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-13.6542, primes=0, username=liumk
+ 
+14.671          UXMS_546_ITER_GAP    uXMS_546        1.00428      
+14.671          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+14.727          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-13.9091, primes=0, username=liumk
+ 
+14.874          UXMS_546_ITER_GAP    uXMS_546        1.01389      
+14.874          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+14.982          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-14.1644, primes=0, username=liumk
+ 
+15.078          UXMS_546_ITER_GAP    uXMS_546        1.02178      
+15.078          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+15.237          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-14.4193, primes=0, username=liumk
+ 
+15.279          UXMS_546_ITER_GAP    uXMS_546        1.00558      
+15.279          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+15.484          UXMS_546_ITER_GAP    uXMS_546        1.02384      
+15.484          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+15.491          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-14.6731, primes=0, username=liumk
+ 
+15.684          UXMS_546_ITER_GAP    uXMS_546        1.00110      
+15.684          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+15.742          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-14.924, primes=0, username=liumk
+ 
+15.888          UXMS_546_ITER_GAP    uXMS_546        1.01633      
+15.888          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+15.888          DB_TIME              MOOSDB_#1       1582232236.87487 
+15.888          DB_UPTIME            MOOSDB_#1       16.29809     
+15.888          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+15.888          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:16.874         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:14.855         MOOSDB_#1            0.5 Hz S  pLogger=0.310898:0.338...
+DB_RWSUMMARY         15:57:14.855         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:16.874         MOOSDB_#1            0.5 Hz D  1582232236.9
+DB_UPTIME            15:57:16.874         MOOSDB_#1            0.5 Hz D  16.3
+DB_VARSUMMARY        15:57:14.855         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:11.124         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:16.728         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:15.959         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:15.969         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:16.874         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:16.874         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:16.266         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+15.888          DB_QOS               MOOSDB_#1       pLogger=0.313044:0.338078:0.101089:0.273418,pPrimeFactor=0.306129:0.306129:0.120878:0.217152,uXMS_546=0.176907:0.380993:0.111818:0.218773, 
+15.888          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+15.993          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-15.1751, primes=0, username=liumk
+ 
+16.093          UXMS_546_ITER_GAP    uXMS_546        1.02545      
+16.093          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+16.244          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-15.426, primes=0, username=liumk
+ 
+16.295          UXMS_546_ITER_GAP    uXMS_546        1.01237      
+16.295          UXMS_546_ITER_LEN    uXMS_546        0.00024      
+16.495          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-15.677, primes=0, username=liumk
+ 
+16.495          UXMS_546_ITER_GAP    uXMS_546        1.00077      
+16.495          UXMS_546_ITER_LEN    uXMS_546        0.00008      
+16.696          UXMS_546_ITER_GAP    uXMS_546        1.00366      
+16.696          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+16.746          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-15.928, primes=0, username=liumk
+ 
+16.896          UXMS_546_ITER_GAP    uXMS_546        1.00129      
+16.896          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+17.001          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-16.1832, primes=0, username=liumk
+ 
+17.097          UXMS_546_ITER_GAP    uXMS_546        1.00423      
+17.097          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+17.251          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-16.4333, primes=0, username=liumk
+ 
+17.298          UXMS_546_ITER_GAP    uXMS_546        1.00395      
+17.298          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+17.499          UXMS_546_ITER_GAP    uXMS_546        1.00322      
+17.499          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+17.506          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-16.6886, primes=0, username=liumk
+ 
+17.699          UXMS_546_ITER_GAP    uXMS_546        1.00413      
+17.699          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+17.758          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-16.9401, primes=0, username=liumk
+ 
+17.900          UXMS_546_ITER_GAP    uXMS_546        1.00387      
+17.900          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+17.901          DB_TIME              MOOSDB_#1       1582232238.88755 
+17.901          DB_UPTIME            MOOSDB_#1       18.31076     
+17.901          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+17.901          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:18.887         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:16.875         MOOSDB_#1            0.5 Hz S  pLogger=0.313044:0.338...
+DB_RWSUMMARY         15:57:16.875         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:18.887         MOOSDB_#1            0.5 Hz D  1582232238.9
+DB_UPTIME            15:57:18.887         MOOSDB_#1            0.5 Hz D  18.3
+DB_VARSUMMARY        15:57:16.875         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:11.124         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:18.745         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:17.984         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:17.988         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:18.887         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:18.887         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:18.285         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+17.901          DB_QOS               MOOSDB_#1       pLogger=0.273943:0.338078:0.101089:0.265598,pPrimeFactor=0.18096:0.306129:0.120878:0.192118,uXMS_546=0.227928:0.380993:0.111818:0.228977, 
+17.901          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+18.013          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-17.1953, primes=0, username=liumk
+ 
+18.101          UXMS_546_ITER_GAP    uXMS_546        1.00398      
+18.101          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+18.265          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-17.4471, primes=0, username=liumk
+ 
+18.302          UXMS_546_ITER_GAP    uXMS_546        1.00378      
+18.302          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+18.504          UXMS_546_ITER_GAP    uXMS_546        1.01161      
+18.504          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+18.519          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-17.7015, primes=0, username=liumk
+ 
+18.707          UXMS_546_ITER_GAP    uXMS_546        1.01544      
+18.707          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+18.770          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-17.9524, primes=0, username=liumk
+ 
+18.912          UXMS_546_ITER_GAP    uXMS_546        1.02538      
+18.912          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+19.021          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-18.2035, primes=0, username=liumk
+ 
+19.118          UXMS_546_ITER_GAP    uXMS_546        1.02683      
+19.118          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+19.272          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-18.4544, primes=0, username=liumk
+ 
+19.322          UXMS_546_ITER_GAP    uXMS_546        1.02411      
+19.322          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+19.523          UXMS_546_ITER_GAP    uXMS_546        1.00340      
+19.523          UXMS_546_ITER_LEN    uXMS_546        0.00034      
+19.523          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-18.7054, primes=0, username=liumk
+ 
+19.724          UXMS_546_ITER_GAP    uXMS_546        1.00394      
+19.724          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+19.774          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-18.9563, primes=0, username=liumk
+ 
+19.929          UXMS_546_ITER_GAP    uXMS_546        1.02344      
+19.929          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+19.929          DB_TIME              MOOSDB_#1       1582232240.91576 
+19.929          DB_UPTIME            MOOSDB_#1       20.33897     
+19.929          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+19.929          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:20.915         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:18.887         MOOSDB_#1            0.5 Hz S  pLogger=0.273943:0.338...
+DB_RWSUMMARY         15:57:18.887         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:20.915         MOOSDB_#1            0.5 Hz D  1582232240.9
+DB_UPTIME            15:57:20.915         MOOSDB_#1            0.5 Hz D  20.3
+DB_VARSUMMARY        15:57:18.887         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:11.124         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:20.761         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:20.005         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:20.008         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:20.915         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:20.915         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:20.309         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+19.929          DB_QOS               MOOSDB_#1       pLogger=0.288963:0.338078:0.101089:0.268602,pPrimeFactor=0.252008:0.306129:0.120878:0.206327,uXMS_546=0.228882:0.380993:0.111818:0.229168, 
+19.929          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+20.025          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-19.2073, primes=0, username=liumk
+ 
+20.134          UXMS_546_ITER_GAP    uXMS_546        1.02558      
+20.134          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+20.238          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+20.275          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-19.4577, primes=0, username=liumk
+ 
+20.337          UXMS_546_ITER_GAP    uXMS_546        1.01565      
+20.337          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+20.529          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-19.7108, primes=0, username=liumk
+ 
+20.542          UXMS_546_ITER_GAP    uXMS_546        1.02571      
+20.542          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+20.744          UXMS_546_ITER_GAP    uXMS_546        1.01246      
+20.744          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+20.784          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-19.9659, primes=0, username=liumk
+ 
+20.945          UXMS_546_ITER_GAP    uXMS_546        1.00422      
+20.945          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+21.039          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-20.2211, primes=0, username=liumk
+ 
+21.146          UXMS_546_ITER_GAP    uXMS_546        1.00387      
+21.146          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+21.294          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-20.4762, primes=0, username=liumk
+ 
+21.351          UXMS_546_ITER_GAP    uXMS_546        1.02488      
+21.351          UXMS_546_ITER_LEN    uXMS_546        0.00006      
+21.548          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-20.7298, primes=0, username=liumk
+ 
+21.556          UXMS_546_ITER_GAP    uXMS_546        1.02654      
+21.556          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+21.761          UXMS_546_ITER_GAP    uXMS_546        1.02564      
+21.761          UXMS_546_ITER_LEN    uXMS_546        0.00033      
+21.799          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-20.9808, primes=0, username=liumk
+ 
+21.966          UXMS_546_ITER_GAP    uXMS_546        1.02208      
+21.966          UXMS_546_ITER_LEN    uXMS_546        0.00024      
+21.966          DB_TIME              MOOSDB_#1       1582232242.95326 
+21.966          DB_UPTIME            MOOSDB_#1       22.37647     
+21.966          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+21.966          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:22.953         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:20.915         MOOSDB_#1            0.5 Hz S  pLogger=0.288963:0.338...
+DB_RWSUMMARY         15:57:20.915         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:22.953         MOOSDB_#1            0.5 Hz D  1582232243.0
+DB_UPTIME            15:57:22.953         MOOSDB_#1            0.5 Hz D  22.4
+DB_VARSUMMARY        15:57:20.915         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:21.225         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:22.785         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:22.037         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:22.026         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:22.953         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:22.953         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:22.338         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+21.966          DB_QOS               MOOSDB_#1       pLogger=0.314951:0.338078:0.101089:0.2738,pPrimeFactor=0.243187:0.306129:0.120878:0.204563,uXMS_546=0.29707:0.380993:0.111818:0.242805, 
+21.967          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+22.049          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-21.231, primes=0, username=liumk
+ 
+22.166          UXMS_546_ITER_GAP    uXMS_546        1.00090      
+22.166          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+22.302          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-21.4842, primes=0, username=liumk
+ 
+22.367          UXMS_546_ITER_GAP    uXMS_546        1.00691      
+22.367          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+22.557          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-21.7393, primes=0, username=liumk
+ 
+22.568          UXMS_546_ITER_GAP    uXMS_546        1.00387      
+22.568          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+22.773          UXMS_546_ITER_GAP    uXMS_546        1.02584      
+22.773          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+22.812          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-21.9944, primes=0, username=liumk
+ 
+22.978          UXMS_546_ITER_GAP    uXMS_546        1.02550      
+22.978          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+23.067          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-22.2497, primes=0, username=liumk
+ 
+23.184          UXMS_546_ITER_GAP    uXMS_546        1.02636      
+23.184          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+23.321          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-22.5033, primes=0, username=liumk
+ 
+23.388          UXMS_546_ITER_GAP    uXMS_546        1.02170      
+23.388          UXMS_546_ITER_LEN    uXMS_546        0.00010      
+23.572          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-22.7543, primes=0, username=liumk
+ 
+23.589          UXMS_546_ITER_GAP    uXMS_546        1.00341      
+23.589          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+23.789          UXMS_546_ITER_GAP    uXMS_546        1.00366      
+23.790          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+23.824          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-23.0062, primes=0, username=liumk
+ 
+23.990          UXMS_546_ITER_GAP    uXMS_546        1.00425      
+23.990          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+23.991          DB_TIME              MOOSDB_#1       1582232244.97770 
+23.991          DB_UPTIME            MOOSDB_#1       24.40092     
+23.991          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+23.991          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:24.977         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:22.953         MOOSDB_#1            0.5 Hz S  pLogger=0.314951:0.338...
+DB_RWSUMMARY         15:57:22.953         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:24.977         MOOSDB_#1            0.5 Hz D  1582232245.0
+DB_UPTIME            15:57:24.977         MOOSDB_#1            0.5 Hz D  24.4
+DB_VARSUMMARY        15:57:22.953         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:21.225         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:24.811         pPrimeFactor         3.9 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:24.073         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:24.054         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:24.977         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:24.977         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:24.375         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+23.991          DB_QOS               MOOSDB_#1       pLogger=0.26989:0.338078:0.101089:0.264788,pPrimeFactor=0.19908:0.306129:0.120878:0.195742,uXMS_546=0.257015:0.380993:0.111818:0.234795, 
+23.991          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+24.079          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-23.2614, primes=0, username=liumk
+ 
+24.191          UXMS_546_ITER_GAP    uXMS_546        1.00375      
+24.191          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+24.334          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-23.5165, primes=0, username=liumk
+ 
+24.392          UXMS_546_ITER_GAP    uXMS_546        1.00412      
+24.392          UXMS_546_ITER_LEN    uXMS_546        0.00043      
+24.589          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-23.7716, primes=0, username=liumk
+ 
+24.593          UXMS_546_ITER_GAP    uXMS_546        1.00357      
+24.593          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+24.793          UXMS_546_ITER_GAP    uXMS_546        1.00375      
+24.793          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+24.844          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-24.0259, primes=0, username=liumk
+ 
+24.996          UXMS_546_ITER_GAP    uXMS_546        1.01316      
+24.996          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+25.095          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-24.2769, primes=0, username=liumk
+ 
+25.201          UXMS_546_ITER_GAP    uXMS_546        1.02477      
+25.201          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+25.346          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-24.5278, primes=0, username=liumk
+ 
+25.406          UXMS_546_ITER_GAP    uXMS_546        1.02607      
+25.406          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+25.596          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-24.7781, primes=0, username=liumk
+ 
+25.606          UXMS_546_ITER_GAP    uXMS_546        1.00147      
+25.606          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+25.811          UXMS_546_ITER_GAP    uXMS_546        1.02479      
+25.811          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+25.848          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-25.0298, primes=0, username=liumk
+ 
+26.015          UXMS_546_ITER_GAP    uXMS_546        1.01698      
+26.015          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+26.015          DB_TIME              MOOSDB_#1       1582232247.00214 
+26.015          DB_UPTIME            MOOSDB_#1       26.42539     
+26.015          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+26.016          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:27.002         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:24.977         MOOSDB_#1            0.5 Hz S  pLogger=0.26989:0.3380...
+DB_RWSUMMARY         15:57:24.977         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:27.002         MOOSDB_#1            0.5 Hz D  1582232247.0
+DB_UPTIME            15:57:27.002         MOOSDB_#1            0.5 Hz D  26.4
+DB_VARSUMMARY        15:57:24.977         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:21.225         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:26.834         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:26.098         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:26.081         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:27.002         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:27.002         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:26.393         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+26.016          DB_QOS               MOOSDB_#1       pLogger=0.30303:0.36788:0.101089:0.271416,pPrimeFactor=0.240088:0.306129:0.120878:0.203943,uXMS_546=0.240088:0.380993:0.111818:0.231409, 
+26.016          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+26.100          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-25.2826, primes=0, username=liumk
+ 
+26.216          UXMS_546_ITER_GAP    uXMS_546        1.00581      
+26.216          UXMS_546_ITER_LEN    uXMS_546        0.00011      
+26.356          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-25.5378, primes=0, username=liumk
+ 
+26.420          UXMS_546_ITER_GAP    uXMS_546        1.01837      
+26.420          UXMS_546_ITER_LEN    uXMS_546        0.00024      
+26.611          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-25.7929, primes=0, username=liumk
+ 
+26.622          UXMS_546_ITER_GAP    uXMS_546        1.01127      
+26.622          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+26.827          UXMS_546_ITER_GAP    uXMS_546        1.02637      
+26.827          UXMS_546_ITER_LEN    uXMS_546        0.00030      
+26.861          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-26.0432, primes=0, username=liumk
+ 
+27.031          UXMS_546_ITER_GAP    uXMS_546        1.01883      
+27.031          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+27.116          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-26.2984, primes=0, username=liumk
+ 
+27.236          UXMS_546_ITER_GAP    uXMS_546        1.02349      
+27.236          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+27.370          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-26.5523, primes=0, username=liumk
+ 
+27.437          UXMS_546_ITER_GAP    uXMS_546        1.00684      
+27.437          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+27.621          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-26.8033, primes=0, username=liumk
+ 
+27.638          UXMS_546_ITER_GAP    uXMS_546        1.00349      
+27.638          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+27.838          UXMS_546_ITER_GAP    uXMS_546        1.00366      
+27.838          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+27.872          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-27.0543, primes=0, username=liumk
+ 
+28.041          UXMS_546_ITER_GAP    uXMS_546        1.01300      
+28.041          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+28.041          DB_TIME              MOOSDB_#1       1582232249.02841 
+28.041          DB_UPTIME            MOOSDB_#1       28.45163     
+28.041          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+28.042          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:29.028         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:27.002         MOOSDB_#1            0.5 Hz S  pLogger=0.30303:0.3678...
+DB_RWSUMMARY         15:57:27.002         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:29.028         MOOSDB_#1            0.5 Hz D  1582232249.0
+DB_UPTIME            15:57:29.028         MOOSDB_#1            0.5 Hz D  28.5
+DB_VARSUMMARY        15:57:27.002         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:21.225         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:28.859         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:28.122         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:28.103         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:29.028         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:29.028         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:28.424         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+28.042          DB_QOS               MOOSDB_#1       pLogger=0.309944:0.36788:0.101089:0.272799,pPrimeFactor=0.226021:0.306129:0.120878:0.20113,uXMS_546=0.259161:0.380993:0.111818:0.235224, 
+28.042          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+28.123          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-27.3052, primes=0, username=liumk
+ 
+28.243          UXMS_546_ITER_GAP    uXMS_546        1.01087      
+28.243          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+28.374          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-27.5562, primes=0, username=liumk
+ 
+28.448          UXMS_546_ITER_GAP    uXMS_546        1.02156      
+28.448          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+28.625          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-27.8071, primes=0, username=liumk
+ 
+28.652          UXMS_546_ITER_GAP    uXMS_546        1.02402      
+28.652          UXMS_546_ITER_LEN    uXMS_546        0.00069      
+28.853          UXMS_546_ITER_GAP    uXMS_546        1.00361      
+28.853          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+28.876          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-28.0581, primes=0, username=liumk
+ 
+29.053          UXMS_546_ITER_GAP    uXMS_546        1.00095      
+29.053          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+29.127          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-28.3089, primes=0, username=liumk
+ 
+29.254          UXMS_546_ITER_GAP    uXMS_546        1.00181      
+29.254          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+29.378          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-28.56, primes=0, username=liumk
+ 
+29.459          UXMS_546_ITER_GAP    uXMS_546        1.02600      
+29.459          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+29.629          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-28.811, primes=0, username=liumk
+ 
+29.662          UXMS_546_ITER_GAP    uXMS_546        1.01695      
+29.662          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+29.863          UXMS_546_ITER_GAP    uXMS_546        1.00376      
+29.863          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+29.880          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-29.0619, primes=0, username=liumk
+ 
+30.064          UXMS_546_ITER_GAP    uXMS_546        1.00409      
+30.064          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+30.064          DB_TIME              MOOSDB_#1       1582232251.05114 
+30.064          DB_UPTIME            MOOSDB_#1       30.47436     
+30.064          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+30.064          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:31.051         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:29.028         MOOSDB_#1            0.5 Hz S  pLogger=0.309944:0.367...
+DB_RWSUMMARY         15:57:29.028         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:31.051         MOOSDB_#1            0.5 Hz D  1582232251.1
+DB_UPTIME            15:57:31.051         MOOSDB_#1            0.5 Hz D  30.5
+DB_VARSUMMARY        15:57:29.028         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:21.225         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:30.867         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:30.137         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:30.113         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:31.051         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:31.051         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:30.446         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+30.064          DB_QOS               MOOSDB_#1       pLogger=0.317812:0.36788:0.101089:0.274372,pPrimeFactor=0.185013:0.306129:0.120878:0.192928,uXMS_546=0.28801:0.380993:0.111818:0.240993, 
+30.064          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+30.131          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-29.313, primes=0, username=liumk
+ 
+30.265          UXMS_546_ITER_GAP    uXMS_546        1.00376      
+30.265          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+30.367          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+30.382          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-29.5639, primes=0, username=liumk
+ 
+30.465          UXMS_546_ITER_GAP    uXMS_546        1.00390      
+30.465          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+30.633          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-29.8149, primes=0, username=liumk
+ 
+30.666          UXMS_546_ITER_GAP    uXMS_546        1.00399      
+30.666          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+30.867          UXMS_546_ITER_GAP    uXMS_546        1.00353      
+30.867          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+30.884          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-30.0658, primes=0, username=liumk
+ 
+31.068          UXMS_546_ITER_GAP    uXMS_546        1.00406      
+31.068          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+31.135          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-30.317, primes=0, username=liumk
+ 
+31.268          UXMS_546_ITER_GAP    uXMS_546        1.00388      
+31.268          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+31.386          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-30.5678, primes=0, username=liumk
+ 
+31.469          UXMS_546_ITER_GAP    uXMS_546        1.00434      
+31.469          UXMS_546_ITER_LEN    uXMS_546        0.00004      
+31.637          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-30.8188, primes=0, username=liumk
+ 
+31.670          UXMS_546_ITER_GAP    uXMS_546        1.00347      
+31.670          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+31.871          UXMS_546_ITER_GAP    uXMS_546        1.00363      
+31.871          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+31.887          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-31.0697, primes=0, username=liumk
+ 
+32.072          UXMS_546_ITER_GAP    uXMS_546        1.00426      
+32.072          UXMS_546_ITER_LEN    uXMS_546        0.00026      
+32.072          DB_TIME              MOOSDB_#1       1582232253.05897 
+32.072          DB_UPTIME            MOOSDB_#1       32.48218     
+32.072          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+32.072          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:33.058         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:31.051         MOOSDB_#1            0.5 Hz S  pLogger=0.317812:0.367...
+DB_RWSUMMARY         15:57:31.051         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:33.058         MOOSDB_#1            0.5 Hz D  1582232253.1
+DB_UPTIME            15:57:33.058         MOOSDB_#1            0.5 Hz D  32.5
+DB_VARSUMMARY        15:57:31.051         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:31.354         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:32.874         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:32.172         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:32.121         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:33.058         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:33.058         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:32.456         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+32.072          DB_QOS               MOOSDB_#1       pLogger=0.311852:0.36788:0.101089:0.27318,pPrimeFactor=0.212908:0.306129:0.120878:0.198507,uXMS_546=0.177145:0.380993:0.111818:0.218821, 
+32.072          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+32.138          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-31.3201, primes=0, username=liumk
+ 
+32.272          UXMS_546_ITER_GAP    uXMS_546        1.00368      
+32.272          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+32.388          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-31.5706, primes=0, username=liumk
+ 
+32.476          UXMS_546_ITER_GAP    uXMS_546        1.01645      
+32.476          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+32.640          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-31.8226, primes=0, username=liumk
+ 
+32.681          UXMS_546_ITER_GAP    uXMS_546        1.02541      
+32.681          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+32.886          UXMS_546_ITER_GAP    uXMS_546        1.02630      
+32.886          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+32.891          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-32.0736, primes=0, username=liumk
+ 
+33.088          UXMS_546_ITER_GAP    uXMS_546        1.01173      
+33.088          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+33.142          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-32.3247, primes=0, username=liumk
+ 
+33.293          UXMS_546_ITER_GAP    uXMS_546        1.02313      
+33.293          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+33.393          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-32.5755, primes=0, username=liumk
+ 
+33.494          UXMS_546_ITER_GAP    uXMS_546        1.00427      
+33.494          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+33.644          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-32.8265, primes=0, username=liumk
+ 
+33.694          UXMS_546_ITER_GAP    uXMS_546        1.00332      
+33.694          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+33.895          UXMS_546_ITER_GAP    uXMS_546        1.00400      
+33.895          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-33.0775, primes=0, username=liumk
+ 
+33.895          UXMS_546_ITER_LEN    uXMS_546        0.00017      
+34.096          UXMS_546_ITER_GAP    uXMS_546        1.00255      
+34.096          UXMS_546_ITER_LEN    uXMS_546        0.00011      
+34.096          DB_TIME              MOOSDB_#1       1582232255.08288 
+34.096          DB_UPTIME            MOOSDB_#1       34.50610     
+34.096          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+34.096          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:35.082         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:33.059         MOOSDB_#1            0.5 Hz S  pLogger=0.311852:0.367...
+DB_RWSUMMARY         15:57:33.059         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:35.082         MOOSDB_#1            0.5 Hz D  1582232255.1
+DB_UPTIME            15:57:35.082         MOOSDB_#1            0.5 Hz D  34.5
+DB_VARSUMMARY        15:57:33.059         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:31.354         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:34.882         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:34.197         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:34.129         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:35.082         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:35.082         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:34.481         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+34.096          DB_QOS               MOOSDB_#1       pLogger=0.29397:0.370979:0.101089:0.269604,pPrimeFactor=0.197172:0.306129:0.120878:0.19536,uXMS_546=0.267982:0.380993:0.111818:0.236988, 
+34.096          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+34.146          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-33.3284, primes=0, username=liumk
+ 
+34.297          UXMS_546_ITER_GAP    uXMS_546        1.00528      
+34.297          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+34.399          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-33.5815, primes=0, username=liumk
+ 
+34.498          UXMS_546_ITER_GAP    uXMS_546        1.00384      
+34.498          UXMS_546_ITER_LEN    uXMS_546        0.00025      
+34.654          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-33.8365, primes=0, username=liumk
+ 
+34.698          UXMS_546_ITER_GAP    uXMS_546        1.00389      
+34.698          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+34.899          UXMS_546_ITER_GAP    uXMS_546        1.00362      
+34.899          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+34.904          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-34.0866, primes=0, username=liumk
+ 
+35.099          UXMS_546_ITER_GAP    uXMS_546        1.00083      
+35.099          UXMS_546_ITER_LEN    uXMS_546        0.00010      
+35.160          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-34.3418, primes=0, username=liumk
+ 
+35.301          UXMS_546_ITER_GAP    uXMS_546        1.00713      
+35.301          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+35.410          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-34.5925, primes=0, username=liumk
+ 
+35.505          UXMS_546_ITER_GAP    uXMS_546        1.02125      
+35.505          UXMS_546_ITER_LEN    uXMS_546        0.00003      
+35.665          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-34.8476, primes=0, username=liumk
+ 
+35.706          UXMS_546_ITER_GAP    uXMS_546        1.00402      
+35.706          UXMS_546_ITER_LEN    uXMS_546        0.00010      
+35.908          UXMS_546_ITER_GAP    uXMS_546        1.01238      
+35.908          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+35.916          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-35.0984, primes=0, username=liumk
+ 
+36.110          UXMS_546_ITER_GAP    uXMS_546        1.01014      
+36.110          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+36.111          DB_TIME              MOOSDB_#1       1582232257.09762 
+36.111          DB_UPTIME            MOOSDB_#1       36.52083     
+36.111          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+36.111          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:37.097         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:35.083         MOOSDB_#1            0.5 Hz S  pLogger=0.29397:0.3709...
+DB_RWSUMMARY         15:57:35.083         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:37.097         MOOSDB_#1            0.5 Hz D  1582232257.1
+DB_UPTIME            15:57:37.097         MOOSDB_#1            0.5 Hz D  36.5
+DB_VARSUMMARY        15:57:35.083         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:31.354         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:36.903         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:36.219         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:36.146         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:37.097         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:37.097         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:36.492         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+36.111          DB_QOS               MOOSDB_#1       pLogger=0.295877:0.370979:0.101089:0.269985,pPrimeFactor=0.199795:0.306129:0.120878:0.195885,uXMS_546=0.313997:0.380993:0.111818:0.246191, 
+36.111          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+36.171          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-35.3533, primes=0, username=liumk
+ 
+36.312          UXMS_546_ITER_GAP    uXMS_546        1.00969      
+36.312          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+36.422          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-35.6042, primes=0, username=liumk
+ 
+36.514          UXMS_546_ITER_GAP    uXMS_546        1.01026      
+36.514          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+36.673          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-35.8548, primes=0, username=liumk
+ 
+36.716          UXMS_546_ITER_GAP    uXMS_546        1.00998      
+36.716          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+36.918          UXMS_546_ITER_GAP    uXMS_546        1.00975      
+36.918          UXMS_546_ITER_LEN    uXMS_546        0.00031      
+36.924          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-36.1058, primes=0, username=liumk
+ 
+37.120          UXMS_546_ITER_GAP    uXMS_546        1.00867      
+37.120          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+37.175          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-36.357, primes=0, username=liumk
+ 
+37.324          UXMS_546_ITER_GAP    uXMS_546        1.02151      
+37.324          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+37.425          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-36.6075, primes=0, username=liumk
+ 
+37.529          UXMS_546_ITER_GAP    uXMS_546        1.02574      
+37.529          UXMS_546_ITER_LEN    uXMS_546        0.00003      
+37.676          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-36.8579, primes=0, username=liumk
+ 
+37.730          UXMS_546_ITER_GAP    uXMS_546        1.00181      
+37.730          UXMS_546_ITER_LEN    uXMS_546        0.00009      
+37.926          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-37.1082, primes=0, username=liumk
+ 
+37.930          UXMS_546_ITER_GAP    uXMS_546        1.00089      
+37.930          UXMS_546_ITER_LEN    uXMS_546        0.00008      
+38.130          UXMS_546_ITER_GAP    uXMS_546        1.00243      
+38.130          UXMS_546_ITER_LEN    uXMS_546        0.00043      
+38.131          DB_TIME              MOOSDB_#1       1582232259.11766 
+38.131          DB_UPTIME            MOOSDB_#1       38.54088     
+38.131          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+38.131          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:39.117         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:37.097         MOOSDB_#1            0.5 Hz S  pLogger=0.295877:0.370...
+DB_RWSUMMARY         15:57:37.097         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:39.117         MOOSDB_#1            0.5 Hz D  1582232259.1
+DB_UPTIME            15:57:39.117         MOOSDB_#1            0.5 Hz D  38.5
+DB_VARSUMMARY        15:57:37.097         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:31.354         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:38.913         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:38.245         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:38.161         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:39.117         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:39.117         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:38.516         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+38.131          DB_QOS               MOOSDB_#1       pLogger=0.328064:0.370979:0.101089:0.276423,pPrimeFactor=0.149965:0.306129:0.113964:0.185919,uXMS_546=0.0898838:0.380993:0.0898838:0.201368, 
+38.131          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+38.178          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-37.3606, primes=0, username=liumk
+ 
+38.335          UXMS_546_ITER_GAP    uXMS_546        1.02565      
+38.335          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+38.429          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-37.6116, primes=0, username=liumk
+ 
+38.536          UXMS_546_ITER_GAP    uXMS_546        1.00335      
+38.536          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+38.680          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-37.8626, primes=0, username=liumk
+ 
+38.738          UXMS_546_ITER_GAP    uXMS_546        1.01000      
+38.738          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+38.931          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-38.1136, primes=0, username=liumk
+ 
+38.942          UXMS_546_ITER_GAP    uXMS_546        1.01997      
+38.942          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+39.144          UXMS_546_ITER_GAP    uXMS_546        1.00975      
+39.144          UXMS_546_ITER_LEN    uXMS_546        0.00031      
+39.182          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-38.3645, primes=0, username=liumk
+ 
+39.346          UXMS_546_ITER_GAP    uXMS_546        1.01019      
+39.346          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+39.433          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-38.6155, primes=0, username=liumk
+ 
+39.550          UXMS_546_ITER_GAP    uXMS_546        1.02175      
+39.550          UXMS_546_ITER_LEN    uXMS_546        0.00004      
+39.684          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-38.866, primes=0, username=liumk
+ 
+39.751          UXMS_546_ITER_GAP    uXMS_546        1.00282      
+39.751          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+39.934          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-39.1164, primes=0, username=liumk
+ 
+39.952          UXMS_546_ITER_GAP    uXMS_546        1.00452      
+39.952          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+40.153          UXMS_546_ITER_GAP    uXMS_546        1.00370      
+40.153          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+40.153          DB_TIME              MOOSDB_#1       1582232261.14000 
+40.153          DB_UPTIME            MOOSDB_#1       40.56322     
+40.153          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+40.153          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:41.140         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:39.117         MOOSDB_#1            0.5 Hz S  pLogger=0.328064:0.370...
+DB_RWSUMMARY         15:57:39.117         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:41.140         MOOSDB_#1            0.5 Hz D  1582232261.1
+DB_UPTIME            15:57:41.140         MOOSDB_#1            0.5 Hz D  40.6
+DB_VARSUMMARY        15:57:39.117         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:31.354         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:40.921         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:40.263         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:40.169         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:41.139         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:41.140         uXMS_546             4.9 Hz D  0.0
+UXMS_546_STATUS      15:57:40.537         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+40.153          DB_QOS               MOOSDB_#1       pLogger=0.307083:0.370979:0.101089:0.272226,pPrimeFactor=0.19002:0.306129:0.113964:0.19393,uXMS_546=0.247002:0.380993:0.0898838:0.232792, 
+40.153          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+40.186          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-39.3684, primes=0, username=liumk
+ 
+40.354          UXMS_546_ITER_GAP    uXMS_546        1.00427      
+40.354          UXMS_546_ITER_LEN    uXMS_546        0.00030      
+40.439          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-39.6217, primes=0, username=liumk
+ 
+40.494          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+40.554          UXMS_546_ITER_GAP    uXMS_546        1.00388      
+40.554          UXMS_546_ITER_LEN    uXMS_546        0.00012      
+40.693          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-39.8755, primes=0, username=liumk
+ 
+40.754          UXMS_546_ITER_GAP    uXMS_546        1.00073      
+40.754          UXMS_546_ITER_LEN    uXMS_546        0.00010      
+40.944          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-40.1265, primes=0, username=liumk
+ 
+40.956          UXMS_546_ITER_GAP    uXMS_546        1.00548      
+40.956          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+41.157          UXMS_546_ITER_GAP    uXMS_546        1.00490      
+41.157          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+41.198          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-40.3804, primes=0, username=liumk
+ 
+41.357          UXMS_546_ITER_GAP    uXMS_546        1.00393      
+41.357          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+41.453          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-40.6356, primes=0, username=liumk
+ 
+41.558          UXMS_546_ITER_GAP    uXMS_546        1.00474      
+41.558          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+41.705          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-40.8867, primes=0, username=liumk
+ 
+41.759          UXMS_546_ITER_GAP    uXMS_546        1.00294      
+41.759          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+41.955          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-41.137, primes=0, username=liumk
+ 
+41.964          UXMS_546_ITER_GAP    uXMS_546        1.02518      
+41.964          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+42.169          UXMS_546_ITER_GAP    uXMS_546        1.02702      
+42.169          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+42.170          DB_TIME              MOOSDB_#1       1582232263.15670 
+42.170          DB_UPTIME            MOOSDB_#1       42.57992     
+42.170          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+42.170          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:43.156         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:41.140         MOOSDB_#1            0.5 Hz S  pLogger=0.307083:0.370...
+DB_RWSUMMARY         15:57:41.140         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:43.156         MOOSDB_#1            0.5 Hz D  1582232263.2
+DB_UPTIME            15:57:43.156         MOOSDB_#1            0.5 Hz D  42.6
+DB_VARSUMMARY        15:57:41.140         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:41.481         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:42.941         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:42.294         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:42.185         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:43.156         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:43.156         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:42.545         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+42.170          DB_QOS               MOOSDB_#1       pLogger=0.302076:0.370979:0.101089:0.271225,pPrimeFactor=0.231028:0.306129:0.113964:0.202131,uXMS_546=0.233173:0.380993:0.0898838:0.230026, 
+42.170          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+42.208          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-41.3898, primes=0, username=liumk
+ 
+42.370          UXMS_546_ITER_GAP    uXMS_546        1.00317      
+42.370          UXMS_546_ITER_LEN    uXMS_546        0.00012      
+42.462          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-41.6438, primes=0, username=liumk
+ 
+42.575          UXMS_546_ITER_GAP    uXMS_546        1.02661      
+42.575          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+42.713          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-41.8948, primes=0, username=liumk
+ 
+42.779          UXMS_546_ITER_GAP    uXMS_546        1.02057      
+42.779          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+42.964          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-42.1458, primes=0, username=liumk
+ 
+42.980          UXMS_546_ITER_GAP    uXMS_546        1.00458      
+42.980          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+43.181          UXMS_546_ITER_GAP    uXMS_546        1.00353      
+43.181          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+43.215          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-42.3969, primes=0, username=liumk
+ 
+43.382          UXMS_546_ITER_GAP    uXMS_546        1.00438      
+43.382          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+43.466          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-42.6478, primes=0, username=liumk
+ 
+43.582          UXMS_546_ITER_GAP    uXMS_546        1.00203      
+43.582          UXMS_546_ITER_LEN    uXMS_546        0.00004      
+43.716          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-42.8987, primes=0, username=liumk
+ 
+43.783          UXMS_546_ITER_GAP    uXMS_546        1.00337      
+43.783          UXMS_546_ITER_LEN    uXMS_546        0.00011      
+43.967          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-43.1497, primes=0, username=liumk
+ 
+43.984          UXMS_546_ITER_GAP    uXMS_546        1.00625      
+43.984          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+44.185          UXMS_546_ITER_GAP    uXMS_546        1.00356      
+44.185          UXMS_546_ITER_LEN    uXMS_546        0.00032      
+44.185          DB_TIME              MOOSDB_#1       1582232265.17231 
+44.185          DB_UPTIME            MOOSDB_#1       44.59552     
+44.185          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+44.185          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:45.172         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:43.156         MOOSDB_#1            0.5 Hz S  pLogger=0.302076:0.370...
+DB_RWSUMMARY         15:57:43.156         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:45.172         MOOSDB_#1            0.5 Hz D  1582232265.2
+DB_UPTIME            15:57:45.172         MOOSDB_#1            0.5 Hz D  44.6
+DB_VARSUMMARY        15:57:43.156         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:41.481         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:44.954         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:44.302         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:44.201         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:45.172         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:44.971         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:44.569         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+44.185          DB_QOS               MOOSDB_#1       pLogger=0.365019:0.370979:0.101089:0.283813,pPrimeFactor=0.263929:0.306129:0.113964:0.208712,uXMS_546=0.291824:0.380993:0.0898838:0.241756, 
+44.186          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+44.218          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-43.4006, primes=0, username=liumk
+ 
+44.386          UXMS_546_ITER_GAP    uXMS_546        1.00411      
+44.386          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+44.469          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-43.6516, primes=0, username=liumk
+ 
+44.586          UXMS_546_ITER_GAP    uXMS_546        1.00374      
+44.586          UXMS_546_ITER_LEN    uXMS_546        0.00025      
+44.720          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-43.9023, primes=0, username=liumk
+ 
+44.787          UXMS_546_ITER_GAP    uXMS_546        1.00387      
+44.787          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+44.971          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-44.1535, primes=0, username=liumk
+ 
+44.988          UXMS_546_ITER_GAP    uXMS_546        1.00417      
+44.988          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+45.189          UXMS_546_ITER_GAP    uXMS_546        1.00352      
+45.189          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+45.222          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-44.4046, primes=0, username=liumk
+ 
+45.389          UXMS_546_ITER_GAP    uXMS_546        1.00314      
+45.389          UXMS_546_ITER_LEN    uXMS_546        0.00011      
+45.473          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-44.6555, primes=0, username=liumk
+ 
+45.590          UXMS_546_ITER_GAP    uXMS_546        1.00488      
+45.590          UXMS_546_ITER_LEN    uXMS_546        0.00003      
+45.724          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-44.9065, primes=0, username=liumk
+ 
+45.791          UXMS_546_ITER_GAP    uXMS_546        1.00367      
+45.791          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+45.974          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-45.1566, primes=0, username=liumk
+ 
+45.995          UXMS_546_ITER_GAP    uXMS_546        1.01818      
+45.995          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+46.200          UXMS_546_ITER_GAP    uXMS_546        1.02641      
+46.200          UXMS_546_ITER_LEN    uXMS_546        0.00028      
+46.200          DB_TIME              MOOSDB_#1       1582232267.18744 
+46.200          DB_UPTIME            MOOSDB_#1       46.61066     
+46.200          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+46.201          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:47.187         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:45.172         MOOSDB_#1            0.5 Hz S  pLogger=0.365019:0.370...
+DB_RWSUMMARY         15:57:45.172         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:47.187         MOOSDB_#1            0.5 Hz D  1582232267.2
+DB_UPTIME            15:57:47.187         MOOSDB_#1            0.5 Hz D  46.6
+DB_VARSUMMARY        15:57:45.172         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:41.481         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:46.961         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:46.337         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:46.209         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:47.187         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:47.187         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:46.577         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+46.201          DB_QOS               MOOSDB_#1       pLogger=0.315905:0.370979:0.101089:0.273991,pPrimeFactor=0.236034:0.306129:0.113964:0.203133,uXMS_546=0.26989:0.380993:0.0898838:0.23737, 
+46.201          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+46.226          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-45.4084, primes=0, username=liumk
+ 
+46.400          UXMS_546_ITER_GAP    uXMS_546        1.00183      
+46.400          UXMS_546_ITER_LEN    uXMS_546        0.00012      
+46.476          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-45.6586, primes=0, username=liumk
+ 
+46.601          UXMS_546_ITER_GAP    uXMS_546        1.00161      
+46.601          UXMS_546_ITER_LEN    uXMS_546        0.00021      
+46.728          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-45.9103, primes=0, username=liumk
+ 
+46.806          UXMS_546_ITER_GAP    uXMS_546        1.02543      
+46.806          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+46.979          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-46.1613, primes=0, username=liumk
+ 
+47.007          UXMS_546_ITER_GAP    uXMS_546        1.00381      
+47.007          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+47.212          UXMS_546_ITER_GAP    uXMS_546        1.02538      
+47.212          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+47.229          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-46.4117, primes=0, username=liumk
+ 
+47.414          UXMS_546_ITER_GAP    uXMS_546        1.01198      
+47.414          UXMS_546_ITER_LEN    uXMS_546        0.00022      
+47.481          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-46.6632, primes=0, username=liumk
+ 
+47.615          UXMS_546_ITER_GAP    uXMS_546        1.00462      
+47.615          UXMS_546_ITER_LEN    uXMS_546        0.00006      
+47.732          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-46.9142, primes=0, username=liumk
+ 
+47.816          UXMS_546_ITER_GAP    uXMS_546        1.00316      
+47.816          UXMS_546_ITER_LEN    uXMS_546        0.00020      
+47.985          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-47.1672, primes=0, username=liumk
+ 
+48.016          UXMS_546_ITER_GAP    uXMS_546        1.00402      
+48.016          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+48.219          UXMS_546_ITER_GAP    uXMS_546        1.01553      
+48.220          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+48.220          DB_TIME              MOOSDB_#1       1582232269.20688 
+48.220          DB_UPTIME            MOOSDB_#1       48.63010     
+48.220          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+48.220          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:49.206         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:47.187         MOOSDB_#1            0.5 Hz S  pLogger=0.315905:0.370...
+DB_RWSUMMARY         15:57:47.187         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:49.206         MOOSDB_#1            0.5 Hz D  1582232269.2
+DB_UPTIME            15:57:49.206         MOOSDB_#1            0.5 Hz D  48.6
+DB_VARSUMMARY        15:57:47.187         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:41.481         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:48.972         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:48.355         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:48.216         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:49.206         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:49.206         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:48.602         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+48.220          DB_QOS               MOOSDB_#1       pLogger=0.262022:0.370979:0.101089:0.263214,pPrimeFactor=0.307083:0.307083:0.113964:0.217342,uXMS_546=0.194788:0.380993:0.0898838:0.222349, 
+48.220          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+48.238          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-47.4202, primes=0, username=liumk
+ 
+48.420          UXMS_546_ITER_GAP    uXMS_546        1.00081      
+48.420          UXMS_546_ITER_LEN    uXMS_546        0.00008      
+48.493          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-47.6753, primes=0, username=liumk
+ 
+48.620          UXMS_546_ITER_GAP    uXMS_546        1.00127      
+48.620          UXMS_546_ITER_LEN    uXMS_546        0.00013      
+48.748          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-47.9304, primes=0, username=liumk
+ 
+48.824          UXMS_546_ITER_GAP    uXMS_546        1.02164      
+48.824          UXMS_546_ITER_LEN    uXMS_546        0.00029      
+49.002          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-48.1847, primes=0, username=liumk
+ 
+49.025          UXMS_546_ITER_GAP    uXMS_546        1.00486      
+49.025          UXMS_546_ITER_LEN    uXMS_546        0.00023      
+49.230          UXMS_546_ITER_GAP    uXMS_546        1.02553      
+49.230          UXMS_546_ITER_LEN    uXMS_546        0.00027      
+49.255          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-48.4369, primes=0, username=liumk
+ 
+49.436          UXMS_546_ITER_GAP    uXMS_546        1.02713      
+49.436          UXMS_546_ITER_LEN    uXMS_546        0.00024      
+49.505          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-48.6877, primes=0, username=liumk
+ 
+49.639          UXMS_546_ITER_GAP    uXMS_546        1.01859      
+49.639          UXMS_546_ITER_LEN    uXMS_546        0.00005      
+49.756          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-48.9386, primes=0, username=liumk
+ 
+49.840          UXMS_546_ITER_GAP    uXMS_546        1.00155      
+49.840          UXMS_546_ITER_LEN    uXMS_546        0.00008      
+50.007          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-49.189, primes=0, username=liumk
+ 
+50.041          UXMS_546_ITER_GAP    uXMS_546        1.00549      
+50.041          UXMS_546_ITER_LEN    uXMS_546        0.00012      
+50.241          UXMS_546_ITER_GAP    uXMS_546        1.00277      
+50.241          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+50.242          DB_TIME              MOOSDB_#1       1582232271.22859 
+50.242          DB_UPTIME            MOOSDB_#1       50.65180     
+50.242          DB_CLIENTS           MOOSDB_#1       uXMS_546,pLogger,pPrimeFactor, 
+50.242          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:51.228         MOOSDB_#1            0.5 Hz S  uXMS_546,pLogger,pPrim...
+DB_EVENT             15:57:01.384         MOOSDB_#1            0.0 Hz S  connected=uXMS_546
+DB_QOS               15:57:49.207         MOOSDB_#1            0.5 Hz S  pLogger=0.262022:0.370...
+DB_RWSUMMARY         15:57:49.207         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:51.228         MOOSDB_#1            0.5 Hz D  1582232271.2
+DB_UPTIME            15:57:51.228         MOOSDB_#1            0.5 Hz D  50.7
+DB_VARSUMMARY        15:57:49.207         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:41.481         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:50.993         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:50.391         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:50.241         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:51.228         uXMS_546             4.9 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:51.228         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+50.242          DB_QOS               MOOSDB_#1       pLogger=0.185013:0.370979:0.101089:0.247812,pPrimeFactor=0.212908:0.307083:0.113964:0.198507,uXMS_546=0.211954:0.380993:0.0898838:0.225782, 
+50.242          DB_RWSUMMARY         MOOSDB_#1       uXMS_546=APPCAST_REQ:DB_UPTIME:NUM_RESULT:NUM_VALUE&APPCAST:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN:UXMS_546_STATUS,pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS,pPrimeFactor=NUM_RESULT:NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+50.260          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-49.4425, primes=0, username=liumk
+ 
+50.442          UXMS_546_ITER_GAP    uXMS_546        1.00329      
+50.442          UXMS_546_ITER_LEN    uXMS_546        0.00015      
+50.512          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-49.6941, primes=0, username=liumk
+ 
+50.614          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+50.643          UXMS_546_ITER_GAP    uXMS_546        1.00556      
+50.643          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+50.762          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-49.9443, primes=0, username=liumk
+ 
+50.844          UXMS_546_ITER_GAP    uXMS_546        1.00385      
+50.844          UXMS_546_ITER_LEN    uXMS_546        0.00014      
+51.013          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-50.1954, primes=0, username=liumk
+ 
+51.045          UXMS_546_ITER_GAP    uXMS_546        1.00388      
+51.045          UXMS_546_ITER_LEN    uXMS_546        0.00017      
+51.091          DB_EVENT             MOOSDB_#1       disconnected=uXMS_546 
+51.268          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-50.4506, primes=0, username=liumk
+ 
+51.522          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-50.7041, primes=0, username=liumk
+ 
+51.774          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-50.9561, primes=0, username=liumk
+ 
+52.028          NUM_RESULT           pPrimeFactor    orig=0, received=0, calculated=0,solve_time=-51.21, primes=0, username=liumk
+ 
+52.105          DB_EVENT             MOOSDB_#1       disconnected=pPrimeFactor 
+53.036          DB_TIME              MOOSDB_#1       1582232274.02307 
+53.036          DB_UPTIME            MOOSDB_#1       53.44629     
+53.036          DB_CLIENTS           MOOSDB_#1       pLogger, 
+53.036          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:54.023         MOOSDB_#1            0.4 Hz S  pLogger,
+DB_EVENT             15:57:53.092         MOOSDB_#1            0.5 Hz S  disconnected=pPrimeFactor
+DB_QOS               15:57:51.228         MOOSDB_#1            0.5 Hz S  pLogger=0.185013:0.370...
+DB_RWSUMMARY         15:57:51.228         MOOSDB_#1            0.5 Hz S  uXMS_546=APPCAST_REQ:D...
+DB_TIME              15:57:54.023         MOOSDB_#1            0.4 Hz D  1582232274.0
+DB_UPTIME            15:57:54.023         MOOSDB_#1            0.4 Hz D  53.4
+DB_VARSUMMARY        15:57:51.228         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:51.601         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:53.014         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:52.407         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:52.255         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:52.031         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:52.031         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+53.036          DB_QOS               MOOSDB_#1       pLogger=0.27895:0.370979:0.101089:0.2666, 
+53.036          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS 
+55.467          DB_TIME              MOOSDB_#1       1582232276.45448 
+55.467          DB_UPTIME            MOOSDB_#1       55.87770     
+55.467          DB_CLIENTS           MOOSDB_#1       pLogger, 
+55.468          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:56.454         MOOSDB_#1            0.4 Hz S  pLogger,
+DB_EVENT             15:57:53.092         MOOSDB_#1            0.5 Hz S  disconnected=pPrimeFactor
+DB_QOS               15:57:54.023         MOOSDB_#1            0.4 Hz S  pLogger=0.27895:0.3709...
+DB_RWSUMMARY         15:57:54.023         MOOSDB_#1            0.4 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              15:57:56.454         MOOSDB_#1            0.4 Hz D  1582232276.5
+DB_UPTIME            15:57:56.454         MOOSDB_#1            0.4 Hz D  55.9
+DB_VARSUMMARY        15:57:54.023         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:51.601         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:53.014         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:56.454         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:52.255         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:52.031         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:52.031         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+55.468          DB_QOS               MOOSDB_#1       pLogger=0.295877:0.370979:0.101089:0.269985, 
+55.468          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS 
+57.492          DB_TIME              MOOSDB_#1       1582232278.47896 
+57.492          DB_UPTIME            MOOSDB_#1       57.90218     
+57.492          DB_CLIENTS           MOOSDB_#1       pLogger, 
+57.492          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:57:58.478         MOOSDB_#1            0.5 Hz S  pLogger,
+DB_EVENT             15:57:53.092         MOOSDB_#1            0.5 Hz S  disconnected=pPrimeFactor
+DB_QOS               15:57:56.454         MOOSDB_#1            0.4 Hz S  pLogger=0.295877:0.370...
+DB_RWSUMMARY         15:57:56.454         MOOSDB_#1            0.4 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              15:57:58.478         MOOSDB_#1            0.5 Hz D  1582232278.5
+DB_UPTIME            15:57:58.478         MOOSDB_#1            0.5 Hz D  57.9
+DB_VARSUMMARY        15:57:56.454         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:51.601         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:53.014         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:57:58.478         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:52.255         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:52.031         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:52.031         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+57.492          DB_QOS               MOOSDB_#1       pLogger=0.342131:0.370979:0.101089:0.279236, 
+57.492          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS 
+59.511          DB_TIME              MOOSDB_#1       1582232280.49809 
+59.511          DB_UPTIME            MOOSDB_#1       59.92131     
+59.511          DB_CLIENTS           MOOSDB_#1       pLogger, 
+59.511          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:58:00.498         MOOSDB_#1            0.5 Hz S  pLogger,
+DB_EVENT             15:57:53.092         MOOSDB_#1            0.5 Hz S  disconnected=pPrimeFactor
+DB_QOS               15:57:58.479         MOOSDB_#1            0.5 Hz S  pLogger=0.342131:0.370...
+DB_RWSUMMARY         15:57:58.479         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              15:58:00.498         MOOSDB_#1            0.5 Hz D  1582232280.5
+DB_UPTIME            15:58:00.498         MOOSDB_#1            0.5 Hz D  59.9
+DB_VARSUMMARY        15:57:58.479         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:57:51.601         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:53.014         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:58:00.498         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:52.255         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:52.031         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:52.031         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+59.511          DB_QOS               MOOSDB_#1       pLogger=0.308037:0.370979:0.101089:0.272417, 
+59.511          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS 
+60.732          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____15_57_01 
+61.536          DB_TIME              MOOSDB_#1       1582232282.52263 
+61.536          DB_UPTIME            MOOSDB_#1       61.94584     
+61.536          DB_CLIENTS           MOOSDB_#1       pLogger, 
+61.536          DB_VARSUMMARY        MOOSDB_#1       APPCAST              15:57:02.100         uXMS_546             0.0 Hz S  proc=uXMS_546!@#iter=1...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           15:58:02.522         MOOSDB_#1            0.5 Hz S  pLogger,
+DB_EVENT             15:57:53.092         MOOSDB_#1            0.5 Hz S  disconnected=pPrimeFactor
+DB_QOS               15:58:00.498         MOOSDB_#1            0.5 Hz S  pLogger=0.308037:0.370...
+DB_RWSUMMARY         15:58:00.498         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              15:58:02.522         MOOSDB_#1            0.5 Hz D  1582232282.5
+DB_UPTIME            15:58:02.522         MOOSDB_#1            0.5 Hz D  61.9
+DB_VARSUMMARY        15:58:00.498         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+LOGGER_DIRECTORY     15:58:01.719         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           15:57:53.014         pPrimeFactor         4.0 Hz S  orig=0, received=0, ca...
+NUM_VALUE            18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       15:58:02.522         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  15:57:52.255         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UXMS_546_ITER_GAP    15:57:52.031         uXMS_546             5.0 Hz D  1.0
+UXMS_546_ITER_LEN    15:57:52.031         uXMS_546             5.0 Hz D  0.0
+UXMS_546_STATUS      15:57:50.626         uXMS_546             0.5 Hz S  AppErrorFlag=false,Upt...
+ 
+61.536          DB_QOS               MOOSDB_#1       pLogger=0.313044:0.370979:0.101089:0.273418, 
+61.536          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UXMS_546_ITER_GAP:UXMS_546_ITER_LEN&LOGGER_DIRECTORY:PLOGGER_STATUS 

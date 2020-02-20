@@ -1,13 +1,14 @@
 /************************************************************/
-/*    NAME: Michael Liu                                              */
+/*    NAME: liumk                                              */
 /*    ORGN: MIT                                             */
 /*    FILE: PrimeFactor.cpp                                        */
-/*    DATE: 14 FEB 2020                                                */
+/*    DATE:                                                 */
 /************************************************************/
 
 #include <iterator>
 #include "MBUtils.h"
 #include "PrimeFactor.h"
+#include "PrimeEntry.cpp"
 #include <cstdlib>
 
 using namespace std;
@@ -38,22 +39,15 @@ bool PrimeFactor::OnNewMail(MOOSMSG_LIST &NewMail)
   for(p=NewMail.begin(); p!=NewMail.end(); p++) {
     CMOOSMsg &msg = *p;
     string key = msg.GetKey();
-    string sval = msg.GetString();
-  
-    if (key == "NUM_VALUE") {
-      // Convert from string to long unsigned int
-      m_index++;
-      stringstream temp(sval);
-      m_ival = 0;
-      temp >> m_ival;
-
-      //Make PrimeEntry object and save to list
-      PrimeEntry m_prime;
-      m_prime.setOriginalVal(m_ival);
-      m_prime.setReceivedIndex(m_index);
-      m_mail_list.push_back(m_prime);
-  }
-}
+    if (key == "NUM_VALUE")
+      {
+	string sval = msg.GetString();
+	m_temp.setOriginalVal(stoul(sval));
+	cout << "m_orig" << m_temp.showOriginal() << endl;
+	//temp.setCalculatedIndex(stoul(sval));
+	//cout << "m_calculated_index"<<temp.showCalculatedIndex << endl;
+	//cout << "m_orig"<< m_orig << endl;
+      }
 
 #if 0 // Keep these around just for template
     string key   = msg.GetKey();
@@ -65,10 +59,11 @@ bool PrimeFactor::OnNewMail(MOOSMSG_LIST &NewMail)
     bool   mdbl  = msg.IsDouble();
     bool   mstr  = msg.IsString();
 #endif
-
-    return(true);
+   }
+	
+   return(true);
 }
-  
+
 //---------------------------------------------------------
 // Procedure: OnConnectToServer
 
@@ -84,28 +79,12 @@ bool PrimeFactor::OnConnectToServer()
 
 bool PrimeFactor::Iterate()
 {
-  //Reset max iterations
-  m_max_iter=100000;
-  //Loop through mail list
-  for(std::list<PrimeEntry>::iterator k=m_mail_list.begin();k!=m_mail_list.end();k++)
-    {
-      // Calculate prime number
-      PrimeEntry& m_prime_entry = *k;
-      m_prime_entry.factor(m_max_iter);
-
-      //If finished, publish result and erase object in list, update max iterations
-      if(m_prime_entry.done()){
-	m_calc++;
-	m_prime_entry.setCalculatedIndex(m_calc); //Update index calculated
-	m_max_iter=m_max_iter-m_prime_entry.iter_calc(); // Update max_iter
-	m_result_str=m_prime_entry.getReport();
-	Notify("PRIME_RESULT",m_result_str);
-	k=m_mail_list.erase(k);  //Remove value from list
-      }
-      else{ //Unfinished with factoring by max iterations
-	break;
-      }
-    }
+  //temp.factor();
+  //Notify("NUM_RESULT", temp.returnPrimeString());
+  //m_start_time=MOOSTime();
+  m_temp.factor(10);
+  Notify("NUM_RESULT", m_temp.getReport());
+  //cout << returnPrimeString() << endl;
   return(true);
 }
 
@@ -120,14 +99,14 @@ bool PrimeFactor::OnStartUp()
   if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
     list<string>::iterator p;
     for(p=sParams.begin(); p!=sParams.end(); p++) {
-      string original_line  = *p;
-      string param = stripBlankEnds(toupper(biteString(*p, '=')));
-      string value = stripBlankEnds(*p);
+      string line  = *p;
+      string param = tolower(biteStringX(line, '='));
+      string value = line;
       
-      if(param == "FOO") {
+      if(param == "foo") {
         //handled
       }
-      else if(param == "BAR") {
+      else if(param == "bar") {
         //handled
       }
     }
@@ -142,6 +121,8 @@ bool PrimeFactor::OnStartUp()
 
 void PrimeFactor::RegisterVariables()
 {
-   Register("NUM_VALUE", 0);
+  Register("NUM_VALUE", 0);
+  Register("NUM_RESULT", 0 );
+  // Register("FOOBAR", 0);
 }
 

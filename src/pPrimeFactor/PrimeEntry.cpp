@@ -6,6 +6,7 @@
 /************************************************************/
 
 #include "PrimeEntry.h"
+#include "MBUtils.h"
 
 //---------------------------------------------------------
 // PrimeEntry
@@ -29,6 +30,14 @@ void PrimeEntry::setOriginalVal(unsigned long int v){
 };
 
 //---------------------------------------------------------
+// showOriginal
+// Purpose: Show original value
+//---------------------------------------------------------
+unsigned long int PrimeEntry::showOriginal(){
+  return m_orig;
+}
+
+//---------------------------------------------------------
 //setReceivedIndex
 //Purpose: Index at which # was received
 //---------------------------------------------------------
@@ -44,6 +53,22 @@ void PrimeEntry::setReceivedIndex(unsigned int v){
 void PrimeEntry::setCalculatedIndex(unsigned int v){
   m_calculated_index=v;
 };
+
+//---------------------------------------------------------
+// showCalculatedIndex
+// Purpose: Show index of calculated numbers
+//---------------------------------------------------------
+unsigned long int PrimeEntry::showCalculatedIndex(){
+  return m_calculated_index;
+}
+
+//---------------------------------------------------------
+//returnPrimeString
+//Purpose: Display string of prime numbers
+//---------------------------------------------------------
+std::string PrimeEntry::returnPrimeString(){
+  return uintToString(m_calculated_index);
+}
 
 //---------------------------------------------------------
 //iter_calc
@@ -88,7 +113,7 @@ void PrimeEntry::factor(unsigned long int max_steps){
     m_start_time=MOOSTime();
   }
 
-  while (m_k<=ceil(sqrtl(m_N))){
+  while (m_k<=ceil(sqrt(m_N))){
     m_ii++; // Add iteration
     if(m_ii>max_steps){ //Reached max steps, stop factoring
       break;
@@ -102,19 +127,24 @@ void PrimeEntry::factor(unsigned long int max_steps){
   }
 
   //Check if done
+  while(m_done == false){
   if (m_k>=ceil(sqrtl(m_N))){ //Finished
+    m_done = true;
     m_finished_iter=m_ii;
     m_finish_time=MOOSTime();
 
     if(m_N!=1){ //Add last prime number
       m_factors.push_back(m_N);
     }
-    setDone(true);
+    //return(true);
   }
-  else{
-    setDone(false);
   }
+  //else{
+  //  return;
+    //return(false);
+  //   }
 }
+
 
 //---------------------------------------------------------
 //getReport
@@ -130,7 +160,7 @@ std::string PrimeEntry::getReport(){
   ss<<m_solve_time<<", ";
 
   std::vector<unsigned long int>::iterator p;
-  ss<"primes=";
+  ss << "primes=";
   std::sort(m_factors.begin(),m_factors.end()); //Sort factors.
   for(p=m_factors.begin();p!=m_factors.end();p++){
     ss<<*p<<":";

@@ -31,6 +31,7 @@ class PrimeFactor : public CMOOSApp
    void RegisterVariables();
 
  private: // Configuration variables
+  PrimeEntry m_temp;
   bool m_even;
   long unsigned int m_ival;
   long unsigned int m_max_iter;

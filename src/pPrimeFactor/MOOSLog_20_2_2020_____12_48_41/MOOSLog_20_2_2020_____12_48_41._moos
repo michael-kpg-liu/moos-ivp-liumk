@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_20_2_2020_____12_48_41/MOOSLog_20_2_2020_____12_48_41._moos
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1582220920.52
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //------------------------------------------
 // Antler configuration  block
 ProcessConfig = ANTLER
@@ -6,9 +11,8 @@ ProcessConfig = ANTLER
 
   Run = MOOSDB		@ NewConsole = false
   Run = pPrimeFactor	@ NewConsole = true
-  //Run = uTimerScript	@ New Consol = false
+  Run = uTimerScript	@ New Consol = false
   Run = pLogger		@ NewConsole = false
-  Run = uXMS		@ NewConsole = true
 }
 
 //------------------------------------------------
@@ -30,9 +34,9 @@ ProcessConfig = uTimerScript
 
    paused = false
    event = var=NUM_VALUE, val="$(15)", time=0.25
-   #event = var=NUM_VALUE, val="$(9)", time=0.50
-   #event = var_NUM_VALUE, val="$(7)", time=0.75
-   #event = var_NUM_VALUE, val="$(5)", time=1.00
+   event = var=NUM_VALUE, val="$(9)", time=0.50
+   event = var_NUM_VALUE, val="$(7)", time=0.75
+   event = var_NUM_VALUE, val="$(5)", time=1.00
    
    reset_max = nolimit
    reset_time = all-posted
@@ -49,16 +53,4 @@ ProcessConfig = pLogger
 
    LOG = PRIME_RESULT @ 0
    LOG = NUM_VALUE @ 0
-}
-
-//------------------------------------------------
-// uXMS config block
-
-ProcessConfig = uXMS
-{
-   AppTick   = 4
-   CommsTick = 4
-
-   var = NUM_VALUE, NUM_RESULT
-
 }

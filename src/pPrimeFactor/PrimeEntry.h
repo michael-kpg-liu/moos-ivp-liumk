@@ -24,8 +24,11 @@ class PrimeEntry
   ~PrimeEntry() {};
 
   void setOriginalVal(unsigned long int v); //Set original value
+  unsigned long int showOriginal(); 
   void setReceivedIndex(unsigned int v);
   void setCalculatedIndex(unsigned int v);
+  unsigned long int showCalculatedIndex();
+  std::string returnPrimeString();
   void setDone(bool v);
   bool done();
   long unsigned int iter_calc();
@@ -35,7 +38,7 @@ class PrimeEntry
  protected:
   unsigned long int m_N; //Updated number to factor
   unsigned long int m_orig; //Original prime number
-  bool m_done; //True or false if done with factoring
+  bool m_done = false; //True or false if done with factoring
   unsigned long int m_received_index;
   unsigned long int m_calculated_index;
   unsigned long int m_finished_iter;

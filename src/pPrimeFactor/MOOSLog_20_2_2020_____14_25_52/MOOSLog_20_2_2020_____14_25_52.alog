@@ -1,0 +1,603 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_20_2_2020_____14_25_52/MOOSLog_20_2_2020_____14_25_52.alog
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART                1582226751.7
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+0.104           DB_EVENT             MOOSDB_#1       connected=pLogger 
+0.662           LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____14_25_52 
+0.713           APPCAST              uTimerScript    proc=uTimerScript!@#iter=1!@#iter=1!@#messages=Current Script Information: !@     Elements: 2(0)!@      Reinits: 0!@    Time Warp: 1!@ Time Zero is: At uTimerScript launch time (not MOOSDB start time)!@  Delay Start: 0!@  Delay Reset: 0!@    Reset Max: 0!@!@Run criteria:!@   Block Apps: (ok) no blocking apps!@       Paused: (ok) Not paused!@ ConditionsOK: (ok) No un-met conditions!@!@RandomVar  Type  Min  Max  Parameters!@---------  ----  ---  ---  ----------!@!@Total Random Pairs: 0!@!@Var1  Var2  Type  Parameters!@----  ----  ----  ----------!@!@P/Tot  P/Loc  T/Total   T/Local  Variable/Var!@-----  -----  --------  -------  ------------!@!@#config_warnings=XCommunity/Vehicle name not found in mission file!@Unknown param in event config: var_num_value!@Event configured with NULL posting variable!@Unknown param in event config: var_num_value!@Event configured with NULL posting variable!@#events_total=1!@#events=[0.25]: Script Start. Warp=1, DelayStart=0.0, DelayReset=0.0!@#run_warning_total=0!@# 
+0.880           NUM_RESULT           pPrimeFactor    3887654688 
+0.965           NUM_VALUE            uTimerScript    337356991684298 
+0.965           NUM_VALUE            uTimerScript    337356991684298 
+0.965           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00087      
+1.132           NUM_RESULT           pPrimeFactor    3887654688 
+1.219           NUM_VALUE            uTimerScript    515093417 
+1.219           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00138      
+1.388           NUM_RESULT           pPrimeFactor    3887654688 
+1.470           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00035      
+1.470           DB_TIME              MOOSDB_#1       1582226753.17024 
+1.470           DB_UPTIME            MOOSDB_#1       2.07658      
+1.470           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+1.471           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:25:53.170         MOOSDB_#1            0.0 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:51.092         MOOSDB#1             0.0 Hz S  
+DB_RWSUMMARY         14:25:51.092         MOOSDB#1             0.0 Hz S  
+DB_TIME              14:25:53.170         MOOSDB_#1            0.0 Hz D  1582226753.2
+DB_UPTIME            14:25:53.170         MOOSDB_#1            0.0 Hz D  2.1
+DB_VARSUMMARY        14:25:51.092         MOOSDB#1             0.0 Hz S  
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:25:53.088         pPrimeFactor         2.0 Hz S  3887654688
+NUM_VALUE            14:25:52.919         uTimerScript         0.0 Hz S  515093417
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:25:52.569         pLogger              0.0 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:25:52.326         pPrimeFactor         0.0 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:25:53.170         uTimerScript         2.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:25:52.919         uTimerScript         2.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:25:52.412         uTimerScript         0.0 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:25:52.919         uTimerScript         2.0 Hz S  name=unnamed, elapsed_...
+ 
+1.471           DB_QOS               MOOSDB_#1       pLogger=0:0.427961:0.0941753:0,pPrimeFactor=0:0.207901:0.102043:0,uTimerScript=0:0.291109:0.116825:0, 
+1.471           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+1.643           NUM_RESULT           pPrimeFactor    3887654688 
+1.721           NUM_VALUE            uTimerScript    310526628229293 
+1.721           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00070      
+1.894           NUM_RESULT           pPrimeFactor    3887654688 
+1.972           NUM_VALUE            uTimerScript    385495876 
+1.972           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00064      
+0.104           DB_EVENT             MOOSDB_#1       connected=pLogger 
+0.662           LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____14_25_52 
+0.713           APPCAST              uTimerScript    proc=uTimerScript!@#iter=1!@#iter=1!@#messages=Current Script Information: !@     Elements: 2(0)!@      Reinits: 0!@    Time Warp: 1!@ Time Zero is: At uTimerScript launch time (not MOOSDB start time)!@  Delay Start: 0!@  Delay Reset: 0!@    Reset Max: 0!@!@Run criteria:!@   Block Apps: (ok) no blocking apps!@       Paused: (ok) Not paused!@ ConditionsOK: (ok) No un-met conditions!@!@RandomVar  Type  Min  Max  Parameters!@---------  ----  ---  ---  ----------!@!@Total Random Pairs: 0!@!@Var1  Var2  Type  Parameters!@----  ----  ----  ----------!@!@P/Tot  P/Loc  T/Total   T/Local  Variable/Var!@-----  -----  --------  -------  ------------!@!@#config_warnings=XCommunity/Vehicle name not found in mission file!@Unknown param in event config: var_num_value!@Event configured with NULL posting variable!@Unknown param in event config: var_num_value!@Event configured with NULL posting variable!@#events_total=1!@#events=[0.25]: Script Start. Warp=1, DelayStart=0.0, DelayReset=0.0!@#run_warning_total=0!@# 
+1.470           DB_TIME              MOOSDB_#1       1582226753.17024 
+1.470           DB_UPTIME            MOOSDB_#1       2.07658      
+1.470           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+1.471           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:25:53.170         MOOSDB_#1            0.0 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:51.092         MOOSDB#1             0.0 Hz S  
+DB_RWSUMMARY         14:25:51.092         MOOSDB#1             0.0 Hz S  
+DB_TIME              14:25:53.170         MOOSDB_#1            0.0 Hz D  1582226753.2
+DB_UPTIME            14:25:53.170         MOOSDB_#1            0.0 Hz D  2.1
+DB_VARSUMMARY        14:25:51.092         MOOSDB#1             0.0 Hz S  
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:25:53.088         pPrimeFactor         2.0 Hz S  3887654688
+NUM_VALUE            14:25:52.919         uTimerScript         0.0 Hz S  515093417
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:25:52.569         pLogger              0.0 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:25:52.326         pPrimeFactor         0.0 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:25:53.170         uTimerScript         2.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:25:52.919         uTimerScript         2.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:25:52.412         uTimerScript         0.0 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:25:52.919         uTimerScript         2.0 Hz S  name=unnamed, elapsed_...
+ 
+1.471           DB_QOS               MOOSDB_#1       pLogger=0:0.427961:0.0941753:0,pPrimeFactor=0:0.207901:0.102043:0,uTimerScript=0:0.291109:0.116825:0, 
+1.471           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+1.972           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00389      
+1.972           NUM_VALUE            uTimerScript    385495876 
+1.972           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00064      
+2.148           NUM_RESULT           pPrimeFactor    3887654688 
+2.148           NUM_RESULT           pPrimeFactor    3887654688 
+2.224           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00540      
+2.224           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00042      
+2.400           NUM_RESULT           pPrimeFactor    3887654688 
+2.478           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01873      
+2.478           NUM_VALUE            uTimerScript    914034598244221 
+2.478           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00089      
+2.652           NUM_RESULT           pPrimeFactor    3887654688 
+2.731           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01292      
+2.732           NUM_VALUE            uTimerScript    344306291 
+2.732           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00046      
+2.902           NUM_RESULT           pPrimeFactor    3887654688 
+2.985           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01510      
+2.985           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00042      
+3.152           NUM_RESULT           pPrimeFactor    3887654688 
+3.236           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00388      
+3.236           NUM_VALUE            uTimerScript    617003672150104 
+3.236           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00075      
+3.403           NUM_RESULT           pPrimeFactor    3887654688 
+3.488           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00617      
+3.488           NUM_VALUE            uTimerScript    487223010 
+3.488           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00049      
+3.488           DB_TIME              MOOSDB_#1       1582226755.18830 
+3.488           DB_UPTIME            MOOSDB_#1       4.09465      
+3.488           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+3.488           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:25:55.188         MOOSDB_#1            0.2 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:53.170         MOOSDB_#1            0.0 Hz S  pLogger=0:0.427961:0.0...
+DB_RWSUMMARY         14:25:53.170         MOOSDB_#1            0.0 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:25:55.188         MOOSDB_#1            0.2 Hz D  1582226755.2
+DB_UPTIME            14:25:55.188         MOOSDB_#1            0.2 Hz D  4.1
+DB_VARSUMMARY        14:25:53.170         MOOSDB_#1            0.0 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:25:55.103         pPrimeFactor         3.9 Hz S  3887654688
+NUM_VALUE            14:25:54.936         uTimerScript         2.3 Hz S  617003672150104
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:25:54.587         pLogger              0.2 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:25:54.352         pPrimeFactor         0.2 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:25:55.188         uTimerScript         3.8 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:25:54.936         uTimerScript         3.8 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:25:54.432         uTimerScript         0.2 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:25:54.936         uTimerScript         2.5 Hz S  name=unnamed, elapsed_...
+ 
+3.488           DB_QOS               MOOSDB_#1       pLogger=0:0.427961:0.0941753:0,pPrimeFactor=0:0.265121:0.102043:0,uTimerScript=0:0.291109:0.116825:0, 
+3.488           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+3.655           NUM_RESULT           pPrimeFactor    3887654688 
+3.738           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00104      
+3.738           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00025      
+3.906           NUM_RESULT           pPrimeFactor    3887654688 
+3.989           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00449      
+3.989           NUM_VALUE            uTimerScript    470583483896148 
+3.989           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00052      
+4.156           NUM_RESULT           pPrimeFactor    3887654688 
+4.240           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00150      
+4.240           NUM_VALUE            uTimerScript    311961371 
+4.240           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00067      
+4.409           NUM_RESULT           pPrimeFactor    3887654688 
+4.490           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00271      
+4.490           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00095      
+4.662           NUM_RESULT           pPrimeFactor    3887654688 
+4.742           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00602      
+4.742           NUM_VALUE            uTimerScript    563309651584962 
+4.742           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00022      
+4.916           NUM_RESULT           pPrimeFactor    3887654688 
+4.993           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00527      
+4.993           NUM_VALUE            uTimerScript    674686200 
+4.993           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+5.172           NUM_RESULT           pPrimeFactor    3887654688 
+5.244           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00402      
+5.244           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00058      
+5.422           NUM_RESULT           pPrimeFactor    3887654688 
+5.495           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00379      
+5.495           NUM_VALUE            uTimerScript    931454623566303 
+5.495           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00062      
+5.495           DB_TIME              MOOSDB_#1       1582226757.19570 
+5.495           DB_UPTIME            MOOSDB_#1       6.10204      
+5.495           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+5.496           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:25:57.195         MOOSDB_#1            0.4 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:55.188         MOOSDB_#1            0.2 Hz S  pLogger=0:0.427961:0.0...
+DB_RWSUMMARY         14:25:55.188         MOOSDB_#1            0.2 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:25:57.195         MOOSDB_#1            0.4 Hz D  1582226757.2
+DB_UPTIME            14:25:57.195         MOOSDB_#1            0.4 Hz D  6.1
+DB_VARSUMMARY        14:25:55.188         MOOSDB_#1            0.2 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:25:57.122         pPrimeFactor         3.9 Hz S  3887654688
+NUM_VALUE            14:25:56.693         uTimerScript         2.6 Hz S  674686200
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:25:56.610         pLogger              0.4 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:25:56.362         pPrimeFactor         0.4 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:25:57.195         uTimerScript         4.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:25:56.944         uTimerScript         4.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:25:56.442         uTimerScript         0.4 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:25:56.693         uTimerScript         2.6 Hz S  name=unnamed, elapsed_...
+ 
+5.496           DB_QOS               MOOSDB_#1       pLogger=0.314951:0.427961:0.0941753:0.265265,pPrimeFactor=0.194073:0.30899:0.102043:0.205231,uTimerScript=0.351906:0.351906:0.116825:0.23694, 
+5.496           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+5.672           NUM_RESULT           pPrimeFactor    3887654688 
+5.746           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00269      
+5.746           NUM_VALUE            uTimerScript    595473760 
+5.746           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00076      
+5.927           NUM_RESULT           pPrimeFactor    3887654688 
+5.997           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00506      
+5.997           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00061      
+6.181           NUM_RESULT           pPrimeFactor    3887654688 
+6.248           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00337      
+6.248           NUM_VALUE            uTimerScript    978117799767717 
+6.248           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00069      
+6.434           NUM_RESULT           pPrimeFactor    3887654688 
+6.501           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01452      
+6.502           NUM_VALUE            uTimerScript    863316662 
+6.502           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00069      
+6.685           NUM_RESULT           pPrimeFactor    3887654688 
+6.752           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00121      
+6.752           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00034      
+6.936           NUM_RESULT           pPrimeFactor    3887654688 
+7.007           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02279      
+7.007           NUM_VALUE            uTimerScript    394705137693698 
+7.008           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00061      
+7.191           NUM_RESULT           pPrimeFactor    3887654688 
+7.263           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02080      
+7.263           NUM_VALUE            uTimerScript    103558282 
+7.263           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00063      
+7.446           NUM_RESULT           pPrimeFactor    3887654688 
+7.519           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02399      
+7.519           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+7.519           DB_TIME              MOOSDB_#1       1582226759.21936 
+7.519           DB_UPTIME            MOOSDB_#1       8.12570      
+7.519           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+7.519           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:25:59.219         MOOSDB_#1            0.4 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:57.196         MOOSDB_#1            0.4 Hz S  pLogger=0.314951:0.427...
+DB_RWSUMMARY         14:25:57.196         MOOSDB_#1            0.4 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:25:59.219         MOOSDB_#1            0.4 Hz D  1582226759.2
+DB_UPTIME            14:25:59.219         MOOSDB_#1            0.4 Hz D  8.1
+DB_VARSUMMARY        14:25:57.195         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:25:59.146         pPrimeFactor         4.0 Hz S  3887654688
+NUM_VALUE            14:25:58.963         uTimerScript         2.6 Hz S  103558282
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:25:58.630         pLogger              0.4 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:25:58.385         pPrimeFactor         0.4 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:25:59.219         uTimerScript         3.9 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:25:58.963         uTimerScript         3.9 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:25:58.452         uTimerScript         0.4 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:25:58.963         uTimerScript         2.6 Hz S  name=unnamed, elapsed_...
+ 
+7.519           DB_QOS               MOOSDB_#1       pLogger=0.084877:0.427961:0.084877:0.21925,pPrimeFactor=0.149012:0.30899:0.102043:0.196218,uTimerScript=0.239134:0.351906:0.116825:0.214386, 
+7.519           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+7.701           NUM_RESULT           pPrimeFactor    3887654688 
+7.772           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01248      
+7.772           NUM_VALUE            uTimerScript    124020720826394 
+7.772           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00094      
+7.953           NUM_RESULT           pPrimeFactor    3887654688 
+8.027           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02067      
+8.027           NUM_VALUE            uTimerScript    790477726 
+8.027           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00062      
+8.205           NUM_RESULT           pPrimeFactor    3887654688 
+8.282           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02080      
+8.282           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+8.456           NUM_RESULT           pPrimeFactor    3887654688 
+8.538           UTIMERSCRIPT_ITER_GAP uTimerScript    1.02323      
+8.538           NUM_VALUE            uTimerScript    195088288184657 
+8.538           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00063      
+8.709           NUM_RESULT           pPrimeFactor    3887654688 
+8.791           UTIMERSCRIPT_ITER_GAP uTimerScript    1.01326      
+8.791           NUM_VALUE            uTimerScript    668784889 
+8.791           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00041      
+8.965           NUM_RESULT           pPrimeFactor    3887654688 
+9.042           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00315      
+9.042           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00066      
+9.220           NUM_RESULT           pPrimeFactor    3887654688 
+9.293           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00399      
+9.293           NUM_VALUE            uTimerScript    503720908686476 
+9.293           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00065      
+9.475           NUM_RESULT           pPrimeFactor    3887654688 
+9.544           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00458      
+9.544           NUM_VALUE            uTimerScript    100667321 
+9.544           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00043      
+9.544           DB_TIME              MOOSDB_#1       1582226761.24465 
+9.544           DB_UPTIME            MOOSDB_#1       10.15099     
+9.544           DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+9.545           DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:26:01.244         MOOSDB_#1            0.5 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:25:59.219         MOOSDB_#1            0.4 Hz S  pLogger=0.084877:0.427...
+DB_RWSUMMARY         14:25:59.219         MOOSDB_#1            0.4 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:26:01.244         MOOSDB_#1            0.5 Hz D  1582226761.2
+DB_UPTIME            14:26:01.244         MOOSDB_#1            0.5 Hz D  10.2
+DB_VARSUMMARY        14:25:59.219         MOOSDB_#1            0.4 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:25:52.362         pLogger              0.0 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:26:01.175         pPrimeFactor         3.9 Hz S  3887654688
+NUM_VALUE            14:26:00.993         uTimerScript         2.6 Hz S  503720908686476
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:26:00.659         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:26:00.409         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:26:01.244         uTimerScript         4.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:26:00.993         uTimerScript         4.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:26:00.491         uTimerScript         0.5 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:26:00.993         uTimerScript         2.6 Hz S  name=unnamed, elapsed_...
+ 
+9.545           DB_QOS               MOOSDB_#1       pLogger=0.349045:0.427961:0.084877:0.272083,pPrimeFactor=0.272036:0.30899:0.102043:0.220823,uTimerScript=0.191927:0.351906:0.116825:0.204945, 
+9.545           DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+9.728           NUM_RESULT           pPrimeFactor    3887654688 
+9.795           UTIMERSCRIPT_ITER_GAP uTimerScript    1.00332      
+9.795           UTIMERSCRIPT_ITER_LEN uTimerScript    0.00073      
+9.979           NUM_RESULT           pPrimeFactor    3887654688 
+10.046          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00387      
+10.046          NUM_VALUE            uTimerScript    242194255722803 
+10.046          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00064      
+10.163          LOGGER_DIRECTORY     pLogger         ./MOOSLog_20_2_2020_____14_25_52 
+10.230          NUM_RESULT           pPrimeFactor    3887654688 
+10.297          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00315      
+10.297          NUM_VALUE            uTimerScript    222921267 
+10.297          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00066      
+10.481          NUM_RESULT           pPrimeFactor    3887654688 
+10.548          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00442      
+10.548          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00135      
+10.732          NUM_RESULT           pPrimeFactor    3887654688 
+10.798          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00213      
+10.798          NUM_VALUE            uTimerScript    820841919072214 
+10.798          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00026      
+10.983          NUM_RESULT           pPrimeFactor    3887654688 
+11.050          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00580      
+11.050          NUM_VALUE            uTimerScript    585826947 
+11.050          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00053      
+11.234          NUM_RESULT           pPrimeFactor    3887654688 
+11.301          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00357      
+11.301          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00047      
+11.485          NUM_RESULT           pPrimeFactor    3887654688 
+11.552          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00388      
+11.552          NUM_VALUE            uTimerScript    472966119723374 
+11.552          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00093      
+11.552          DB_TIME              MOOSDB_#1       1582226763.25234 
+11.552          DB_UPTIME            MOOSDB_#1       12.15868     
+11.552          DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+11.552          DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:26:03.252         MOOSDB_#1            0.5 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:26:01.244         MOOSDB_#1            0.5 Hz S  pLogger=0.349045:0.427...
+DB_RWSUMMARY         14:26:01.244         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:26:03.252         MOOSDB_#1            0.5 Hz D  1582226763.3
+DB_UPTIME            14:26:03.252         MOOSDB_#1            0.5 Hz D  12.2
+DB_VARSUMMARY        14:26:01.244         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:26:01.863         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:26:03.185         pPrimeFactor         4.0 Hz S  3887654688
+NUM_VALUE            14:26:02.750         uTimerScript         2.7 Hz S  585826947
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:26:02.680         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:26:02.432         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:26:03.252         uTimerScript         4.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:26:03.001         uTimerScript         4.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:26:02.498         uTimerScript         0.5 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:26:02.750         uTimerScript         2.7 Hz S  name=unnamed, elapsed_...
+ 
+11.552          DB_QOS               MOOSDB_#1       pLogger=0.28491:0.427961:0.084877:0.259256,pPrimeFactor=0.191927:0.30899:0.102043:0.204802,uTimerScript=0.18096:0.351906:0.116825:0.202751, 
+11.552          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+11.736          NUM_RESULT           pPrimeFactor    3887654688 
+11.802          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00269      
+11.802          NUM_VALUE            uTimerScript    129907401 
+11.803          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00088      
+11.987          NUM_RESULT           pPrimeFactor    3887654688 
+12.054          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00520      
+12.054          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00094      
+12.238          NUM_RESULT           pPrimeFactor    3887654688 
+12.304          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00297      
+12.305          NUM_VALUE            uTimerScript    697956168588752 
+12.305          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00085      
+12.489          NUM_RESULT           pPrimeFactor    3887654688 
+12.556          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00469      
+12.556          NUM_VALUE            uTimerScript    81175178 
+12.556          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00064      
+12.740          NUM_RESULT           pPrimeFactor    3887654688 
+12.807          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00422      
+12.807          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00073      
+12.991          NUM_RESULT           pPrimeFactor    3887654688 
+13.058          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00377      
+13.058          NUM_VALUE            uTimerScript    342707898619805 
+13.058          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00058      
+13.242          NUM_RESULT           pPrimeFactor    3887654688 
+13.310          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00869      
+13.310          NUM_VALUE            uTimerScript    831487519 
+13.310          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00050      
+13.493          NUM_RESULT           pPrimeFactor    3887654688 
+13.565          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02307      
+13.566          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00108      
+13.566          DB_TIME              MOOSDB_#1       1582226765.26614 
+13.566          DB_UPTIME            MOOSDB_#1       14.17248     
+13.566          DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+13.566          DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:26:05.266         MOOSDB_#1            0.5 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:26:03.252         MOOSDB_#1            0.5 Hz S  pLogger=0.28491:0.4279...
+DB_RWSUMMARY         14:26:03.252         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:26:05.266         MOOSDB_#1            0.5 Hz D  1582226765.3
+DB_UPTIME            14:26:05.266         MOOSDB_#1            0.5 Hz D  14.2
+DB_VARSUMMARY        14:26:03.252         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:26:01.863         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:26:05.193         pPrimeFactor         4.0 Hz S  3887654688
+NUM_VALUE            14:26:05.010         uTimerScript         2.7 Hz S  831487519
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:26:04.691         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:26:04.440         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:26:05.266         uTimerScript         4.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:26:05.010         uTimerScript         4.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:26:04.507         uTimerScript         0.5 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:26:05.010         uTimerScript         2.7 Hz S  name=unnamed, elapsed_...
+ 
+13.566          DB_QOS               MOOSDB_#1       pLogger=0.27895:0.427961:0.084877:0.258064,pPrimeFactor=0.268936:0.30899:0.102043:0.220203,uTimerScript=0.275135:0.374079:0.116825:0.221586, 
+13.566          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+13.743          NUM_RESULT           pPrimeFactor    3887654688 
+13.821          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02146      
+13.821          NUM_VALUE            uTimerScript    980025407220614 
+13.821          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00057      
+13.995          NUM_RESULT           pPrimeFactor    3887654688 
+14.074          UTIMERSCRIPT_ITER_GAP uTimerScript    1.01114      
+14.074          NUM_VALUE            uTimerScript    610003905 
+14.074          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00068      
+14.245          NUM_RESULT           pPrimeFactor    3887654688 
+14.329          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02103      
+14.329          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00059      
+14.496          NUM_RESULT           pPrimeFactor    3887654688 
+14.580          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00438      
+14.580          NUM_VALUE            uTimerScript    113007971321253 
+14.580          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+14.747          NUM_RESULT           pPrimeFactor    3887654688 
+14.831          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00272      
+14.831          NUM_VALUE            uTimerScript    464739615 
+14.831          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00044      
+14.998          NUM_RESULT           pPrimeFactor    3887654688 
+15.082          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00506      
+15.082          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+15.249          NUM_RESULT           pPrimeFactor    3887654688 
+15.332          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00175      
+15.332          NUM_VALUE            uTimerScript    600784467377398 
+15.333          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00066      
+15.500          NUM_RESULT           pPrimeFactor    3887654688 
+15.584          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00600      
+15.584          NUM_VALUE            uTimerScript    896679713 
+15.584          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00058      
+15.584          DB_TIME              MOOSDB_#1       1582226767.28451 
+15.584          DB_UPTIME            MOOSDB_#1       16.19085     
+15.584          DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+15.584          DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:26:07.284         MOOSDB_#1            0.5 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:26:05.266         MOOSDB_#1            0.5 Hz S  pLogger=0.27895:0.4279...
+DB_RWSUMMARY         14:26:05.266         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:26:07.284         MOOSDB_#1            0.5 Hz D  1582226767.3
+DB_UPTIME            14:26:07.284         MOOSDB_#1            0.5 Hz D  16.2
+DB_VARSUMMARY        14:26:05.266         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:26:01.863         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:26:07.200         pPrimeFactor         4.0 Hz S  3887654688
+NUM_VALUE            14:26:07.033         uTimerScript         2.6 Hz S  600784467377398
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:26:06.707         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:26:06.447         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:26:07.284         uTimerScript         4.0 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:26:07.033         uTimerScript         4.0 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:26:06.531         uTimerScript         0.5 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:26:07.033         uTimerScript         2.6 Hz S  name=unnamed, elapsed_...
+ 
+15.584          DB_QOS               MOOSDB_#1       pLogger=0.268936:0.427961:0.084877:0.256062,pPrimeFactor=0.272036:0.30899:0.102043:0.220823,uTimerScript=0.295877:0.374079:0.116825:0.225735, 
+15.584          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+15.751          NUM_RESULT           pPrimeFactor    3887654688 
+15.834          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00239      
+15.835          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00030      
+16.002          NUM_RESULT           pPrimeFactor    3887654688 
+16.089          UTIMERSCRIPT_ITER_GAP uTimerScript    1.01915      
+16.089          NUM_VALUE            uTimerScript    279875992471180 
+16.089          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00062      
+16.253          NUM_RESULT           pPrimeFactor    3887654688 
+16.344          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02082      
+16.345          NUM_VALUE            uTimerScript    180263515 
+16.345          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00062      
+16.504          NUM_RESULT           pPrimeFactor    3887654688 
+16.597          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00970      
+16.597          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00065      
+16.755          NUM_RESULT           pPrimeFactor    3887654688 
+16.851          UTIMERSCRIPT_ITER_GAP uTimerScript    1.01656      
+16.851          NUM_VALUE            uTimerScript    287048387896119 
+16.851          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00045      
+17.006          NUM_RESULT           pPrimeFactor    3887654688 
+17.105          UTIMERSCRIPT_ITER_GAP uTimerScript    1.01705      
+17.105          NUM_VALUE            uTimerScript    37874224 
+17.105          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00024      
+17.257          NUM_RESULT           pPrimeFactor    3887654688 
+17.357          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00847      
+17.358          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00065      
+17.508          NUM_RESULT           pPrimeFactor    3887654688 
+17.613          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02348      
+17.613          NUM_VALUE            uTimerScript    817309433376966 
+17.613          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00062      
+17.614          DB_TIME              MOOSDB_#1       1582226769.31395 
+17.614          DB_UPTIME            MOOSDB_#1       18.22029     
+17.614          DB_CLIENTS           MOOSDB_#1       pLogger,uTimerScript,pPrimeFactor, 
+17.614          DB_VARSUMMARY        MOOSDB_#1       APPCAST              14:25:52.413         uTimerScript         0.0 Hz S  proc=uTimerScript!@#it...
+APPCAST_REQ          18:59:59.000         (write pending)      0.0 Hz ~  
+DB_CLIENTS           14:26:09.313         MOOSDB_#1            0.5 Hz S  pLogger,uTimerScript,p...
+DB_EVENT             14:25:51.804         MOOSDB_#1            0.0 Hz S  connected=pLogger
+DB_QOS               14:26:07.284         MOOSDB_#1            0.5 Hz S  pLogger=0.268936:0.427...
+DB_RWSUMMARY         14:26:07.284         MOOSDB_#1            0.5 Hz S  pLogger=APPCAST:APPCAS...
+DB_TIME              14:26:09.313         MOOSDB_#1            0.5 Hz D  1582226769.3
+DB_UPTIME            14:26:09.313         MOOSDB_#1            0.5 Hz D  18.2
+DB_VARSUMMARY        14:26:07.284         MOOSDB_#1            0.5 Hz S  APPCAST              1...
+EXITED_NORMALLY      18:59:59.000         (write pending)      0.0 Hz ~  
+LOGGER_DIRECTORY     14:26:01.863         pLogger              0.1 Hz S  ./MOOSLog_20_2_2020___...
+LOGGER_RESTART       18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_DEBUG           18:59:59.000         (write pending)      0.0 Hz ~  
+MOOS_SYSTEM          18:59:59.000         (write pending)      0.0 Hz ~  
+NUM_RESULT           14:26:09.208         pPrimeFactor         4.0 Hz S  3887654688
+NUM_VALUE            14:26:08.805         uTimerScript         2.6 Hz S  37874224
+PLOGGER_CMD          18:59:59.000         (write pending)      0.0 Hz ~  
+PLOGGER_STATUS       14:26:08.740         pLogger              0.5 Hz S  AppErrorFlag=false,Upt...
+PPRIMEFACTOR_STATUS  14:26:08.455         pPrimeFactor         0.5 Hz S  AppErrorFlag=false,Upt...
+PRIME_RESULT         18:59:59.000         (write pending)      0.0 Hz ~  
+UTIMERSCRIPT_ITER_GAP 14:26:09.313         uTimerScript         3.9 Hz D  1.0
+UTIMERSCRIPT_ITER_LEN 14:26:09.058         uTimerScript         3.9 Hz D  0.0
+UTIMERSCRIPT_STATUS  14:26:08.551         uTimerScript         0.5 Hz S  AppErrorFlag=false,Upt...
+UTS_FORWARD          18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_PAUSE            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_RESET            18:59:59.000         (write pending)      0.0 Hz ~  
+UTS_STATUS           14:26:08.805         uTimerScript         2.6 Hz S  name=unnamed, elapsed_...
+ 
+17.614          DB_QOS               MOOSDB_#1       pLogger=0.314951:0.427961:0.084877:0.265265,pPrimeFactor=0.20504:0.30899:0.102043:0.207424,uTimerScript=0.135899:0.374079:0.116825:0.193739, 
+17.614          DB_RWSUMMARY         MOOSDB_#1       pLogger=APPCAST:APPCAST_REQ:DB_CLIENTS:DB_EVENT:DB_QOS:DB_RWSUMMARY:DB_TIME:DB_UPTIME:DB_VARSUMMARY:EXITED_NORMALLY:LOGGER_DIRECTORY:LOGGER_RESTART:MOOS_DEBUG:MOOS_SYSTEM:NUM_RESULT:NUM_VALUE:PLOGGER_CMD:PRIME_RESULT:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTS_FORWARD:UTS_PAUSE:UTS_RESET&LOGGER_DIRECTORY:PLOGGER_STATUS,uTimerScript=APPCAST_REQ:DB_CLIENTS:DB_UPTIME:EXITED_NORMALLY:UTS_FORWARD:UTS_PAUSE:UTS_RESET&APPCAST:NUM_VALUE:UTIMERSCRIPT_ITER_GAP:UTIMERSCRIPT_ITER_LEN:UTIMERSCRIPT_STATUS:UTS_STATUS,pPrimeFactor=NUM_VALUE&NUM_RESULT:PPRIMEFACTOR_STATUS 
+17.759          NUM_RESULT           pPrimeFactor    3887654688 
+17.869          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02090      
+17.869          NUM_VALUE            uTimerScript    616890633 
+17.869          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00056      
+18.010          NUM_RESULT           pPrimeFactor    3887654688 
+18.124          UTIMERSCRIPT_ITER_GAP uTimerScript    1.02184      
+18.124          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
+18.261          NUM_RESULT           pPrimeFactor    3887654688 
+18.374          UTIMERSCRIPT_ITER_GAP uTimerScript    1.00127      
+18.374          NUM_VALUE            uTimerScript    789813031727867 
+18.374          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00041      
+18.512          NUM_RESULT           pPrimeFactor    3887654688 
+18.629          UTIMERSCRIPT_ITER_GAP uTimerScript    1.01871      
+18.629          NUM_VALUE            uTimerScript    588268350 
+18.629          UTIMERSCRIPT_ITER_LEN uTimerScript    0.00060      
