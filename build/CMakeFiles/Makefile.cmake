@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/lib_behaviors-test/CMakeLists.txt"
   "../src/pExampleApp/CMakeLists.txt"
   "../src/pOdometry/CMakeLists.txt"
+  "../src/pPrimeFactor/CMakeLists.txt"
   "../src/pXRelayTest/CMakeLists.txt"
   "/Users/liumk/moos-ivp/build/MOOS/MOOSCore/MOOSConfig.cmake"
   "/Users/liumk/moos-ivp/build/MOOS/MOOSCore/MOOSConfigVersion.cmake"
@@ -63,6 +64,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/lib_behaviors-test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pXRelayTest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pExampleApp/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/pPrimeFactor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pOdometry/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -71,5 +73,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/DependInfo.cmake"
   "src/pXRelayTest/CMakeFiles/pXRelayTest.dir/DependInfo.cmake"
   "src/pExampleApp/CMakeFiles/pExampleApp.dir/DependInfo.cmake"
+  "src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/DependInfo.cmake"
   "src/pOdometry/CMakeFiles/pOdometry.dir/DependInfo.cmake"
   )

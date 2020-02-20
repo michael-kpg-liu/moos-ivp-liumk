@@ -90,7 +90,7 @@ bool PrimeFactor::Iterate()
   for(std::list<PrimeEntry>::iterator k=m_mail_list.begin();k!=m_mail_list.end();k++)
     {
       // Calculate prime number
-      PrimeEntry& m_prime_entry*=k;
+      PrimeEntry& m_prime_entry = *k;
       m_prime_entry.factor(m_max_iter);
 
       //If finished, publish result and erase object in list, update max iterations
