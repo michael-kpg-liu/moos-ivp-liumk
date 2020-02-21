@@ -9,6 +9,7 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
+#include <list>
 #include <algorithm>
 #include <sstream>
 #include "/Users/liumk/moos-ivp/MOOS_Jul0519/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h"
@@ -44,7 +45,6 @@ class PrimeEntry
   unsigned long int m_finished_iter;
   unsigned long int m_maxiter;
   unsigned long int m_ii;
-  unsigned long int m_k_start;
   unsigned long int m_k;
   double m_start_time;
   double m_finish_time;
