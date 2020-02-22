@@ -2,7 +2,7 @@
 /*    NAME: Michael Liu                                              */
 /*    ORGN: MIT                                             */
 /*    FILE: PrimeFactor.h                                          */
-/*    DATE: 14 FEB 2020                                                */
+/*    DATE: 14 FEB 2020 to 23 FEB 2020                               */
 /************************************************************/
 
 #ifndef PrimeFactor_HEADER
@@ -31,14 +31,13 @@ class PrimeFactor : public CMOOSApp
    void RegisterVariables();
 
  private: // Configuration variables
-  PrimeEntry m_temp;
-  bool m_even;
-  long unsigned int m_ival;
-  long unsigned int m_max_iter;
-  int m_index; // Tracks number of primes numbers to factor
-  int m_calc;  // Track number of calculated prime numbers
-  std::string m_result_str;
-  std::list<PrimeEntry> m_mail_list;
+   bool m_even;
+   long unsigned int m_ival;
+   long unsigned int m_max_iter;
+   int m_index;// For keeping track of number of Prime #s to factor
+   int m_calc; // For keeping track of number of Prime #s calculated.
+   std::string m_result_str;
+   std::list<PrimeEntry> m_mail_list;
   
  private: // State variables
 };

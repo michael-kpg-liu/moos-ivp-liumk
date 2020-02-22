@@ -2,7 +2,7 @@
 /*    NAME: Michael Liu                                              */
 /*    ORGN: MIT                                             */
 /*    FILE: PrimeEntry.cpp                                       */
-/*    DATE: 14 FEB 2020                                                */
+/*    DATE: 14 FEB 2020 to 23 FEB 2020                                */
 /************************************************************/
 
 #include "PrimeEntry.h"
@@ -12,7 +12,7 @@ using namespace std;
 
 //---------------------------------------------------------
 // PrimeEntry
-// Purpose: Constructor PrimeEntry class, set latest number to factor
+// Purpose: Construct PrimeEntry class, set latest number to factor
 //---------------------------------------------------------
 
 PrimeEntry::PrimeEntry()
@@ -32,14 +32,6 @@ void PrimeEntry::setOriginalVal(unsigned long int v){
 };
 
 //---------------------------------------------------------
-// showOriginal
-// Purpose: Show original value
-//---------------------------------------------------------
-unsigned long int PrimeEntry::showOriginal(){
-  return m_orig;
-}
-
-//---------------------------------------------------------
 //setReceivedIndex
 //Purpose: Index at which # was received
 //---------------------------------------------------------
@@ -55,22 +47,6 @@ void PrimeEntry::setReceivedIndex(unsigned int v){
 void PrimeEntry::setCalculatedIndex(unsigned int v){
   m_calculated_index=v;
 };
-
-//---------------------------------------------------------
-// showCalculatedIndex
-// Purpose: Show index of calculated numbers
-//---------------------------------------------------------
-unsigned long int PrimeEntry::showCalculatedIndex(){
-  return m_calculated_index;
-}
-
-//---------------------------------------------------------
-//returnPrimeString
-//Purpose: Display string of prime numbers
-//---------------------------------------------------------
-std::string PrimeEntry::returnPrimeString(){
-  return uintToString(m_calculated_index);
-}
 
 //---------------------------------------------------------
 //iter_calc
@@ -105,56 +81,46 @@ bool PrimeEntry::done(){
 //Max steps depends on received/calculated index.
 //---------------------------------------------------------
 
-void PrimeEntry::factor(unsigned long int max_steps){
-  //Reset iterations of factor function.
-  m_ii=0;
+void   PrimeEntry::factor(unsigned long int max_steps){
+  //Reset iterations of factor function. 
+  m_ii=0; 
+  
+  if (m_N==0){ //First entry
+      m_N=m_orig;
+      m_k=2;
+      m_start_time=MOOSTime();
+    }
 
-  if(m_N==0){ //First entry
-    m_N=m_orig;
-    m_start_time=MOOSTime();
+  while (m_k<=ceil(sqrtl(m_N))){
+       m_ii++; // Add iteration
+       if (m_ii>max_steps){ //Reached max steps, stop factoring
+	 break;
+       }
+       if (m_N%m_k==0){ //Divisible 
+	 m_factors.push_back(m_k);
+	 m_N=m_N/m_k; // Update N_m
+	 m_k=2; //Reset k. 
+       }
+       m_k++;
+
+  }
+ 
+   //Check if done
+  if (m_k>=ceil(sqrtl(m_N))){ //Finished
+    m_finished_iter=m_ii;
+    m_finish_time=MOOSTime();
+
+      if (m_N!=1){ //Add last (prime) number
+
+	m_factors.push_back(m_N);
+      }
+    setDone(true);
+
+  }
+  else{
+    setDone(false);
   }
 
-     while(m_done==false){
-    // If the condition (m_done==false) is true, do the while loop.
-    // If not, jump out the while loop. 
-        for(int m_k=2; m_k<=m_orig;){
-        //In this for loop, I want to go through 2 to the input number to find the factor.
-            if(m_orig%m_k==0){
-            // if the input can be devided by i,
-                cout << "found " << m_k << endl;
-                factor.push_back(m_k);
-                // I'll store i to the end of the list.
-                m_orig=m_orig/m_k;
-                //then let the input number devided by i.
- 
-            }
-            else{
-	        // If input number cannot be devided by m_k, check m_k+1.
-                m_k++;
-		// Iteration
-		m_ii++;
-            }
-        }
-        // Once the for loop is over,
-	m_finish_time=MOOSTime();
-        m_done=true;
-        //we'll set the boolean variable m_done=true, so that it will jump out of the while loop. 
-        cout << "done!" << endl; 
-    }
-// We've found all the prime factor, let's show all of them. 
-    list<int>::iterator m_calculated_index;
-    // We declare a function of list and set a pointer called p.  
-    for(m_calculated_index=factor.begin(); m_calculated_index!=factor.end();m_calculated_index++){
-    // the pointer p will go through the list (which stored the primefactor we found).
-    // for here {2, 3,  3,  47, 14593}
-    //           ^
-    //              ^ 
-    //                  ^
-    //                      ^
-    //                          ^
-       cout << *m_calculated_index << " ";  
-    }
-    return;    
 }
 
 //---------------------------------------------------------
