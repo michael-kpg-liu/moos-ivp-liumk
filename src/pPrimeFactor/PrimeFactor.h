@@ -10,7 +10,7 @@
 
 #include "MOOS/libMOOS/MOOSLib.h"
 #include <iostream>
-#include <sstream>
+#include <sstream> // Library needed to convert numerical values into strings.
 #include <string>
 #include <list>
 #include "PrimeEntry.h"
@@ -31,13 +31,12 @@ class PrimeFactor : public CMOOSApp
    void RegisterVariables();
 
  private: // Configuration variables
-   bool m_even;
-   long unsigned int m_ival;
-   long unsigned int m_max_iter;
-   int m_index;// For keeping track of number of Prime #s to factor
-   int m_calc; // For keeping track of number of Prime #s calculated.
-   std::string m_result_str;
-   std::list<PrimeEntry> m_mail_list;
+  unsigned long int m_ival; // Initial value 
+  unsigned long int m_max_iter; // Number of maximum iterations (100,000 per p. 11 of Lab 5)
+  int m_index; //For keeping track of prime factors calculated.
+  int m_factors; // Holder of prime factors found so far.
+  std::string m_result_str; // String of results
+  std::list<PrimeEntry> m_mail_list; // List of parameters 
   
  private: // State variables
 };
