@@ -136,13 +136,19 @@ bool CommunicationAngle_liumk::Iterate()
     cout << "Transmission Loss: " <<  m_transmission_loss << endl;
   }
 
-    
+
+
+  
   if (2*m_radius < m_chord){
     Notify("ACOUSTIC_PATH","NaN");
     Notify("CONNECTIVITY_LOCATION",CONNECTIVITY_LOCATION());
+    double m_y = m_NAV_Y; // Assume same for both vehicles.  2D Approximation given by Professor Schmidt during Lab 6.
   }
   if (2*m_radius >= m_chord){
     Notify("ACOUSTIC_PATH",ACOUSTIC_PATH());
+    double m_x = m_NAV_X;
+    double m_y = m_NAV_Y;
+    double m_depth = m_NAV_DEPTH;
     Notify("CONNECTIVITY_LOCATION",CONNECTIVITY_LOCATION());
   
   }
@@ -224,10 +230,10 @@ string CommunicationAngle_liumk::ACOUSTIC_PATH()
 //---------------------------------------------------------
 // Purpose:  ACOUSTIC_PATH and CONNECTIVITY_LOCATION Output
 
-string CommunicationAngle_liumk::ACOUSTIC_PATH()
+string CommunicationAngle_liumk::CONNECTIVITY_LOCATION()
 {
   string result = "";
-  result += "ACOUSTIC_PATH: x=";
+  result += "CONNECTIVITY_LOCATION: x=";
   result += to_string(m_x);
   result += ", y=";
   result += to_string(m_y);
