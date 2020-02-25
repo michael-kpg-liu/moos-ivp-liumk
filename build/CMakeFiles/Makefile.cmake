@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.2/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../src/lib_behaviors-test/CMakeLists.txt"
+  "../src/pCommunicationAngle_liumk/CMakeLists.txt"
   "../src/pExampleApp/CMakeLists.txt"
   "../src/pOdometry/CMakeLists.txt"
   "../src/pPrimeFactor/CMakeLists.txt"
@@ -66,6 +67,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/pExampleApp/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pPrimeFactor/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/pOdometry/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/pCommunicationAngle_liumk/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -75,4 +77,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/pExampleApp/CMakeFiles/pExampleApp.dir/DependInfo.cmake"
   "src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/DependInfo.cmake"
   "src/pOdometry/CMakeFiles/pOdometry.dir/DependInfo.cmake"
+  "src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/DependInfo.cmake"
   )

@@ -175,6 +175,19 @@ pOdometry/fast:
 	$(MAKE) -f src/pOdometry/CMakeFiles/pOdometry.dir/build.make src/pOdometry/CMakeFiles/pOdometry.dir/build
 .PHONY : pOdometry/fast
 
+#=============================================================================
+# Target rules for targets named pCommunicationAngle_liumk
+
+# Build rule for target.
+pCommunicationAngle_liumk: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pCommunicationAngle_liumk
+.PHONY : pCommunicationAngle_liumk
+
+# fast build rule for target.
+pCommunicationAngle_liumk/fast:
+	$(MAKE) -f src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/build.make src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/build
+.PHONY : pCommunicationAngle_liumk/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,6 +201,7 @@ help:
 	@echo "... pExampleApp"
 	@echo "... pPrimeFactor"
 	@echo "... pOdometry"
+	@echo "... pCommunicationAngle_liumk"
 .PHONY : help
 
 

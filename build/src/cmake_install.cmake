@@ -39,6 +39,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/liumk/moos-ivp-liumk/build/src/pExampleApp/cmake_install.cmake")
   include("/Users/liumk/moos-ivp-liumk/build/src/pPrimeFactor/cmake_install.cmake")
   include("/Users/liumk/moos-ivp-liumk/build/src/pOdometry/cmake_install.cmake")
+  include("/Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/cmake_install.cmake")
 
 endif()
 

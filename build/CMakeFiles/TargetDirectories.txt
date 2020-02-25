@@ -17,3 +17,6 @@
 /Users/liumk/moos-ivp-liumk/build/src/pOdometry/CMakeFiles/rebuild_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pOdometry/CMakeFiles/edit_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pOdometry/CMakeFiles/pOdometry.dir
+/Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/rebuild_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/edit_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir

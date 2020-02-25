@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pCommunicationAngle_liumk config block
+
+ProcessConfig = pCommunicationAngle_liumk
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+
