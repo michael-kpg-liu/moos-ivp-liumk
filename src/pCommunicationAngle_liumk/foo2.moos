@@ -6,14 +6,14 @@
 //------------------------------------------
 // MOOS File
 	
-  ServerHost = oceanai.mit.edu
-  ServerPort = 9011
+  //Host = oceanai.mit.edu
+  //Port = 9011
 
 //------------------------------------------
 // MOOS File - Local Community Stub
 
-//ServerHost = localhost
-//ServerPort = 9011
+ServerHost = localhost
+ServerPort = 9011
 
 //------------------------------------------
 // Antler configuration  block
@@ -47,3 +47,6 @@ ProcessConfig = uXMS
 	//var = NUM_VALUE, PRIME_RESULT
 
 }
+
+
+

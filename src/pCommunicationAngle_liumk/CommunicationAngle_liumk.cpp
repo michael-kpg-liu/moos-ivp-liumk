@@ -5,6 +5,7 @@
 /*    DATE: 25 FEB 2020                                                */
 /************************************************************/
 
+#include <iostream>
 #include <iterator>
 #include <cmath>
 #include <sstream>
@@ -79,26 +80,26 @@ bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
 
   else if (sval == "COLLABORATOR_NAME"){
     m_COLLABORATOR_NAME = msg.GetString();
-    neptune_NAV_X = m_COLLABORATOR_NAME + "_NAV_X";
-    neptune_NAV_Y = m_COLLABORATOR_NAME + "_NAV_Y";
-    neptune_NAV_DEPTH = m_COLLABORATOR_NAME + "_NAV_DEPTH";
-    neptune_NAV_HEADING = m_COLLABORATOR_NAME + "_NAV_HEADING";
-    neptune_NAV_SPEED = m_COLLABORATOR_NAME + "_NAV_SPEED";
+    NEPTUNE_NAV_X = m_COLLABORATOR_NAME + "_NAV_X";
+    NEPTUNE_NAV_Y = m_COLLABORATOR_NAME + "_NAV_Y";
+    NEPTUNE_NAV_DEPTH = m_COLLABORATOR_NAME + "_NAV_DEPTH";
+    NEPTUNE_NAV_HEADING = m_COLLABORATOR_NAME + "_NAV_HEADING";
+    NEPTUNE_NAV_SPEED = m_COLLABORATOR_NAME + "_NAV_SPEED";
   }
   
-  else if (key == "neptune_NAV_X"){
+  else if (key == "NEPTUNE_NAV_X"){
     m_neptune_NAV_X = msg.GetDouble();
   }
-  else if (key == "neptune_NAV_Y"){
+  else if (key == "NEPTUNE_NAV_Y"){
     m_neptune_NAV_Y = msg.GetDouble();
   }
-  else if (key == "neptune_NAV_DEPTH"){
+  else if (key == "NEPTUNE_NAV_DEPTH"){
     m_neptune_NAV_DEPTH = msg.GetDouble();
   }
-  else if (key == "neptune_NAV_HEADING"){
+  else if (key == "NEPTUNE_NAV_HEADING"){
     m_neptune_NAV_HEADING = msg.GetDouble();
   }
-  else if (key == "neptune_NAV_SPEED"){
+  else if (key == "NEPTUNE_NAV_SPEED"){
     m_neptune_NAV_SPEED = msg.GetDouble();
   }
   }
@@ -144,35 +145,36 @@ bool CommunicationAngle_liumk::Iterate()
 
   // Projection of Circular Arc
   m_r_projection = m_radius*(sin(m_grazing_angle) + sin(m_arc_length/m_radius - m_grazing_angle));
-  m_depth_projection = m_radius*cos(m_arc_length/m_radius)-m_surface_sound_speed/m_sound_speed_gradient;
+  m_depth_projection = m_radius*cos(m_arc_length/m_radius-m_grazing_angle)-m_surface_sound_speed/m_sound_speed_gradient;
 
   // Elevation Angle
   m_elevation_angle = atan(m_depth_projection/m_r_projection);
 
   // Transmission Loss
-  
-  // Incrementally Adjusted - m_depth_difference broken into XXX steps
-  double m_number_of_steps = 100000;
-  for (int i = 0; i <= m_depth_difference; i = i+abs(m_depth_difference/m_number_of_steps)) {
-    double m_sound_speed_i = m_surface_sound_speed + m_sound_speed_gradient*(m_NAV_DEPTH+i);
-    // m_Jacobian estimated as radius times portion of arc length "traveled"
-    double m_Jacobian = (m_NAV_X-m_neptune_NAV_X)*m_arc_length*(1-i/m_depth_difference);
-    // 1/(4*pi) constant ignored, given denominator, p(1) = 1/(4*pi)
-    double m_pressure = sqrt(((m_sound_speed_i*cos(m_grazing_angle))/(m_sound_speed*m_Jacobian)));
-    double transmission_loss_i = -20*log10(m_pressure);
-    m_transmission_loss = m_transmission_loss + m_transmission_loss_i;
-  }
 
-  string elevation_angle = "elev_angle=" + doubleToString(m_elevation_angle,4);
+  // Calculate Sound Speed of Adjusted Arc Length
+  double m_zs = m_radius*cos(m_arc_length/m_radius-m_grazing_angle)-m_surface_sound_speed/m_sound_speed_gradient;
+  double m_sound_speed_zs = m_surface_sound_speed+m_sound_speed_gradient*m_zs;
+  
+  // Jacobian Incremental Adjustment
+  double m_theta = m_grazing_angle-(m_arc_length/m_radius);
+  double m_increment = 0.001;
+  double m_chord_angle_increment = m_chord_angle+m_increment;
+  double m_arc_length_increment = m_chord_angle_increment*(m_depth_difference+m_chord*m_chord/(4*m_depth_difference));
+  double m_Jacobian = (m_arc_length/sin(m_theta))*(m_arc_length_increment-m_arc_length)/m_increment;
+  // 1/(4*pi) constant ignored, given denominator, p(1) = 1/(4*pi)
+  double m_pressure = sqrt(((m_sound_speed_zs*cos(m_grazing_angle))/(m_sound_speed*m_Jacobian)));
+  double m_transmission_loss = -20*log10(m_pressure);
+
+  string elevation_angle = "elev_angle=" + doubleToString(m_elevation_angle*180/M_PI,4);
   string transmission_loss = ", transmission_loss=" + doubleToString(m_transmission_loss,4);
   string acoustic_path_id = ",id=liumk@mit.edu";
-  string acoustic_path = elevation_angle+transmission_loss+id;
+  string acoustic_path = elevation_angle+transmission_loss+acoustic_path_id;
   
   // CONNECTIVITY_LOCATION
 
   // Maximum Circular Arc Depth
   m_maximum_circular_arc_depth = m_sound_speed/(m_sound_speed_gradient*cos(m_grazing_angle))-m_surface_sound_speed/m_sound_speed_gradient;
-  
   if (m_water_depth >= m_maximum_circular_arc_depth){
     Notify("ACOUSTIC_PATH",acoustic_path);
     double m_x = m_NAV_X;
@@ -182,9 +184,10 @@ bool CommunicationAngle_liumk::Iterate()
     string m_y_position = ",y=" + doubleToString(m_NAV_Y,6);
     string m_depth_position = ",depth=" + doubleToString(m_NAV_DEPTH,4);
     string m_connectivity_location_id = ",id=liumk@mit.edu";
-    string m_connectivity_location = m_x_position+m_y_position+m_depth_position+id;
+    string m_connectivity_location = m_x_position+m_y_position+m_depth_position+m_connectivity_location_id;
     Notify("CONNECTIVITY_LOCATION",m_connectivity_location);
   }
+  
   else if (m_water_depth < m_maximum_circular_arc_depth){
     Notify("ACOUSTIC_PATH","NaN");
     
@@ -193,7 +196,7 @@ bool CommunicationAngle_liumk::Iterate()
     
     // Variable Calculations Dependent on Collaborator Vehicle Postion (not own vehicle)
     double m_neptune_sound_speed = m_surface_sound_speed+m_sound_speed_gradient*m_neptune_NAV_DEPTH;
-    double m_max_grazing_angle = acos(m_neptune_sound_speed/m_max_sound_speed);
+    double m_max_grazing_angle = acos(m_neptune_sound_speed/m_max_sound_speed)*180/M_PI;
     double m_max_radius = m_neptune_sound_speed/(m_sound_speed_gradient*cos(m_max_grazing_angle));
     
     // Determine New_X and New_Y Based on Revised Radius
@@ -204,9 +207,11 @@ bool CommunicationAngle_liumk::Iterate()
     // Determine Path to New Circle Center
     double m_rho = acos(m_revised_x/m_max_radius);
     double m_revised_y = m_max_radius*sin(m_rho);
+    
     if (m_revised_y > m_water_depth){ // Bottom Boundary Concern
       m_revised_y=m_NAV_DEPTH; // Maintain Depth
     }
+    
     else if (m_revised_y < 0){ // Air Boundary Concern
       m_revised_y = m_NAV_DEPTH; // Maintain Depth
     }
@@ -223,7 +228,7 @@ bool CommunicationAngle_liumk::Iterate()
     string m_new_y_position = ",y=" + doubleToString(m_new_NAV_Y,6);
     string m_new_depth_position = ",depth=" + doubleToString(m_revised_y,4);
     string m_new_connectivity_location_id = ",id=liumk@mit.edu";
-    string m_new_connectivity_location = m_x_position+m_y_position+m_depth_position+id;
+    string m_new_connectivity_location = m_x_position+m_y_position+m_depth_position+m_new_connectivity_location_id;
     Notify("CONNECTIVITY_LOCATION",m_new_connectivity_location);
   }
   return(true);
@@ -333,11 +338,11 @@ void CommunicationAngle_liumk::RegisterVariables()
   Register("COLLABORATOR_NAV_DEPTH", 0);
   Register("COLLABORATOR_NAV_HEADING", 0);
   Register("COLLABORATOR_NAV_SPEED", 0);
-  Register("neptune_NAV_X", 0);
-  Register("neptune_NAV_Y", 0);
-  Register("neptune_NAV_DEPTH", 0);
-  Register("neptune_NAV_HEADING", 0);
-  Register("neptune_NAV_SPEED", 0);
+  Register("NEPTUNE_NAV_X", 0);
+  Register("NEPTUNE_NAV_Y", 0);
+  Register("NEPTUNE_NAV_DEPTH", 0);
+  Register("NEPTUNE_NAV_HEADING", 0);
+  Register("NEPTUNE_NAV_SPEED", 0);
   
   // Register("FOOBAR", 0);
 }

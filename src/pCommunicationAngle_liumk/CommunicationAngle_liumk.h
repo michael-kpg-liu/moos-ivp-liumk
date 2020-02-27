@@ -43,8 +43,15 @@ class CommunicationAngle_liumk : public CMOOSApp
   double m_r_projection;
   double m_depth_projection;
   double m_elevation_angle;
+  double m_zs;
+  double m_sound_speed_zs;
+  double m_theta;
+  double m_increment;
+  double m_chord_angle_increment;
+  double m_arc_length_increment;
+  double m_Jacobian;
+  double m_pressure;
   double m_transmission_loss;
-  double m_transmission_loss_i;
   double m_maximum_circular_arc_depth;
   std::string elevation_angle;
   std::string transmission_loss;
@@ -75,13 +82,12 @@ class CommunicationAngle_liumk : public CMOOSApp
   double m_NAV_HEADING;
   double m_NAV_SPEED;
 
-  
   std::string m_COLLABORATOR_NAME;
-  std::string neptune_NAV_X;
-  std::string neptune_NAV_Y;
-  std::string neptune_NAV_DEPTH;
-  std::string neptune_NAV_HEADING;
-  std::string neptune_NAV_SPEED;
+  std::string NEPTUNE_NAV_X;
+  std::string NEPTUNE_NAV_Y;
+  std::string NEPTUNE_NAV_DEPTH;
+  std::string NEPTUNE_NAV_HEADING;
+  std::string NEPTUNE_NAV_SPEED;
 
   double m_neptune_NAV_X;
   double m_neptune_NAV_Y;
