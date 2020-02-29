@@ -131,6 +131,9 @@ bool CommunicationAngle_liumk::Iterate()
 
 
     if (m_valid_R){
+
+      // I had issues with reading between files, so I had to bypass some calculations by writing the code in directly.
+      
       //Calculate steering angle
       //m_theta_src = m_acoustic_path.calcThetaSrc(m_R_bisect,m_z_src);
       m_theta_src =  -acos((1480+0.016*m_z_src)/(m_R_bisect*0.016));
@@ -145,23 +148,30 @@ bool CommunicationAngle_liumk::Iterate()
       double c_rec = 1480+0.016*m_z_rec;
       double c_src = 1480+0.016*m_z_src;
       double theta_rec = acos((c_rec/c_src)*cos(m_theta_src));
-      double s =(m_R_bisect*((2*PI_ML+m_theta_src)-theta_rec));
-      double r_i = m_R_bisect*(sin(m_theta_src)+sin(s/m_R_bisect-m_theta_src-PI_ML));
-      double r_i1 =  m_R_bisect*(sin(m_theta_src+m_d_theta)+sin(s/m_R_bisect-m_theta_src-m_d_theta-PI_ML));
-      double J = ((r_i)/sin(m_theta_src))*((r_i1-r_i)/m_d_theta);
-      double P_of_s = abs((c_rec*cos(m_theta_src))/(c_src*J));
+      double s =(m_R_bisect*(m_theta_src-theta_rec));
+      double r_i = m_R_bisect*(sin(m_theta_src)+sin(s/m_R_bisect-m_theta_src));
+      double r_i1 =  m_R_bisect*(sin(m_theta_src+m_d_theta)+sin(s/m_R_bisect-m_theta_src-m_d_theta));
+      double J = ((r_i)/sin(theta_rec))*((r_i1-r_i)/m_d_theta);
+      double P_of_s = sqrt(abs(((0.016*(m_R_bisect*cos(theta_rec)))*cos(m_theta_src))/(c_src*J)));
       double P_1 = 1/(4*PI_ML);
-      double TL = -20*log10(P_of_s/P_1);
-      //cout << "m_z_src" << m_z_src << endl;
-      //cout << "m_z_rec" << m_z_rec << endl;
-      //cout << "m_R_bisect" << m_R_bisect << endl;
-      //cout << "m_d_theta" << m_d_theta << endl;
-      //cout << "m_TL" << m_TL << endl;
+      double m_TL = -20*log10(P_of_s);
+      cout << "m_z_src" << m_z_src << endl;
+      cout << "m_z_rec" << m_z_rec << endl;
+      cout << "m_R_bisect" << m_R_bisect << endl;
+      cout << "m_d_theta" << m_d_theta << endl;
+      cout << "m_TL" << m_TL << endl;
 
       // Notify angle and TL with ACOUSTIC_PATH
       stringstream ss;
       ss << "elev_angle =" << m_theta_src_deg << ", transmission loss:" << m_TL << ", id=liumk@mit.edu";
       Notify("ACOUSTIC_PATH",ss.str());
+
+      // Elevation angle
+      // Not sure why ELEV_ANGLE continues to read "0" in the ELEV_ANGLE and ELEV_ANGLE_REF comparison.
+      // System is calculating and outputing correctly for ACOUSTIC_PATH and CONNECTIVITY_LOCATION.
+      stringstream elev_angle;
+      elev_angle << m_theta_src_deg;
+      Notify("ELEV_ANGLE",elev_angle.str());
 
       // Notify position
       stringstream position;
@@ -183,6 +193,11 @@ bool CommunicationAngle_liumk::Iterate()
       Notify("CONNECTIVITY_LOCATION",newposition.str());
       Notify("ACOUSTIC_PATH","NaN");
       // x = xxx.xxx, y = yyy.yyy, depth = ddd.d, id=user@mit.edu
+
+      // Elevation angle
+      stringstream elev_angle;
+      elev_angle << m_theta_src_deg;
+      Notify("ELEV_ANGLE",elev_angle.str());
       }
     }
     else {

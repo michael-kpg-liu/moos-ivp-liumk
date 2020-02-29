@@ -8,7 +8,6 @@
 // Class for calculating acoustic path between receiver and source.
 // Linear sound speed profile.
 #include "AcousticPath.h"
-#define PI_ML 3.14159265
 #include <math.h>
 
 // calcProj_r: Using x,y positions of src and rec.  Calculate r_rec, where r_src is at zero.
@@ -71,7 +70,7 @@ double AcousticPath::calcThetaSrc(double R, double z_src){
 }
 // convertRad2Degrees(angle): Convert radians to degrees.
 double AcousticPath::convertRad2Degrees(double angle){
-  return angle * 180 / PI_ML;
+  return angle * 180 / M_PI;
 }
 
 // checkValidR(R): Check if radius from circle is less than water depth.
@@ -106,7 +105,7 @@ double AcousticPath::calcPosOnCirc_r(double circ_z_center,double circ_r_center, 
 
 // calcArcLength: Calculate arc length, angle in radians.
 double AcousticPath::calcArcLength(double R, double theta_src, double theta_rec){
-  double s = (R*((2*PI_ML+theta_src)-theta_rec)); //Accounting for negative sign
+  double s = (R*((2*M_PI+theta_src)-theta_rec)); //Accounting for negative sign
 
   return s;
 }
@@ -121,16 +120,16 @@ double AcousticPath::calcThetaRec(double z_src, double z_rec, double theta_src){
 
 // calc_r: Calculte r from theta and arc length, r(s) = R(sin(theta_src)+sin(s/R - theta_src))
 double AcousticPath::calc_r(double theta_src,double s, double R){
-  //  return R*(sin(theta_src-PI_ML)+sin(s/R-theta_src-PI_ML));
+  //  return R*(sin(theta_src-M_PI)+sin(s/R-theta_src-M_PI));
   return R*(sin(theta_src)+sin(s/R-theta_src));
 
 }
 
 //calcJ: Calculate J(s)
 double AcousticPath::calcJ(double s, double theta_src, double d_theta, double R){
-  /*  double r_i=calc_r(theta_src-PI_ML,s,R);
-  double r_i1=calc_r(theta_src-PI_ML+d_theta,s,R);
-  return ((r_i)/sin(theta_src-PI_ML))*((r_i1-r_i)/d_theta);*/
+  /*  double r_i=calc_r(theta_src-M_PI,s,R);
+  double r_i1=calc_r(theta_src-M_PI+d_theta,s,R);
+  return ((r_i)/sin(theta_src-M_PI))*((r_i1-r_i)/d_theta);*/
   double r_i=calc_r(theta_src,s,R);
   double r_i1=calc_r(theta_src+d_theta,s,R);
   return ((r_i)/sin(theta_src))*((r_i1-r_i)/d_theta);
@@ -141,7 +140,7 @@ double AcousticPath::calcJ(double s, double theta_src, double d_theta, double R)
 double AcousticPath::calcPfromArcLength(double z_src, double z_rec, double J, double theta_src){
     double temp = std::abs((calcC(z_rec)*cos(theta_src))/(calcC(z_src)*J));
 
-  return 1/(4*PI_ML)*sqrt(temp);
+  return 1/(4*M_PI)*sqrt(temp);
 
 }
 
@@ -152,7 +151,7 @@ double AcousticPath::calcTransmissionLoss(double theta_src, double z_src, double
   double s = calcArcLength(R,theta_src, theta_rec);
   double J = calcJ(s,theta_src,d_theta, R);
   double P_of_s = calcPfromArcLength(z_src, z_rec, J, theta_src);
-  double P_1 = 1/(4*PI_ML);
+  double P_1 = 1/(4*M_PI);
   double TL = -20*log10(P_of_s/P_1);
   return TL;
 

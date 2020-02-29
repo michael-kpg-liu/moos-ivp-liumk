@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% LOG FILE:       ./MOOSLog_28_2_2020_____22_00_26/MOOSLog_28_2_2020_____22_00_26._moos
+%% LOG FILE:       ./MOOSLog_29_2_2020_____08_43_26/MOOSLog_29_2_2020_____08_43_26._moos
 %% FILE OPENED ON  Wed Dec 31 19:00:00 1969
-%% LOGSTART               1582945225.75
+%% LOGSTART               1582983805.74
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //Alex Scott
 //MIT 2.680 Lab5
@@ -18,7 +18,8 @@ ProcessConfig = ANTLER
 
   Run = MOOSDB				 @ NewConsole = false
   Run = pLogger     			 @ NewConsole = false
-  Run = pCommunicationAngle_liumk	 @ NewConsole = false
+//  CHANGE TO YOUR PROGRAM NAME HERE///////////////////////////////////////////////////////////////  
+  Run = pCommunicationAngle_scottal	 @ NewConsole = false
   Run = uTimerScript 			 @ NewConsole = false
   Run = uXMS         			 @ NewConsole = true
 }
@@ -38,10 +39,10 @@ ProcessConfig = pLogger
 }
 
 //------------------------------------------
-//
-// pCommunicationAngle_liumk config block
+//  CHANGE TO YOUR PROGRAM NAME HERE///////////////////////////////////////////////////////////////
+// pCommunicationAngle_scottal config block
 
-ProcessConfig = pCommunicationAngle_liumk
+ProcessConfig = pCommunicationAngle_scottal
 {
    AppTick   = 4
    CommsTick = 4
