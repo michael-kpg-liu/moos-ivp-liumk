@@ -6,6 +6,7 @@
 SET(SRC
   CommunicationAngle_liumk.cpp
   CommunicationAngle_liumk_Info.cpp
+  AcousticPath.cpp
   main.cpp
 )
 

@@ -4,10 +4,10 @@ echo "Starting Communications Stub"
 
 #MOOSDB
 #pAntler pCommunicationAngle_liumk.moos
-uPokeDB pCommunicationAngle_liumk.moos m_VEHICLE_NAME="MACRURA"
-uPokeDB pCommunicationAngle_liumk.moos NAV_X=0.0
-uPokeDB pCommunicationAngle_liumk.moos NAV_Y=0.0
-uPokeDB pCommunicationAngle_liumk.moos NAV_DEPTH=0.00
+uPokeDB pCommunicationAngle_liumk.moos VEHICLE_NAME="MACRURA"
+uPokeDB pCommunicationAngle_liumk.moos NAV_X=0
+uPokeDB pCommunicationAngle_liumk.moos NAV_Y=0
+uPokeDB pCommunicationAngle_liumk.moos NAV_DEPTH=00.00
 uPokeDB pCommunicationAngle_liumk.moos NAV_SPEED=0.0
 uPokeDB pCommunicationAngle_liumk.moos NAV_HEADING=20.0
 uPokeDB pCommunicationAngle_liumk.moos NEPTUNE_NAV_X=15000.0
