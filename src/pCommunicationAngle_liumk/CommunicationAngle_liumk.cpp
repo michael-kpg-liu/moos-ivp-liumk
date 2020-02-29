@@ -9,8 +9,6 @@
 #include "MBUtils.h"
 #include "CommunicationAngle_liumk.h"
 #include <sstream>
-#define PI_ML 3.14159265
-
 using namespace std;
 
 //---------------------------------------------------------
@@ -61,17 +59,34 @@ bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
       m_nav_depth = true;
     }
 
-    else if (key == "NEPTUNE_NAV_X"){
+    // Parse messages with "VEHICLE_NAME"
+    if (key=="VEHICLE_NAME"){
+      m_own_name=msg.GetString();
+    }
+    
+    // Parse messages with "COLLABORATOR_NAME"
+    if (key=="COLLABORATOR_NAME"){
+      m_collab_name=msg.GetString();
+
+      //Make collaborator nav data names
+      m_c_name_nav_x=m_collab_name + "_NAV_X";
+      m_c_name_nav_y=m_collab_name + "_NAV_Y";
+      m_c_name_nav_depth=m_collab_name + "_NAV_DEPTH";
+      //m_c_name_nav_heading=m_collab_name + "_NAV_HEADING";
+      //m_c_name_nav_speed=m_collab_name + "_NAV_SPEED";
+    }
+
+    else if (key == " m_c_name_nav_x"){
       m_x_rec = dval;
       m_collab_nav_x = true;
     }
 
-    else if (key == "NEPTUNE_NAV_Y"){
+    else if (key == " m_c_name_nav_y"){
       m_y_rec = dval;
       m_collab_nav_y = true;
     }
 
-    else if (key == "NEPTUNE_NAV_DEPTH"){
+    else if (key == " m_c_name_nav_depth"){
       m_z_rec = dval;
       m_collab_nav_depth = true;
     }
@@ -153,7 +168,7 @@ bool CommunicationAngle_liumk::Iterate()
       double r_i1 =  m_R_bisect*(sin(m_theta_src+m_d_theta)+sin(s/m_R_bisect-m_theta_src-m_d_theta));
       double J = ((r_i)/sin(theta_rec))*((r_i1-r_i)/m_d_theta);
       double P_of_s = sqrt(abs(((0.016*(m_R_bisect*cos(theta_rec)))*cos(m_theta_src))/(c_src*J)));
-      double P_1 = 1/(4*PI_ML);
+      double P_1 = 1/(4*M_PI);
       double m_TL = -20*log10(P_of_s);
       cout << "m_z_src" << m_z_src << endl;
       cout << "m_z_rec" << m_z_rec << endl;
@@ -266,9 +281,9 @@ void CommunicationAngle_liumk::RegisterVariables()
   Register("NAV_DEPTH", 0);
   Register("NAV_HEADING", 0);
   Register("NAV_SPEED", 0);
-  Register("NEPTUNE_NAV_X", 0);
-  Register("NEPTUNE_NAV_Y", 0);
-  Register("NEPTUNE_NAV_DEPTH", 0);
-  Register("NEPTUNE_NAV_HEADING", 0);
-  Register("NEPTUNE_NAV_SPEED", 0);
+      Register(m_c_name_nav_x,0);
+      Register(m_c_name_nav_y,0);
+      Register(m_c_name_nav_depth,0);
+      Register(m_c_name_nav_heading,0);
+      Register(m_c_name_nav_speed,0); 
 }
