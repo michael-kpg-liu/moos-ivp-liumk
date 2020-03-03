@@ -1,3 +1,8 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_3_3_2020_____11_18_46/MOOSLog_3_3_2020_____11_18_46._moos
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1583252326.33
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //Alex Scott - Developed test to help with oceanai discussion issues.
 //MIT 2.680 Lab5
 // pCommunicationAngle_scottal.moos
@@ -213,3 +218,4 @@ ProcessConfig = uTimerScript
    reset_time=all-posted
 
 }
+

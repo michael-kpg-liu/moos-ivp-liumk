@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_3_3_2020_____11_18_46/MOOSLog_3_3_2020_____11_18_46.alog
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1583252326.33
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1.111           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=NaN,transmission_loss=NaN,id=liumk@mit.edu 
+1.111           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=nan,y=nan,depth=0.0,id=liumk@mit.edu 
+1.363           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-0.9,transmission_loss=72.6,id=liumk@mit.edu 
+1.363           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+1.618           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-0.9,transmission_loss=72.6,id=liumk@mit.edu 
+1.618           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+1.870           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+1.870           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+2.122           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+2.122           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+2.373           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+2.373           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+2.624           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+2.624           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+2.876           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+2.876           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+3.127           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+3.127           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+3.377           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+3.377           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+3.627           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+3.627           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+3.882           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+3.882           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+4.133           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+4.133           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+4.385           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+4.385           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+4.640           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+4.640           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+4.895           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+4.895           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+5.145           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+5.145           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+5.397           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+5.397           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 
+5.651           ACOUSTIC_PATH        pCommunicationAngle_liumk elev_angle=-10.1,transmission_loss=77.9,id=liumk@mit.edu 
+5.651           CONNECTIVITY_LOCATION pCommunicationAngle_liumk x=-5000.000,y=-5000.000,depth=155.0,id=liumk@mit.edu 

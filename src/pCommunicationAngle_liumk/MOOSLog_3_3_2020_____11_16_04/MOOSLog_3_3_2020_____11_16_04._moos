@@ -1,4 +1,9 @@
-//Alex Scott - Developed test to help with oceanai discussion issues.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_3_3_2020_____11_16_04/MOOSLog_3_3_2020_____11_16_04._moos
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               1583252164.08
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//Alex Scott
 //MIT 2.680 Lab5
 // pCommunicationAngle_scottal.moos
 
@@ -14,7 +19,7 @@ ProcessConfig = ANTLER
   Run = MOOSDB				 @ NewConsole = false
   Run = pLogger     			 @ NewConsole = false
 //  CHANGE TO YOUR PROGRAM NAME HERE///////////////////////////////////////////////////////////////  
-  Run = pCommunicationAngle_liumk	 @ NewConsole = false
+  Run = pCommunicationAngle_scottal	 @ NewConsole = false
   Run = uTimerScript 			 @ NewConsole = false
   Run = uXMS         			 @ NewConsole = true
 }
@@ -35,9 +40,9 @@ ProcessConfig = pLogger
 
 //------------------------------------------
 //  CHANGE TO YOUR PROGRAM NAME HERE///////////////////////////////////////////////////////////////
-// pCommunicationAngle_liumk config block
+// pCommunicationAngle_scottal config block
 
-ProcessConfig = pCommunicationAngle_liumk
+ProcessConfig = pCommunicationAngle_scottal
 {
    AppTick   = 4
    CommsTick = 4
@@ -213,3 +218,4 @@ ProcessConfig = uTimerScript
    reset_time=all-posted
 
 }
+

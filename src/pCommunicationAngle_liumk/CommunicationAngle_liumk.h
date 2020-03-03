@@ -2,40 +2,102 @@
 /*    NAME: liumk                                              */
 /*    ORGN: MIT                                             */
 /*    FILE: CommunicationAngle_liumk.h                      */
-/*    DATE: 25 FEB 2020                                                */
+/*    DATE: 25 FEB 2020 - 2 MAR 2020                             */
 /************************************************************/
-
 #ifndef CommunicationAngle_liumk_HEADER
 #define CommunicationAngle_liumk_HEADER
 
+#include "MOOS/libMOOS/Thirdparty/AppCasting/AppCastingMOOSApp.h"
 #include "MOOS/libMOOS/MOOSLib.h"
-#include "AcousticPath.h"
+#include "CommCalcs.h"
+#include "MBUtils.h"
+#include <string>
+#include <vector>
+#include <cstdint>
 #include <iostream>
+#include <list>
+#include <sstream>
+#include <math.h>
 
-class CommunicationAngle_liumk : public CMOOSApp
+using namespace std;
+
+class CommunicationAngle_liumk : public AppCastingMOOSApp
 {
  public:
    CommunicationAngle_liumk();
    ~CommunicationAngle_liumk();
 
  protected: // Standard MOOSApp functions to overload  
-  bool OnNewMail(MOOSMSG_LIST &NewMail);
-  bool Iterate();
-  bool OnConnectToServer();
-  bool OnStartUp();
-  
+   bool OnNewMail(MOOSMSG_LIST &NewMail);
+   bool Iterate();
+   bool OnConnectToServer();
+   bool OnStartUp();
+
+ protected: // Standard AppCastingMOOSApp function to overload 
+   bool buildReport();
+
  protected:
-   void RegisterVariables();
+   void registerVariables();
+
+  //Enviromental parameters
+  double m_surface_sound_speed;
+  double m_sound_speed_gradient;
+  double m_water_depth;
+
+  //Own Ship Data
+  string m_own_name;
+  double m_nav_x;
+  double m_nav_y;
+  double m_nav_depth;
+  double m_nav_heading;
+  double m_nav_speed;
+
+  //Collaborator ship key strings
+  string m_collab_name;
+  string m_c_name_nav_x;
+  string m_c_name_nav_y;
+  string m_c_name_nav_depth;
+  string m_c_name_nav_heading;
+  string m_c_name_nav_speed;
+
+  //Collaborator ship data
+  double m_collab_nav_x;
+  double m_collab_nav_y;    
+  double m_collab_nav_depth;
+  double m_collab_nav_heading;
+  double m_collab_nav_speed;
+
+  //Variables used in calculations
+  double m_co_g;
+  double m_2d_dist;
+  double m_c_z;
+  double m_c_zc;
+  double m_r;
+  double m_s;
+  double m_theta_o;
+  double m_max_depth;
+  double m_theta;
+  double m_js;
+  double m_z_s;
+  double m_c_z_s;
+  double m_trans_loss;
+  double m_c_max;
+  double m_r_max;
+  double m_theta_o_max;
+  double m_bearing;
+  double m_x_center;
+  double m_y_center;
+  double m_z_center;
+  double m_2d_max;
+  double m_3d_max;
+  double m_theta_max;
+  double m_x_target;
+  double m_y_target;
+  double m_z_target;  
 
  private: // Configuration variables
-  
+
  private: // State variables
-  AcousticPath m_acoustic_path;
-  double m_x_src, m_y_src, m_r_src, m_z_src, m_x_rec, m_y_rec, m_r_rec, m_z_rec, m_r_theta, m_x_new, m_y_new;
-  double m_midpt_r, m_midpt_z, m_int_slope, m_int_b, m_circ_z_center, m_circ_r_center, m_R_bisect, m_theta_src, m_theta_src_deg, m_R_new, m_r_src_new, m_circ_r_center_new;
-  bool m_valid_R, m_nav_x, m_nav_y, m_nav_depth,  m_collab_nav_x, m_collab_nav_y, m_collab_nav_depth;
-  // TL variables
-  double m_d_theta, m_TL;
 };
 
 #endif 

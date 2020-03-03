@@ -1,0 +1,58 @@
+// NAME: Michael Liu
+// ORGN: MIT
+// FILE: pCommunicationAngle_liumk.moos
+// DATE: 25 FEB 2020
+
+//------------------------------------------
+// MOOS File
+	
+ServerHost = oceanai.mit.edu
+ServerPort = 9011
+
+//------------------------------------------
+// MOOS File - Local Community Stub
+
+// ServerHost = localhost
+// ServerPort = 9011
+
+//------------------------------------------
+// Antler configuration  block
+ProcessConfig = ANTLER
+{
+ // MSBetweenLaunches = 200
+
+  //Run = MOOSDB                      @ NewConsole = false
+  Run = pCommunicationAngle_liumk   @ NewConsole = true
+  Run = uXMS                        @ NewConsole = true
+}
+
+//------------------------------------------------
+// pCommunicationAngle_liumk config block
+
+ProcessConfig = pCommunicationAngle_liumk
+{
+   AppTick   = 4
+   CommsTick = 4
+
+	surface_sound_speed = 1480
+	sound_speed_gradient = 0.016
+	water_depth = 6000
+}
+
+//------------------------------------------------
+// uXMS config block
+
+ProcessConfig = uXMS
+{
+   AppTick   = 4
+   CommsTick = 4
+	 
+	var = VEHICLE_NAME, COLLABORATOR_NAME
+	var = NAV_X, NAV_Y, NAV_DEPTH, NAV_HEADING, NAV_SPEED
+	var = NEPTUNE_NAV_X, NEPTUNE_NAV_Y, NEPTUNE_NAV_DEPTH, NEPTUNE_NAV_HEADING, NEPTUNE_NAV_SPEED 
+  var = ACOUSTIC_PATH, CONNECTIVITY_LOCATION
+	var = ACOUSTIC_PATH_REF, CONNECTIVITY_LOCATION_REF
+	var = ELEV_ANGLE, ELEV_ANGLE_REF
+	//var = NUM_VALUE, PRIME_RESULT
+
+}

@@ -2,13 +2,14 @@
 /*    NAME: liumk                                              */
 /*    ORGN: MIT                                             */
 /*    FILE: CommunicationAngle_liumk.cpp                           */
-/*    DATE: 25-28  FEB 2020                                                */
+/*    DATE: 25 FEB 2020 - 2 MAR 2020                              */
 /************************************************************/
 
 #include <iterator>
 #include "MBUtils.h"
+#include "ACTable.h"
 #include "CommunicationAngle_liumk.h"
-#include <sstream>
+
 using namespace std;
 
 //---------------------------------------------------------
@@ -16,12 +17,9 @@ using namespace std;
 
 CommunicationAngle_liumk::CommunicationAngle_liumk()
 {
-  m_nav_x = false;
-  m_nav_y = false;
-  m_nav_depth = false;
-  m_collab_nav_x = false;
-  m_collab_nav_y = false;
-  m_collab_nav_depth = false;
+  m_surface_sound_speed=1480;//meters per second
+  m_sound_speed_gradient=0.016;//meters per second per meter
+  m_water_depth=6000;//meters
 }
 
 //---------------------------------------------------------
@@ -36,28 +34,12 @@ CommunicationAngle_liumk::~CommunicationAngle_liumk()
 
 bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
 {
+  AppCastingMOOSApp::OnNewMail(NewMail);
+
   MOOSMSG_LIST::iterator p;
-   
   for(p=NewMail.begin(); p!=NewMail.end(); p++) {
     CMOOSMsg &msg = *p;
-    string key = msg.GetKey();
-    double dval = msg.GetDouble();
-    string sval = msg.GetString();
-
-    if (key == "NAV_X"){
-      m_x_src = dval;
-      m_nav_x = true;
-    }
-
-    else if (key == "NAV_Y"){
-      m_y_src = dval;
-      m_nav_y = true;
-    }
-
-    else if (key == "NAV_DEPTH"){
-      m_z_src = dval;
-      m_nav_depth = true;
-    }
+    string key    = msg.GetKey();
 
     // Parse messages with "VEHICLE_NAME"
     if (key=="VEHICLE_NAME"){
@@ -72,27 +54,69 @@ bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
       m_c_name_nav_x=m_collab_name + "_NAV_X";
       m_c_name_nav_y=m_collab_name + "_NAV_Y";
       m_c_name_nav_depth=m_collab_name + "_NAV_DEPTH";
-      //m_c_name_nav_heading=m_collab_name + "_NAV_HEADING";
-      //m_c_name_nav_speed=m_collab_name + "_NAV_SPEED";
+      m_c_name_nav_heading=m_collab_name + "_NAV_HEADING";
+      m_c_name_nav_speed=m_collab_name + "_NAV_SPEED";
+
+      //Register for collaborator nav data
+      Register(m_c_name_nav_x,0);
+      Register(m_c_name_nav_y,0);
+      Register(m_c_name_nav_depth,0);
+      Register(m_c_name_nav_heading,0);
+      Register(m_c_name_nav_speed,0); 
+    }
+    
+    // Parse messages with "NAV_X"
+    if (key=="NAV_X"){
+      m_nav_x=msg.GetDouble();
+    }
+    
+    // Parse messages with "NAV_Y"
+    if (key=="NAV_Y"){
+      m_nav_y=msg.GetDouble();
+    }
+    
+    // Parse messages with "NAV_DEPTH"
+    if (key=="NAV_DEPTH"){
+      m_nav_depth=msg.GetDouble();
+    }
+    
+    // Parse messages with "NAV_HEADING"
+    if (key=="NAV_HEADING"){
+      m_nav_heading=msg.GetDouble();
+    }
+    
+    // Parse messages with "NAV_SPEED"
+    if (key=="NAV_SPEED"){
+      m_nav_speed=msg.GetDouble();
+    }
+    
+    // Parse messages with 'collaborator' "_NAV_X"
+    if (key==m_c_name_nav_x){
+      m_collab_nav_x=msg.GetDouble();
+    }
+    
+    // Parse messages with 'collaborator' "_NAV_Y"
+    if (key==m_c_name_nav_y){
+      m_collab_nav_y=msg.GetDouble();    
+    }
+    
+    // Parse messages with 'collaborator' "_NAV_DEPTH"
+    if (key==m_c_name_nav_depth){
+      m_collab_nav_depth=msg.GetDouble();
+    }
+    
+    // Parse messages with 'collaborator' "_NAV_HEADING"
+    if (key==m_c_name_nav_heading){
+      m_collab_nav_heading=msg.GetDouble();
+    }
+    
+    // Parse messages with 'collaborator' "_NAV_SPEED" 
+    if (key==m_c_name_nav_speed){
+      m_collab_nav_speed=msg.GetDouble();
     }
 
-    else if (key == " m_c_name_nav_x"){
-      m_x_rec = dval;
-      m_collab_nav_x = true;
-    }
-
-    else if (key == " m_c_name_nav_y"){
-      m_y_rec = dval;
-      m_collab_nav_y = true;
-    }
-
-    else if (key == " m_c_name_nav_depth"){
-      m_z_rec = dval;
-      m_collab_nav_depth = true;
-    }
-
+    
 #if 0 // Keep these around just for template
-    string key   = msg.GetKey();
     string comm  = msg.GetCommunity();
     double dval  = msg.GetDouble();
     string sval  = msg.GetString(); 
@@ -101,7 +125,14 @@ bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
     bool   mdbl  = msg.IsDouble();
     bool   mstr  = msg.IsString();
 #endif
-  }
+
+     if(key == "FOO") 
+       cout << "great!";
+
+     else if(key != "APPCAST_REQ") // handled by AppCastingMOOSApp
+       reportRunWarning("Unhandled Mail: " + key);
+   }
+	
    return(true);
 }
 
@@ -110,8 +141,7 @@ bool CommunicationAngle_liumk::OnNewMail(MOOSMSG_LIST &NewMail)
 
 bool CommunicationAngle_liumk::OnConnectToServer()
 {
-  // Register for variables here.
-   RegisterVariables();
+   registerVariables();
    return(true);
 }
 
@@ -121,159 +151,160 @@ bool CommunicationAngle_liumk::OnConnectToServer()
 
 bool CommunicationAngle_liumk::Iterate()
 {
-  // ACOUSTIC_PROFILE
+  AppCastingMOOSApp::Iterate();
 
-  if (m_nav_x && m_nav_y && m_nav_depth && m_collab_nav_x && m_collab_nav_y && m_collab_nav_depth){
-    //Calculate r_src, r_rec
-    m_r_src = 0.0;
-    m_r_rec = m_acoustic_path.calcProj_r(m_x_rec,m_y_rec,m_x_src,m_y_src);
-    m_r_theta = m_acoustic_path.calcProj_theta(m_x_rec,m_y_rec, m_x_src, m_y_src);
-
-   //Find circle equation, given source and receiver position
-    m_midpt_r=m_acoustic_path.calcMidpt(m_r_src,m_r_rec);
-    m_midpt_z=m_acoustic_path.calcMidpt(m_z_src,m_z_rec);
-    m_int_slope =m_acoustic_path.calcPerpSlope(m_r_src,m_z_src, m_r_rec, m_z_rec);
-    m_int_b=m_acoustic_path.calcPerpIntercept(m_int_slope, m_midpt_r,m_midpt_z);
-    //m_circ_z_center=m_acoustic_path.calcCircCenter_z();
-    m_circ_z_center = - 1480/0.016;
-    m_circ_r_center = m_acoustic_path.calcCircCenter_r(m_circ_z_center, m_int_slope, m_int_b);
-    //cout << m_circ_z_center << "m_circ_z_center" << endl;
-    //cout << m_int_slope << "m_int_slope" << endl;
-    m_R_bisect = m_acoustic_path.calcRBisect(m_r_src,m_z_src,m_circ_r_center,m_circ_z_center);
+  //ACOUSTIC_PATH calculations
   
-    //Check if valid R.   
-    m_valid_R=m_acoustic_path.checkValidR(m_R_bisect);
+  //Find elevation angle assuming adequate water depth
+  
+  //Find c(0)/g
+  m_co_g=calcCog(m_surface_sound_speed,m_sound_speed_gradient);
+  //cout<<"m_co_g="<<m_co_g<<endl;
+  
+  //Find distance between vessels
+  m_2d_dist=calc2Distance(m_nav_x,m_nav_y,m_collab_nav_x,m_collab_nav_y);
+  //cout<<"m_2d_dist="<<m_2d_dist<<endl;
+  
+  //Find sound speed at own ship
+  m_c_z=calcSoundSpeed(m_surface_sound_speed,m_sound_speed_gradient,m_nav_depth);
+  //cout<<"m_c_z="<<m_c_z<<endl;
+  
+  //Find sound speed at collaborator
+  m_c_zc=calcSoundSpeed(m_surface_sound_speed,m_sound_speed_gradient,m_collab_nav_depth); 
+  //cout<<"m_c_zc="<<m_c_zc<<endl;
+  
+  //Find ray path radius
+  m_r=calcRadius(m_nav_depth,m_collab_nav_depth,m_co_g,m_2d_dist);
+  //cout<<"m_r="<<m_r<<endl;
+  
+  //Find arc length of ray path
+  m_s=calcArcLength(m_r,m_2d_dist);
+  //cout<<"m_s="<<m_s<<endl;
+  
+  //Find elevation angle
+  m_theta_o=calcThetaO(m_c_z,m_sound_speed_gradient,m_r);
+  //cout<<"m_theta_o="<<m_theta_o<<endl;
+  
+  //Find water depth required for transmission.
+  m_max_depth=calcMaxDepth(m_c_z,m_co_g,m_sound_speed_gradient,m_theta_o);
+  //cout<<"m_max_depth="<<m_max_depth<<endl;
 
+  //Verify ray path is clear, calc transmission losses, then publish reports
+  if(m_max_depth<m_water_depth){
 
-    if (m_valid_R){
+    //Find theta
+    m_theta=calcTheta(m_theta_o,m_s,m_r);
+    
+    //Find J(s)
+    m_js=calcJs(m_c_z,m_sound_speed_gradient,m_theta_o,m_s,m_theta);
 
-      // I had issues with reading between files, so I had to bypass some calculations by writing the code in directly.
-      
-      //Calculate steering angle
-      //m_theta_src = m_acoustic_path.calcThetaSrc(m_R_bisect,m_z_src);
-      m_theta_src =  -acos((1480+0.016*m_z_src)/(m_R_bisect*0.016));
-      cout << "m_R_bisect" << m_R_bisect << endl;
-      cout << "m_theta_src" << m_theta_src << endl;
-      m_theta_src_deg = m_acoustic_path.convertRad2Degrees(m_theta_src);
-      cout << "m_theta_src_deg" << m_theta_src_deg << endl;
+    //Find c(z(s))
+    m_z_s=calcZs(m_r,m_theta_o,m_s,m_co_g);
+    m_c_z_s=calcSoundSpeed(m_surface_sound_speed,m_sound_speed_gradient,m_z_s);
+        
+    //Find Transmission loss
+    m_trans_loss=calcTransLoss(m_c_z_s,m_theta_o,m_c_z,m_js);
+    
+    //Publish reports
+    Notify("ACOUSTIC_PATH",calcAcousticPath(calcRad2Deg(m_theta_o),m_trans_loss));
+    Notify("CONNECTIVITY_LOCATION",calcConnectivityLocation(m_nav_x,m_nav_y,m_nav_depth));
+  }
 
-      // Calculate TL
-      m_d_theta = 0.0000001;
-      //m_TL = m_acoustic_path.calcTransmissionLoss(m_theta_src,m_z_src,m_z_rec,m_R_bisect,m_d_theta);
-      double c_rec = 1480+0.016*m_z_rec;
-      double c_src = 1480+0.016*m_z_src;
-      double theta_rec =- acos((c_rec/c_src)*cos(m_theta_src));
-      double s =(m_R_bisect*(m_theta_src-theta_rec));
-      double r_i = m_R_bisect*(sin(m_theta_src)+sin(s/m_R_bisect-m_theta_src));
-      double r_i1 =  m_R_bisect*(sin(m_theta_src+m_d_theta)+sin(s/m_R_bisect-m_theta_src-m_d_theta));
-      double J = ((r_i)/sin(theta_rec))*((r_i1-r_i)/m_d_theta);
-      double P_of_s = sqrt(abs(((0.016*(m_R_bisect*cos(theta_rec)))*cos(m_theta_src))/(c_src*J)));
-      double P_1 = 1/(4*M_PI);
-      double m_TL = -20*log10(P_of_s);
-      cout << "m_z_src" << m_z_src << endl;
-      cout << "m_z_rec" << m_z_rec << endl;
-      cout << "m_R_bisect" << m_R_bisect << endl;
-      cout << "m_d_theta" << m_d_theta << endl;
-      cout << "m_TL" << m_TL << endl;
+  else{
+    //Publish NaN report
+    Notify("ACOUSTIC_PATH",calcAcousticNoPath());
+  
+    //Calculate connectivity location
 
-      // Notify angle and TL with ACOUSTIC_PATH
-      stringstream ss;
-      ss << "elev_angle =" << m_theta_src_deg << ", transmission loss:" << m_TL << ", id=liumk@mit.edu";
-      Notify("ACOUSTIC_PATH",ss.str());
+    //Find sound speed at max water depth
+    m_c_max=calcSoundSpeed(m_surface_sound_speed,m_sound_speed_gradient,m_water_depth);
 
-      // Elevation angle
-      // Not sure why ELEV_ANGLE continues to read "0" in the ELEV_ANGLE and ELEV_ANGLE_REF comparison.
-      // System is calculating and outputing correctly for ACOUSTIC_PATH and CONNECTIVITY_LOCATION.
-      stringstream elev_angle;
-      elev_angle << m_theta_src_deg;
-      Notify("ELEV_ANGLE",elev_angle.str());
+    //Find maximum possible radius of ray
+    m_r_max=m_c_max/m_sound_speed_gradient;
 
-      // Notify position
-      stringstream position;
-      position  << "x=" << m_x_src << ",y=" << m_y_src << ",depth=" << m_z_src << ",id=liumk@mit.edu";
-      Notify("CONNECTIVITY_LOCATION",position.str());
+    //Calculate elevation angle for max range from collaborator
+    m_theta_o_max=acos(m_c_zc/m_c_max);
+    
+    //Calculate bearing to collaborator
+    m_bearing=calcBearing(m_nav_x,m_nav_y,m_collab_nav_x,m_collab_nav_y);
+
+    //Calculate center of ray path
+    m_x_center=m_collab_nav_x-m_r_max*sin(m_theta_o_max)*cos(m_bearing);
+    m_y_center=m_collab_nav_y-m_r_max*sin(m_theta_o_max)*sin(m_bearing);
+    m_z_center=-m_co_g;
+
+    //Find graze angle of arrival path at own ship
+    m_2d_max=calc2Distance(m_nav_x,m_nav_y,m_x_center,m_y_center);
+    m_3d_max=calc3Distance(m_nav_x,m_nav_y,m_nav_depth,m_x_center,m_y_center,m_z_center);
+    m_theta_max=asin(m_2d_max/m_3d_max);
+
+    //Find target coordinates
+    m_x_target=m_collab_nav_x-m_r_max*(sin(m_theta_o_max)+sin(m_theta_max))*cos(m_bearing);
+    m_y_target=m_collab_nav_y-m_r_max*(sin(m_theta_o_max)+sin(m_theta_max))*sin(m_bearing);
+    m_z_target=m_r_max*cos(m_theta_max)-m_co_g;
+
+    //Check to ensure z is in water then adjust or publish
+
+    //Check z is in water
+    if(m_z_target>=0){
+      Notify("CONNECTIVITY_LOCATION",calcConnectivityLocation(m_x_target,m_y_target,m_z_target));
     }
+    
     else{
-      //Calc new R and cirlce (r) center
-      m_R_new = m_acoustic_path.calcValidR(m_R_bisect);
-      m_circ_r_center_new = m_acoustic_path.calcNewCircCenter_r(m_z_rec,m_r_rec,m_R_new,m_circ_z_center);
-      // Recalculate position, keep depth (z_src)
-      m_r_src_new = m_acoustic_path.calcPosOnCirc_r(m_circ_z_center,m_circ_r_center_new,m_z_src,m_R_new);
-      m_x_new = m_r_src_new * cos(m_r_theta);
-      m_y_new = m_r_src_new * sin(m_r_theta);
-
-      //Notify new position
-      stringstream newposition;
-      newposition << "x=" << m_x_new << ",y=" << m_y_new << ",depth=" << m_z_src << ",id=liumk@mit.edu";
-      Notify("CONNECTIVITY_LOCATION",newposition.str());
-      Notify("ACOUSTIC_PATH","NaN");
-      // x = xxx.xxx, y = yyy.yyy, depth = ddd.d, id=user@mit.edu
-
-      // Elevation angle
-      stringstream elev_angle;
-      elev_angle << m_theta_src_deg;
-      Notify("ELEV_ANGLE",elev_angle.str());
-      }
+      m_theta_max=acos(m_co_g/m_r_max);
+      m_x_target=m_collab_nav_x-m_r_max*(sin(m_theta_o_max)+sin(m_theta_max))*cos(m_bearing);
+      m_y_target=m_collab_nav_y-m_r_max*(sin(m_theta_o_max)+sin(m_theta_max))*sin(m_bearing);
+      m_z_target=m_r_max*cos(m_theta_max)-m_co_g;
+      Notify("CONNECTIVITY_LOCATION",calcConnectivityLocation(m_x_target,m_y_target,m_z_target));
     }
-    else {
-    }
+  }
+  AppCastingMOOSApp::PostReport();
   return(true);
 }
-
+  
 //---------------------------------------------------------
 // Procedure: OnStartUp()
 //            happens before connection is open
 
-bool CommunicationAngle_liumk::OnStartUp()
+  bool CommunicationAngle_liumk::OnStartUp()
 {
-  list<string> sParams;
+  AppCastingMOOSApp::OnStartUp();
+
+  STRING_LIST sParams;
   m_MissionReader.EnableVerbatimQuoting(false);
-  if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
-    list<string>::iterator p;
-    for(p=sParams.begin(); p!=sParams.end(); p++) {
-      string line  = *p;
-      string param = tolower(biteStringX(line, '='));
-      string value = line;
+  if(!m_MissionReader.GetConfiguration(GetAppName(), sParams))
+    reportConfigWarning("No config block found for " + GetAppName());
 
-      // Convert value to double
-      stringstream temp(value);
-      double fvalue = 0;
-      temp >> fvalue;
+  STRING_LIST::iterator p;
+  for(p=sParams.begin(); p!=sParams.end(); p++) {
+    string orig  = *p;
+    string line  = *p;
+    string param = tolower(biteStringX(line, '='));
+    string value = line;
 
-      if(param == "SURFACE_SOUND_SPEED") {
-	m_acoustic_path.setSurfaceSoundSpeed(fvalue);
-      }
-
-      else if(param == "SOUND_SPEED_GRADIENT") {
-	m_acoustic_path.setSoundSpeedGradient(fvalue);
-      }
-      
-      else if(param == "WATER_DEPTH") {
-	m_acoustic_path.setWaterDepth(fvalue);
-      }
-
-      else if(param == "TIME_INTERVAL"){
-	m_acoustic_path.setTimeInterval(fvalue);
-      }
-      
-      if(param == "foo") {
-        //handled
-      }
-      else if(param == "bar") {
-        //handled
-      }
+    bool handled = false;
+    if(param == "foo") {
+      handled = true;
     }
+    else if(param == "bar") {
+      handled = true;
+    }
+
+    if(!handled)
+      reportUnhandledConfigWarning(orig);
+
   }
-  RegisterVariables();	
+  
+  registerVariables();	
   return(true);
 }
- 
-//---------------------------------------------------------
-// Procedure: RegisterVariables
 
-void CommunicationAngle_liumk::RegisterVariables()
+//---------------------------------------------------------
+// Procedure: registerVariables
+
+void CommunicationAngle_liumk::registerVariables()
 {
-  // Register ("FOOBAR", 0);
+  AppCastingMOOSApp::RegisterVariables();
   Register("VEHICLE_NAME", 0);
   Register("COLLABORATOR_NAME", 0);
   Register("NAV_X", 0);
@@ -281,9 +312,24 @@ void CommunicationAngle_liumk::RegisterVariables()
   Register("NAV_DEPTH", 0);
   Register("NAV_HEADING", 0);
   Register("NAV_SPEED", 0);
-      Register(m_c_name_nav_x,0);
-      Register(m_c_name_nav_y,0);
-      Register(m_c_name_nav_depth,0);
-      Register(m_c_name_nav_heading,0);
-      Register(m_c_name_nav_speed,0); 
 }
+
+
+//------------------------------------------------------------
+// Procedure: buildReport()
+
+bool CommunicationAngle_liumk::buildReport() 
+{
+  //  m_msgs << "============================================" << endl;
+  //  m_msgs << "File:                                       " << endl;
+  //  m_msgs << "============================================" << endl;
+
+  //  ACTable actab(4);
+  //  actab << "Alpha | Bravo | Charlie | Delta";
+  //  actab.addHeaderLines();
+  //  actab << "one" << "two" << "three" << "four";
+  //  m_msgs << actab.getFormattedString();
+
+  return(true);
+}
+
