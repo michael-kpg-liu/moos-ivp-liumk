@@ -162,7 +162,7 @@ bool CommunicationAngle_liumk::Iterate()
       //m_TL = m_acoustic_path.calcTransmissionLoss(m_theta_src,m_z_src,m_z_rec,m_R_bisect,m_d_theta);
       double c_rec = 1480+0.016*m_z_rec;
       double c_src = 1480+0.016*m_z_src;
-      double theta_rec = acos((c_rec/c_src)*cos(m_theta_src));
+      double theta_rec =- acos((c_rec/c_src)*cos(m_theta_src));
       double s =(m_R_bisect*(m_theta_src-theta_rec));
       double r_i = m_R_bisect*(sin(m_theta_src)+sin(s/m_R_bisect-m_theta_src));
       double r_i1 =  m_R_bisect*(sin(m_theta_src+m_d_theta)+sin(s/m_R_bisect-m_theta_src-m_d_theta));
