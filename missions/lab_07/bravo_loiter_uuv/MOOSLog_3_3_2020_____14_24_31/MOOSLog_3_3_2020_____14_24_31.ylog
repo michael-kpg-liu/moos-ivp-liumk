@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LOG FILE:       ./MOOSLog_3_3_2020_____14_24_31/MOOSLog_3_3_2020_____14_24_31.ylog
+%% FILE OPENED ON  Wed Dec 31 19:00:00 1969
+%% LOGSTART               31665269434.1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+9.141323   MOOS_DEBUG           pMarinePID           ** NEW CONTROLLER GAINS ARE ** 
+9.141743   MOOS_DEBUG           pMarinePID           YAW_PID_KP             = 1.200 
+9.141922   MOOS_DEBUG           pMarinePID           YAW_PID_KD             = 0.000 
+9.142086   MOOS_DEBUG           pMarinePID           YAW_PID_KI             = 0.300 
+9.142242   MOOS_DEBUG           pMarinePID           YAW_PID_INTEGRAL_LIMIT = 0.070 
+9.142506   MOOS_DEBUG           pMarinePID           MAXRUDDER              = 100.000 
+9.164982   MOOS_DEBUG           pMarinePID           SPEED_PID_KP           = 1.000 
+9.165184   MOOS_DEBUG           pMarinePID           SPEED_PID_KD           = 0.000 
+9.165344   MOOS_DEBUG           pMarinePID           SPEED_PID_KI           = 0.000 
+9.165501   MOOS_DEBUG           pMarinePID           SPEED_PID_INTEGRAL_LIMIT = 0.070 
+9.165665   MOOS_DEBUG           pMarinePID           MAXTHRUST              = 100.000 
+9.165665   MOOS_DEBUG           pMarinePID           MAXTHRUST              = 100.000 
+9.165665   MOOS_DEBUG           pMarinePID           MAXTHRUST              = 100.000 
+13.41882   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: ManualOverride 
+13.41882   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: ManualOverride 
+64.76146   MOOS_DEBUG           pMarinePID           pMarinePID Control Is On 
+64.76217   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
+64.97354   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: BehaviorError 
+64.97354   MOOS_DEBUG           pHelmIvP             pHelmIvP AllStop: BehaviorError 
+67.16072   MOOS_DEBUG           pMarinePID           Paused Due To Tardy HELM Input: THRUST=0 
