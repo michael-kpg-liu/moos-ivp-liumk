@@ -30,6 +30,11 @@
 *.exe
 *.out
 *.app
+*._moos
+*.alog
+*.blog
+*.ylog
+*.CMakeCache.txt
 
 .DS_Store
 .svn
