@@ -6,7 +6,7 @@
 ServerHost   = localhost
 ServerPort   = 9000
 Community    = alpha_return_now
-MOOSTimeWarp = 1
+MOOSTimeWarp = 20
 
 // Forest Lake
 LatOrigin  = 43.825300 
@@ -183,11 +183,13 @@ ProcessConfig = pMarineViewer
   // left_context[survey-point] = RETURN=false
 
  
-  right_context[view_poly] = VIEW_POLYGON = format=radial,x=$(XPOS),y=$(YPOS),radius=10,pts=8,edge_size=1,label=mypoly
+  // left_context[view_poly] = VIEW_POLYGON = format=radial,x=$(XPOS),y=$(YPOS),radius=10,pts=8,edge_size=1,label=mypoly
+  // Adjust view_poly to return_point.  Must all go to same point.
+  left_context[return_point] = VIEW_POLYGON = format=radial,x=$(XPOS),y=$(YPOS),radius=10,pts=8,edge_size=1,label=mypoly
   
-  right_context[return_point] = VIEW_POINT = x =$(XPOS), y =$(YPOS), label = return_point
-  right_context[return_point] = RETURN_UPDATE = "points=$(XPOS),$(YPOS) # speed = 1.5"
-  right_context[return_point] = RETURN = true
+  left_context[return_point] = VIEW_POINT = x =$(XPOS), y =$(YPOS), label = return_point
+  left_context[return_point] = RETURN_UPDATE = "points=$(XPOS),$(YPOS) # speed = 1.5"
+  left_context[return_point] = RETURN = true
 
 
   right_context[return] = DEPLOY=true
