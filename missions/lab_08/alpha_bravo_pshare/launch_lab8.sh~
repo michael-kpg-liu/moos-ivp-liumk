@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pAntler shoreside.moos &
+pAntler alpha.moos &
+pAntler bravo.moos
