@@ -188,6 +188,32 @@ pCommunicationAngle_liumk/fast:
 	$(MAKE) -f src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/build.make src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/build
 .PHONY : pCommunicationAngle_liumk/fast
 
+#=============================================================================
+# Target rules for targets named pPointAssign
+
+# Build rule for target.
+pPointAssign: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pPointAssign
+.PHONY : pPointAssign
+
+# fast build rule for target.
+pPointAssign/fast:
+	$(MAKE) -f src/pPointAssign/CMakeFiles/pPointAssign.dir/build.make src/pPointAssign/CMakeFiles/pPointAssign.dir/build
+.PHONY : pPointAssign/fast
+
+#=============================================================================
+# Target rules for targets named pGenPath
+
+# Build rule for target.
+pGenPath: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pGenPath
+.PHONY : pGenPath
+
+# fast build rule for target.
+pGenPath/fast:
+	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/build
+.PHONY : pGenPath/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,6 +228,8 @@ help:
 	@echo "... pPrimeFactor"
 	@echo "... pOdometry"
 	@echo "... pCommunicationAngle_liumk"
+	@echo "... pPointAssign"
+	@echo "... pGenPath"
 .PHONY : help
 
 

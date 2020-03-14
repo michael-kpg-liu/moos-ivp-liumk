@@ -77,6 +77,8 @@ src/all: src/pExampleApp/all
 src/all: src/pPrimeFactor/all
 src/all: src/pOdometry/all
 src/all: src/pCommunicationAngle_liumk/all
+src/all: src/pPointAssign/all
+src/all: src/pGenPath/all
 
 .PHONY : src/all
 
@@ -87,6 +89,8 @@ src/preinstall: src/pExampleApp/preinstall
 src/preinstall: src/pPrimeFactor/preinstall
 src/preinstall: src/pOdometry/preinstall
 src/preinstall: src/pCommunicationAngle_liumk/preinstall
+src/preinstall: src/pPointAssign/preinstall
+src/preinstall: src/pGenPath/preinstall
 
 .PHONY : src/preinstall
 
@@ -97,6 +101,8 @@ src/clean: src/pExampleApp/clean
 src/clean: src/pPrimeFactor/clean
 src/clean: src/pOdometry/clean
 src/clean: src/pCommunicationAngle_liumk/clean
+src/clean: src/pPointAssign/clean
+src/clean: src/pGenPath/clean
 
 .PHONY : src/clean
 
@@ -155,6 +161,24 @@ src/pExampleApp/clean: src/pExampleApp/CMakeFiles/pExampleApp.dir/clean
 .PHONY : src/pExampleApp/clean
 
 #=============================================================================
+# Directory level rules for directory src/pGenPath
+
+# Recursive "all" directory target.
+src/pGenPath/all: src/pGenPath/CMakeFiles/pGenPath.dir/all
+
+.PHONY : src/pGenPath/all
+
+# Recursive "preinstall" directory target.
+src/pGenPath/preinstall:
+
+.PHONY : src/pGenPath/preinstall
+
+# Recursive "clean" directory target.
+src/pGenPath/clean: src/pGenPath/CMakeFiles/pGenPath.dir/clean
+
+.PHONY : src/pGenPath/clean
+
+#=============================================================================
 # Directory level rules for directory src/pOdometry
 
 # Recursive "all" directory target.
@@ -171,6 +195,24 @@ src/pOdometry/preinstall:
 src/pOdometry/clean: src/pOdometry/CMakeFiles/pOdometry.dir/clean
 
 .PHONY : src/pOdometry/clean
+
+#=============================================================================
+# Directory level rules for directory src/pPointAssign
+
+# Recursive "all" directory target.
+src/pPointAssign/all: src/pPointAssign/CMakeFiles/pPointAssign.dir/all
+
+.PHONY : src/pPointAssign/all
+
+# Recursive "preinstall" directory target.
+src/pPointAssign/preinstall:
+
+.PHONY : src/pPointAssign/preinstall
+
+# Recursive "clean" directory target.
+src/pPointAssign/clean: src/pPointAssign/CMakeFiles/pPointAssign.dir/clean
+
+.PHONY : src/pPointAssign/clean
 
 #=============================================================================
 # Directory level rules for directory src/pPrimeFactor
@@ -242,7 +284,7 @@ src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean:
 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all:
 	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend
 	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=20,21,22,23 "Built target pXRelayTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=28,29,30,31 "Built target pXRelayTest"
 .PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +338,7 @@ src/pExampleApp/CMakeFiles/pExampleApp.dir/clean:
 src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/all:
 	$(MAKE) -f src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/build.make src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/depend
 	$(MAKE) -f src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/build.make src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=15,16,17,18,19 "Built target pPrimeFactor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=23,24,25,26,27 "Built target pPrimeFactor"
 .PHONY : src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -323,7 +365,7 @@ src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir/clean:
 src/pOdometry/CMakeFiles/pOdometry.dir/all:
 	$(MAKE) -f src/pOdometry/CMakeFiles/pOdometry.dir/build.make src/pOdometry/CMakeFiles/pOdometry.dir/depend
 	$(MAKE) -f src/pOdometry/CMakeFiles/pOdometry.dir/build.make src/pOdometry/CMakeFiles/pOdometry.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=11,12,13,14 "Built target pOdometry"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=15,16,17,18 "Built target pOdometry"
 .PHONY : src/pOdometry/CMakeFiles/pOdometry.dir/all
 
 # Build rule for subdir invocation for target.
@@ -369,6 +411,60 @@ pCommunicationAngle_liumk: src/pCommunicationAngle_liumk/CMakeFiles/pCommunicati
 src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/clean:
 	$(MAKE) -f src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/build.make src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/clean
 .PHONY : src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir/clean
+
+#=============================================================================
+# Target rules for target src/pPointAssign/CMakeFiles/pPointAssign.dir
+
+# All Build rule for target.
+src/pPointAssign/CMakeFiles/pPointAssign.dir/all:
+	$(MAKE) -f src/pPointAssign/CMakeFiles/pPointAssign.dir/build.make src/pPointAssign/CMakeFiles/pPointAssign.dir/depend
+	$(MAKE) -f src/pPointAssign/CMakeFiles/pPointAssign.dir/build.make src/pPointAssign/CMakeFiles/pPointAssign.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=19,20,21,22 "Built target pPointAssign"
+.PHONY : src/pPointAssign/CMakeFiles/pPointAssign.dir/all
+
+# Build rule for subdir invocation for target.
+src/pPointAssign/CMakeFiles/pPointAssign.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/pPointAssign/CMakeFiles/pPointAssign.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
+.PHONY : src/pPointAssign/CMakeFiles/pPointAssign.dir/rule
+
+# Convenience name for target.
+pPointAssign: src/pPointAssign/CMakeFiles/pPointAssign.dir/rule
+
+.PHONY : pPointAssign
+
+# clean rule for target.
+src/pPointAssign/CMakeFiles/pPointAssign.dir/clean:
+	$(MAKE) -f src/pPointAssign/CMakeFiles/pPointAssign.dir/build.make src/pPointAssign/CMakeFiles/pPointAssign.dir/clean
+.PHONY : src/pPointAssign/CMakeFiles/pPointAssign.dir/clean
+
+#=============================================================================
+# Target rules for target src/pGenPath/CMakeFiles/pGenPath.dir
+
+# All Build rule for target.
+src/pGenPath/CMakeFiles/pGenPath.dir/all:
+	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/depend
+	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=11,12,13,14 "Built target pGenPath"
+.PHONY : src/pGenPath/CMakeFiles/pGenPath.dir/all
+
+# Build rule for subdir invocation for target.
+src/pGenPath/CMakeFiles/pGenPath.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/pGenPath/CMakeFiles/pGenPath.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
+.PHONY : src/pGenPath/CMakeFiles/pGenPath.dir/rule
+
+# Convenience name for target.
+pGenPath: src/pGenPath/CMakeFiles/pGenPath.dir/rule
+
+.PHONY : pGenPath
+
+# clean rule for target.
+src/pGenPath/CMakeFiles/pGenPath.dir/clean:
+	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/clean
+.PHONY : src/pGenPath/CMakeFiles/pGenPath.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

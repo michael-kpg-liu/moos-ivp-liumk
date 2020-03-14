@@ -20,3 +20,9 @@
 /Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/rebuild_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/edit_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pCommunicationAngle_liumk/CMakeFiles/pCommunicationAngle_liumk.dir
+/Users/liumk/moos-ivp-liumk/build/src/pPointAssign/CMakeFiles/rebuild_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pPointAssign/CMakeFiles/edit_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pPointAssign/CMakeFiles/pPointAssign.dir
+/Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/rebuild_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/edit_cache.dir
+/Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/pGenPath.dir
