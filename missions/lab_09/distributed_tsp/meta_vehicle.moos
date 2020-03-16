@@ -5,6 +5,7 @@ ServerPort = $(VPORT)
 Community  = $(VNAME)
 
 #include plug_origin_warp.moos
+#include plug_pGenPath.moos
   
 //------------------------------------------------------------
 Processconfig = ANTLER
@@ -21,6 +22,7 @@ Processconfig = ANTLER
   Run = pShare             @ NewConsole = false
   Run = pHostInfo          @ NewConsole = false
   Run = uFldNodeBroker     @ NewConsole = false
+	Run = uProcessWatch      @ NewConsole = false
 }
  
 #include plug_uSimMarine.moos

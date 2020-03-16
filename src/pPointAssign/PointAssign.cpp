@@ -10,8 +10,11 @@
 #include "PointAssign.h"
 #include "MOOS/libMOOS/Utils/MOOSUtils.h"
 #include "XYPoint.h"
+#include "MBUtils.h"
 #include "GeomUtils.h"
-#include "XYObject.h"
+#include "XYObject.h" 
+
+
 
 using namespace std;
 
@@ -41,22 +44,22 @@ bool PointAssign::OnNewMail(MOOSMSG_LIST &NewMail)
    
   for(p=NewMail.begin(); p!=NewMail.end(); p++) {
     CMOOSMsg &msg = *p;
+    string key   = msg.GetKey();
+    string sval  = msg.GetString(); 
+   
 
-    string key = msg.GetKey();
-    string sval = msg.GetString();
-
-    if (key == "VISIT_POINT"){
-      if (sval == "firstpoint"){
+    if (key=="VISIT_POINT"){
+      if (sval=="firstpoint"){
 	m_reached_first_point = true;
-	std::cout << "Reached First Point" << std::endl;
+	std::cout<<"reached first point"<<std::endl;
       }
       else if (sval == "lastpoint"){
 	m_reached_last_point = true;
-	std::cout << "Reached Last Point" << std::endl;
+	std::cout<<"reached last point"<<std::endl;
       }
-      else if (m_reached_first_point == true && m_reached_last_point == false){
+      else if (m_reached_first_point==true && m_reached_last_point ==false){
 	m_visit_points.push_back(sval);
-	std::cout << "Added Point to Visit Points" << std::endl;
+	std::cout<<"added point to visit points"<<std::endl;
       }
     }
 
@@ -70,7 +73,7 @@ bool PointAssign::OnNewMail(MOOSMSG_LIST &NewMail)
     bool   mdbl  = msg.IsDouble();
     bool   mstr  = msg.IsString();
 #endif
-   }
+  }
 	
    return(true);
 }
@@ -80,6 +83,11 @@ bool PointAssign::OnNewMail(MOOSMSG_LIST &NewMail)
 
 bool PointAssign::OnConnectToServer()
 {
+   // register for variables here
+   // possibly look at the mission file?
+   // m_MissionReader.GetConfigurationParam("Name", <string>);
+   // m_Comms.Register("VARNAME", 0);
+	
    RegisterVariables();
    return(true);
 }
@@ -90,92 +98,98 @@ bool PointAssign::OnConnectToServer()
 
 bool PointAssign::Iterate()
 {
-  std::cout << "Notified All: " << m_notified_all << std::endl;
-  // Loop through Points and Alternate Vessel Assignment
-  if (m_assign_by_region == false){
+  // NVM: Only iterate if first and last points
+  std::cout<<"notified all: "<<m_notified_all<<std::endl;
+  //  if (m_reached_first_point == true && m_reached_last_point == true && m_notified_all == false){
+  //   if (m_reached_first_point == true && m_reached_last_point == true && m_notified_all == false){
+  //  if (m_reached_first_point == true && m_reached_last_point == true){
+
+  //Loop through list of points and alternate assignment
+  if (m_assign_by_region ==false){
+    
+    //  std::vector<std::string>::const_iterator i = m_vname_list.begin();
     int i = 0;
     for (std::vector<std::string>::const_iterator k = m_visit_points.begin(); k != m_visit_points.end(); ++k){
-      // tokStringParse:  Function works on a comma-separated list of parameter=value paris and pulls out the
-      // value for a given parameter.  First character argument is the "global" separation, and the second
-      // argument is the "local" separator.  First character - reason for pre-increment.
-      std::string x_str = tokStringParse(*k, "x", ',', '='); // Stored in "x_str"
-      std::string y_str = tokStringParse(*k, "y", ',', '='); // Stored in "y_str"
-      std::string id_str = tokStringParse(*k,"id",',','=');  // Stored in "id_str"
-      std::cout << "ID = " << id_str << std::endl;           // Check ID
-      double x_double = 0.0;
-      double y_double = 0.0;
-      stringstream rr;
-      stringstream ww;
-
-      rr << x_str; // Stores string of x_str
-      ww << y_str; // Stores string of y_str
-      rr >> x_double; // Inputs into x_double
-      ww >> y_double; // Inputs into y_double
-      std::string color_label_str;
-
-      // Alternate Vessel Alignment
-      // Note that "HENRY" is "default", since int i = 0 is original definition.
-      if (i == 0){
-	m_vname_str = "HENRY";
+      
+      std::string x_str = tokStringParse(*k, "x", ',', '=');
+      std::string y_str = tokStringParse(*k, "y", ',', '=');
+      std::string id_str = tokStringParse(*k,"id",',','=');
+      std::cout<<"ID = "<<id_str<<std::endl;
+       double x_double = 0.0;
+       double y_double = 0.0;
+       stringstream rr;
+       stringstream ww;
+       
+       rr<<x_str;
+       ww<<y_str;
+       rr>>x_double;
+       ww>>y_double;
+       std::string color_label_str;
+       
+      if (i==0){
+	m_vname_str="HENRY";
 	i=1;
 	color_label_str = "red";
       }
-
       else{
-	m_vname_str = "GILDA";
+	m_vname_str="GILDA";
 	i=0;
-	color_label_str = "yellow";
+	color_label_str= "yellow";
       }
-
-      stringstream ss;
-      ss << "VISIT_POINT_" << m_vname_str; // Stores string of vehicle names
-      Notify(ss.str(),*k);                 // Notifies database
-      postViewPoint(x_double, y_double, id_str, color_label_str); // Calls prodecure at bottom of .cpp file.
+	stringstream ss;
+	ss<<"VISIT_POINT_"<<m_vname_str;
+	Notify(ss.str(),*k);
+	postViewPoint(x_double, y_double,id_str, color_label_str);
     }
-    std::cout << "Finished looping through all points." << std::endl;
+    std::cout<<"finished looping through all points"<<std::endl;
+    m_notified_all = true;
+
+  }
+  else{ //Assign by region
+    std::cout<<"Assigning by region"<<"size of visit points: "<<m_visit_points.size()<<std::endl;
+    for (std::vector<std::string>::const_iterator k = m_visit_points.begin(); k != m_visit_points.end(); ++k){
+      std::string x_str = tokStringParse(*k, "x", ',', '=');
+      std::string y_str = tokStringParse(*k, "y", ',', '=');
+      std::string id_str = tokStringParse(*k,"id",',','=');
+      std::cout<<"ID = "<<id_str<<std::endl;
+       double x_double = 0.0;
+       double y_double = 0.0;
+       stringstream rr;
+       stringstream ww;
+       rr<<x_str;
+       ww<<y_str;
+       rr>>x_double;
+       ww>>y_double;
+       
+       bool is_east = PointRegionIsEast(x_double);
+       std::cout<<"east: "<<is_east<<std::endl;
+       if (is_east){
+	 	stringstream vv;
+		vv<<"VISIT_POINT_"<<m_vname_list[0];
+		std::cout<<vv.str()<<std::endl;
+		Notify(vv.str(),*k);
+		std::cout<<"calling post view point"<<std::endl;
+		postViewPoint(x_double, y_double, id_str, "yellow");
+
+       }
+       else{
+	 	stringstream vv;
+		vv<<"VISIT_POINT_"<<m_vname_list[1];
+		std::cout<<vv.str()<<std::endl;
+		Notify(vv.str(),*k);
+		std::cout<<"calling post view point"<<std::endl;
+		postViewPoint(x_double, y_double, id_str, "red");
+
+	
+       }
+    }
+    std::cout<<"finished looping through all points"<<std::endl;
     m_notified_all = true;
   }
-    // Assign by Region
-    else {
-      std::cout << "Assigning by Region:  Visit Points: " << m_visit_points.size() << std::endl;
-      for(std::vector<std::string>::const_iterator k = m_visit_points.begin(); k!= m_visit_points.end(); ++k){
-	std::string x_str = tokStringParse(*k, "x", ',', '=');
-	std::string y_str = tokStringParse(*k, "y", ',', '=');
-	std::string id_str = tokStringParse(*k, "id", ',','=');
-	std::cout << "ID = " << id_str << std::endl;
-	double x_double = 0.0;
-	double y_double = 0.0;
-	stringstream rr;
-	stringstream ww;
-	
-	rr << x_str;
-	ww << y_str;
-	rr >> x_double;
-	ww >> y_double;
-	
-	bool is_east = PointRegionIsEast(x_double);
-	std::cout << "East: " << is_east << std::endl;
-	if (is_east){
-	  stringstream vv;
-	  vv << "VISIT_POINT_" << m_vname_list[0];
-	  std::cout << vv.str() << std::endl;
-	  Notify(vv.str(),*k);
-	  std::cout << "Calling post view point" << std::endl;
-	  postViewPoint(x_double, y_double, id_str, "yellow");
-	}
-	else{
-	  stringstream vv;
-	  vv << "VISIT_POINT_" << m_vname_list[1];
-	  std::cout << vv.str() << std::endl;
-	  Notify(vv.str(),*k);
-	  std::cout << "Calling post view point" << std::endl;
-	  postViewPoint(x_double, y_double, id_str, "red");
-	}
-      }
-      std::cout << "Finished looping through all points." << std::endl;
-      m_notified_all = true;
-    }
+  
+  // }
   return(true);
+
 }
 
 //---------------------------------------------------------
@@ -190,28 +204,21 @@ bool PointAssign::OnStartUp()
   if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
     list<string>::iterator p;
     for(p=sParams.begin(); p!=sParams.end(); p++) {
-      string original_line  = *p;
+      string original_line = *p;
       string param = stripBlankEnds(toupper(biteString(*p, '=')));
       string value = stripBlankEnds(*p);
-      std::cout << "param: " << param << std::endl;
-
-      // Determine Vehicle Name and Whether to Assign Region
+         std::cout<<"param: "<<param<<std::endl;
       if(param == "VNAME") {
-	m_vname_list.push_back(value);
+        //add to vehicle list of names
+		m_vname_list.push_back(value);
       }
-      else if (param == "ASSIGN_BY_REGION") {
-	if (value == "true"){
+      else if(param == "ASSIGN_BY_REGION") {
+	if (value=="true"){
 	  m_assign_by_region = true;
 	}
 	else{
 	  m_assign_by_region = false;
 	}
-      //if(param == "foo") {
-        //handled
-      //}
-      // else if(param == "bar") {
-        //handled
-      //}
       }
     }
   }
@@ -229,28 +236,28 @@ void PointAssign::RegisterVariables()
   Register("VISIT_POINT",0);
 }
 
-//---------------------------------------------------------
-// Procedure: PointRegionIsEast
 
-bool PointAssign::PointRegionIsEast(double x_val)
-{
+//--------------------------------------------------
+
+bool PointAssign::PointRegionIsEast(double x_val){
   return (x_val<100.0);
+
 }
 
-//---------------------------------------------------------
-// Procedure: postViewPoint
+//----------------------------------------------------
 
-void PointAssign::postViewPoint(double x, double y, string label, string color)
-{
-  XYPoint point(x,y);
-  point.set_label(label);
-  point.set_label_color(color);
-  point.set_color("vertex",color);
-  point.set_param("vertex_size","2");
+void PointAssign::postViewPoint(double x, double y, string label, string color){
+ {
+   XYPoint point(x, y);
+   point.set_label(label);
+   point.set_label_color(color);
+   point.set_color("vertex", color);
+   point.set_param("vertex_size", "5");
 
-  string spec = point.get_spec();
-  std::cout << "Notifying View Point" << std::endl;
-  Notify("VIEW_POINT",spec);
+   string spec = point.get_spec();
+   std::cout<<"notifying view point"<<std::endl;
+   Notify("VIEW_POINT", spec);
+ }
+
+
 }
-
-

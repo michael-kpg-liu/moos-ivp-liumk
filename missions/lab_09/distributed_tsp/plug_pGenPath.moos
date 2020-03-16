@@ -1,0 +1,10 @@
+//----------------------------------------------------
+// pHelmIvP Configuration Block  (Created from Plugin)
+
+ProcessConfig = pGenPath
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  visit_radius  = 3
+}

@@ -13,6 +13,7 @@
 #include <algorithm>
 #include <map>
 
+
 using namespace std;
 
 //---------------------------------------------------------
@@ -79,19 +80,19 @@ bool GenPath::OnNewMail(MOOSMSG_LIST &NewMail)
        //check if id_str is in list already       
        if(std::find(m_index_points.begin(), m_index_points.end(), index_str) == m_index_points.end()){ 
 	 if (index_int ==0){ // First value	
-	   m_dist_to_points.push_back(dist_double);
+	   m_dist_to_point.push_back(dist_double);
 	   m_index_points.push_back(index_str);
 	   m_dist_final_val.push_back(0); //Keep track of final values	  
 	 }
 	 else{ //Tracking new visit point
-	   m_dist_to_points.push_back(dist_double); //Add to list of distances
+	   m_dist_to_point.push_back(dist_double); //Add to list of distances
 	   m_index_points.push_back(index_str);
 	   m_dist_final_val.push_back(0);
 	   m_dist_final_val[index_int-1]=1;
 	 }
        }
        else{ //Update distance for current wpt index
-	 m_dist_to_points[index_int] = dist_double;
+	 m_dist_to_point[index_int] = dist_double;
          }
        
     }
@@ -151,6 +152,11 @@ bool GenPath::OnNewMail(MOOSMSG_LIST &NewMail)
 
 bool GenPath::OnConnectToServer()
 {
+   // register for variables here
+   // possibly look at the mission file?
+   // m_MissionReader.GetConfigurationParam("Name", <string>);
+   // m_Comms.Register("VARNAME", 0);
+	
    RegisterVariables();
    return(true);
 }
@@ -171,9 +177,9 @@ bool GenPath::Iterate()
       
       // Add points to visit list if distance is less than N
       int temp_index=0;
-      m_current_size =m_dist_to_points.size();
+      m_current_size =m_dist_to_point.size();
       if (m_current_size>m_previous_size){ //Keep track of adding distances
-	for (std::vector<double>::iterator k = m_dist_to_points.begin(); k != m_dist_to_points.end(); ++k){	
+	for (std::vector<double>::iterator k = m_dist_to_point.begin(); k != m_dist_to_point.end(); ++k){	
 	  if ((*k>m_visit_radius)&&(m_dist_final_val[temp_index]==1)){ //Miss
 	  //Check if already have number
 	     std::string id_str = tokStringParse(m_points_ordered[temp_index], "id", ',', '=');     
@@ -206,7 +212,7 @@ bool GenPath::Iterate()
 	Notify("MISSED_POINTS","true");
 	m_visit_points.insert(m_visit_points.end(), m_revisit_points.begin(), m_revisit_points.end());     
 	m_revisit_points.clear(); //Clear all lists
-	m_dist_to_points.clear();
+	m_dist_to_point.clear();
 	m_index_points.clear();
 	m_id_revisit_points.clear();
 	m_dist_final_val.clear(); 
@@ -220,7 +226,7 @@ bool GenPath::Iterate()
 	Notify("MISSED_POINTS","true");
 	m_visit_points.insert(m_visit_points.end(), m_revisit_points.begin(), m_revisit_points.end());     
 	m_revisit_points.clear(); //Clear all lists
-	m_dist_to_points.clear();
+	m_dist_to_point.clear();
 	m_index_points.clear();
 	m_dist_final_val.clear();
 	m_id_revisit_points.clear();
@@ -333,24 +339,25 @@ bool GenPath::OnStartUp()
   if(m_MissionReader.GetConfiguration(GetAppName(), sParams)) {
     list<string>::iterator p;
     for(p=sParams.begin(); p!=sParams.end(); p++) {
-      string line  = *p;
-      string param = tolower(biteStringX(line, '='));
-      string value = line;
-
-      if(param == "visit_radius"){
-	// Converts "value" string to double
-	stringstream vr;
-	vr << value;
-	vr >> m_visit_radius;
+      string original_line = *p;
+      string param = stripBlankEnds(toupper(biteString(*p, '=')));
+      string value = stripBlankEnds(*p);
+      
+      if(param == "visit_radius") { //Added this
+        //handled
+	//Convert value to double
+       stringstream vr;
+       
+       vr<<value;
+       vr>>m_visit_radius;
+      
       }
-      //if(param == "foo") {
+      else if(param == "BAR") {
         //handled
-      //}
-      //else if(param == "bar") {
-        //handled
-      //}
+      }
     }
   }
+  Notify("UTS_PAUSE_GENPATH","false");
   
   RegisterVariables();	
   return(true);

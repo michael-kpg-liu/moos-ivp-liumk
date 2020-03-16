@@ -20,6 +20,7 @@ Processconfig = ANTLER
   Run = uFldShoreBroker @ NewConsole = false
 	Run = uTimerScript    @ NewConsole = false
 	Run = pPointAssign    @ NewConsole = false
+	Run = uProcessWatch   @ NewConsole = false
 }
 
 #include plug_pShare.moos
@@ -42,6 +43,8 @@ ProcessConfig = uFldShoreBroker
 	QBRIDGE = VISIT_POINT
   BRIDGE   = src=RETURN_ALL, alias=RETURN
   BRIDGE   = src=RETURN_$V,  alias=RETURN
+	BRIDGE   = src=VISIT_POINT_HENRY, alias=VISIT_POINT
+	BRIDGE   = src=VISIT_POINT_GILDA, alias=VISIT_POINT
 }
 
 //--------------------------------------------------------
@@ -108,3 +111,28 @@ ProcessConfig = pPointAssign
 	vname = GILDA
 	assign_by_region = true
 }
+
+//--------------------------------------------------------
+// uProcessWatch
+
+ProcessConfig = uProcessWatch
+{
+	AppTick = 4
+	CommsTick = 4
+
+	watch_all = true // The default is true.
+
+	watch = pMarinePID:PID_OK
+	watch = uSIMMARINE:USM_OK
+
+	nowatch = uXMS*
+
+	allow_retractions = true // Always allow run-warnings to be
+	// retracted if proc reappears.
+
+	// A negative value means summary only when status changes.
+	summary_wait = 10 // Seconds. Default is -1.
+
+	post_mapping = PROC_WATCH_FULL_SUMMARY, UPW_FULL_SUMMARY
+}
+
