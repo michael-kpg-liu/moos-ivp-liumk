@@ -234,6 +234,8 @@ void PointAssign::RegisterVariables()
 {
   // Register("FOOBAR", 0);
   Register("VISIT_POINT",0);
+  Register("VISIT_POINT_HENRY",0);
+  Register("VISIT_POINT_GILDA",0);
 }
 
 

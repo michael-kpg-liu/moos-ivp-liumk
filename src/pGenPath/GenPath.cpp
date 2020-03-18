@@ -308,6 +308,7 @@ bool GenPath::Iterate()
     if (m_first_time ==true){
       Notify("FIRST_TIME","true");
       Notify("TRANSIT_UPDATES_FIRST_TIME",updates_str);
+      Notify("TRANSIT_UPDATES",updates_str);
       Notify("SEARCH","true");
       std::cout<<"sent notifications"<<std::endl;
       m_all_points_posted = true;
@@ -316,6 +317,7 @@ bool GenPath::Iterate()
     else if (m_regenerate==true){
       std::cout<<"update missed points, regen: "<<updates_str<<std::endl;
       Notify("TRANSIT_UPDATES_MISSED_POINTS",updates_str);
+      Notify("TRANSIT_UPDATES",updates_str);
       Notify("MISSED_POINTS","true");
     }
   

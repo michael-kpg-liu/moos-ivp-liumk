@@ -18,6 +18,32 @@ MBUtils.h
 MOOS/libMOOS/MOOSLib.h
 /Users/liumk/moos-ivp-liumk/src/pXRelayTest/MOOS/libMOOS/MOOSLib.h
 
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/Relayer_Info.cpp
+cstdlib
+-
+iostream
+-
+Relayer_Info.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/Relayer_Info.h
+ColorParse.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/ColorParse.h
+ReleaseInfo.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/ReleaseInfo.h
+
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/Relayer_Info.h
+
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/main.cpp
+string
+-
+list
+-
+Relayer.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/Relayer.h
+Relayer_Info.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/Relayer_Info.h
+MBUtils.h
+/Users/liumk/moos-ivp-liumk/src/pXRelayTest/MBUtils.h
+
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/ClientDefines.h
 
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.h
@@ -554,6 +580,12 @@ MOOS/libMOOS/App/MOOSApp.h
 MOOS/libMOOS/App/MOOSInstrument.h
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSInstrument.h
 
+/Users/liumk/moos-ivp/ivp/src/lib_mbutil/ColorParse.h
+vector
+-
+string
+-
+
 /Users/liumk/moos-ivp/ivp/src/lib_mbutil/MBUtils.h
 vector
 -
@@ -562,5 +594,9 @@ string
 set
 -
 time.h
+-
+
+/Users/liumk/moos-ivp/ivp/src/lib_mbutil/ReleaseInfo.h
+string
 -
 

@@ -78,6 +78,7 @@ src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: ../src/pOdometry/main.cpp
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/ClientDefines.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.hxx
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSInstrument.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/ActiveMailQueue.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/ClientCommsStatus.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/CommsTypes.h
@@ -87,10 +88,12 @@ src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MO
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommClient.hxx
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommObject.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommPkt.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSCommServer.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSMsg.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MOOSVariable.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MessageFunction.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/MulticastNode.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/ServerAudit.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Comms/include/MOOS/libMOOS/Comms/SuicidalSleeper.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/AppCasting/include/MOOS/libMOOS/Thirdparty/Appcasting/AppCast.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Thirdparty/AppCasting/include/MOOS/libMOOS/Thirdparty/Appcasting/AppCastingMOOSApp.h
@@ -115,17 +118,25 @@ src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MO
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/CommandLineParser.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/CommandLineParser.hxx
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/IPV4Address.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSException.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSFileReader.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLinuxSerialPort.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSLock.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSNTSerialPort.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSPlaybackStatus.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSScopedLock.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSScopedPtr.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSSerialPort.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSThread.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtilityFunctions.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/Macros.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MemberFuncBinding.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/NTSerial.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcInfo.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/ProcessConfigReader.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/SafeList.h
+src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOSLib.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/ivp/src/lib_mbutil/ColorParse.h
 src/pOdometry/CMakeFiles/pOdometry.dir/main.cpp.o: /Users/liumk/moos-ivp/ivp/src/lib_mbutil/MBUtils.h
 

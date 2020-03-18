@@ -36,7 +36,6 @@ Processconfig = ANTLER
   Run = pShare             @ NewConsole = false
   Run = pHostInfo          @ NewConsole = false
   Run = uFldNodeBroker     @ NewConsole = false
-	Run = uProcessWatch      @ NewConsole = false
 }
  
 //------------------------------------------------------
@@ -194,6 +193,17 @@ ProcessConfig = uFldNodeBroker
   BRIDGE = src=APPCAST
   BRIDGE = src=NODE_REPORT_LOCAL,  alias=NODE_REPORT
   BRIDGE = src=NODE_MESSAGE_LOCAL, alias=NODE_MESSAGE
+}
+
+//----------------------------------------------------
+// pHelmIvP Configuration Block  (Created from Plugin)
+
+ProcessConfig = pGenPath
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  visit_radius  = 3
 }
 
 

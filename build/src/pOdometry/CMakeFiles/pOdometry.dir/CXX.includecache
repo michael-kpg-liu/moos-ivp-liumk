@@ -20,6 +20,32 @@ MOOS/libMOOS/MOOSLib.h
 MOOS/libMOOS/Thirdparty/Appcasting/AppCastingMOOSApp.h
 /Users/liumk/moos-ivp-liumk/src/pOdometry/MOOS/libMOOS/Thirdparty/Appcasting/AppCastingMOOSApp.h
 
+/Users/liumk/moos-ivp-liumk/src/pOdometry/Odometry_Info.cpp
+cstdlib
+-
+iostream
+-
+Odometry_Info.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/Odometry_Info.h
+ColorParse.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/ColorParse.h
+ReleaseInfo.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/ReleaseInfo.h
+
+/Users/liumk/moos-ivp-liumk/src/pOdometry/Odometry_Info.h
+
+/Users/liumk/moos-ivp-liumk/src/pOdometry/main.cpp
+string
+-
+MBUtils.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/MBUtils.h
+ColorParse.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/ColorParse.h
+Odometry.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/Odometry.h
+Odometry_Info.h
+/Users/liumk/moos-ivp-liumk/src/pOdometry/Odometry_Info.h
+
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/ClientDefines.h
 
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/App/include/MOOS/libMOOS/App/MOOSApp.h
@@ -580,6 +606,12 @@ MOOS/libMOOS/App/MOOSApp.h
 MOOS/libMOOS/App/MOOSInstrument.h
 /Users/liumk/moos-ivp/MOOS/MOOSCore/Core/libMOOS/include/MOOS/libMOOS/MOOS/libMOOS/App/MOOSInstrument.h
 
+/Users/liumk/moos-ivp/ivp/src/lib_mbutil/ColorParse.h
+vector
+-
+string
+-
+
 /Users/liumk/moos-ivp/ivp/src/lib_mbutil/MBUtils.h
 vector
 -
@@ -588,5 +620,9 @@ string
 set
 -
 time.h
+-
+
+/Users/liumk/moos-ivp/ivp/src/lib_mbutil/ReleaseInfo.h
+string
 -
 

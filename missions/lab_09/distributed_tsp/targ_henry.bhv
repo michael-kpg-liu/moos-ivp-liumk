@@ -12,47 +12,47 @@ initialize   AT_START_PT = false
 // Add search to describe point-to-point search pattern
 initialize   SEARCH = false	
 
-set MODE = ACTIVE {
-  DEPLOY = true
+set MODE=ACTIVE {
+  DEPLOY=true
 } INACTIVE
 
-set MODE = STATION-KEEPING {
-  MODE = ACTIVE
-  STATION_KEEP = true
+set MODE=STATION-KEEPING {
+  MODE=ACTIVE
+  STATION_KEEP=true
 }                       
 
-set MODE = RETURNING {
-  MODE = ACTIVE
-  RETURN = true
+set MODE=RETURNING {
+  MODE=ACTIVE
+  RETURN=true
 } 
 
 // Added return to refuel mode.
-set MODE = RETURNING_REFUEL {
-	MODE = ACTIVE
-	REFUEL_NEEDED = true
-	AT_START_PT = false
+set MODE=RETURNING_REFUEL {
+	MODE=ACTIVE
+	REFUEL_NEEDED=true
+	AT_START_PT=false
 }
 	
-set MODE = LOITERING {
-  MODE = ACTIVE
-  LOITER = true
+set MODE=LOITERING {
+  MODE=ACTIVE
+  LOITER=true
 	// Added line to show refuel not needed while loitering.
-	REFUEL_NEEDED = false
+	REFUEL_NEEDED=false
 }
 
 // Added refueling mode.
-set MODE = REFUELING {
-	MODE = ACTIVE
-	REFUEL_NEEDED = true
-	AT_START_PT = true
+set MODE=REFUELING {
+	MODE=ACTIVE
+	REFUEL_NEEDED=true
+	AT_START_PT=true
 }
 
 // Added searching mode.
-set MODE = SEARCHING {
-	MODE = ACTIVE
-	SEARCH = true
+set MODE=SEARCHING {
+	MODE=ACTIVE
+	SEARCH=true
 	// Added line to show refuel not needed while searching.
-	REFUELD_NEEDED = false
+	REFUELD_NEEDED=false
 }
 
 //----------------------------------------------
@@ -112,7 +112,7 @@ Behavior = BHV_StationKeep
 Behavior = BHV_Timer
 {
 	name                    = bhv_refuel
-	condition               = MODE == REFUELING
+	condition               = MODE==REFUELING
 	condition               = AT_START_PT = true
 	// duration                = 100 // Loiter
 	duration                = 60  // Search
@@ -150,7 +150,7 @@ Behavior = BHV_Timer
 {
 	name                = no_refuel_needed
 	// condition           = MODE == LOITERING // Not activated, since LOITER = false
-  condition           = MODE == SEARCHING
+  condition           = MODE==SEARCHING
 	// duration            = 300 // Loiter Duration
 	duration            = 600 // Search Duration
 	duration_idle_decay = false
@@ -166,7 +166,7 @@ Behavior = BHV_Waypoint
 {
 	name      = search_points
 	pwt       = 100
-	condition = MODE == SEARCHING
+	condition = MODE==SEARCHING
 	updates   = TRANSIT_UPDATES
 
   // Parameters specific to this behavior
