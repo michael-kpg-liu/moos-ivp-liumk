@@ -52,7 +52,7 @@ set MODE=SEARCHING {
 	MODE=ACTIVE
 	SEARCH=true
 	// Added line to show refuel not needed while searching.
-	REFUELD_NEEDED=false
+	REFUEL_NEEDED=false
 }
 
 //----------------------------------------------
