@@ -126,14 +126,14 @@ bool PointAssign::Iterate()
        ww>>y_double;
        std::string color_label_str;
        
-      if (i==0){
+      if (i==1){
 	m_vname_str="HENRY";
-	i=1;
+	i=0;
 	color_label_str = "red";
       }
       else{
 	m_vname_str="GILDA";
-	i=0;
+	i=1;
 	color_label_str= "yellow";
       }
 	stringstream ss;
@@ -169,7 +169,7 @@ bool PointAssign::Iterate()
 		std::cout<<vv.str()<<std::endl;
 		Notify(vv.str(),*k);
 		std::cout<<"calling post view point"<<std::endl;
-		postViewPoint(x_double, y_double, id_str, "yellow");
+		postViewPoint(x_double, y_double, id_str, "red");
 
        }
        else{
@@ -178,7 +178,7 @@ bool PointAssign::Iterate()
 		std::cout<<vv.str()<<std::endl;
 		Notify(vv.str(),*k);
 		std::cout<<"calling post view point"<<std::endl;
-		postViewPoint(x_double, y_double, id_str, "red");
+		postViewPoint(x_double, y_double, id_str, "yellow");
 
 	
        }
@@ -234,6 +234,8 @@ void PointAssign::RegisterVariables()
 {
   // Register("FOOBAR", 0);
   Register("VISIT_POINT",0);
+  Register("VISIT_POINT_GILDA",0);
+  Register("VISIT_POINT_HENRY",0);
 }
 
 

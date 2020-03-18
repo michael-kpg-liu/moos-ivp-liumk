@@ -42,8 +42,10 @@ ProcessConfig = uFldShoreBroker
 	QBRIDGE = VISIT_POINT
   BRIDGE   = src=RETURN_ALL, alias=RETURN
   BRIDGE   = src=RETURN_$V,  alias=RETURN
-	BRIDGE   = src=VISIT_POINT_HENRY, alias=VISIT_POINT
-	BRIDGE   = src=VISIT_POINT_GILDA, alias=VISIT_POINT
+	QBRIDGE = VISIT_POINT_HENRY
+	QBRIDGE = VISIT_POINT_GILDA
+	//BRIDGE   = src=VISIT_POINT_HENRY, alias=VISIT_POINT
+	//BRIDGE   = src=VISIT_POINT_GILDA, alias=VISIT_POINT
 }
 
 //--------------------------------------------------------

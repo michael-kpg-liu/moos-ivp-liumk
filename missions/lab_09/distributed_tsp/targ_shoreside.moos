@@ -5,7 +5,7 @@ ServerHost = localhost
 ServerPort = 9000
 Community  = shoreside
 
-MOOSTimeWarp = 1
+MOOSTimeWarp = 30
 LatOrigin  = 43.825300 
 LongOrigin = -70.330400 
 
@@ -89,8 +89,10 @@ ProcessConfig = uFldShoreBroker
 	QBRIDGE = VISIT_POINT
   BRIDGE   = src=RETURN_ALL, alias=RETURN
   BRIDGE   = src=RETURN_$V,  alias=RETURN
-	BRIDGE   = src=VISIT_POINT_HENRY, alias=VISIT_POINT
-	BRIDGE   = src=VISIT_POINT_GILDA, alias=VISIT_POINT
+	QBRIDGE = VISIT_POINT_HENRY
+	QBRIDGE = VISIT_POINT_GILDA
+	//BRIDGE   = src=VISIT_POINT_HENRY, alias=VISIT_POINT
+	//BRIDGE   = src=VISIT_POINT_GILDA, alias=VISIT_POINT
 }
 
 //--------------------------------------------------------

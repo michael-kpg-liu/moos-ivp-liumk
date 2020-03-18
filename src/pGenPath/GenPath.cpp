@@ -111,7 +111,7 @@ bool GenPath::OnNewMail(MOOSMSG_LIST &NewMail)
     if (key=="FINISHED_SEARCH"){
       if (sval =="true"){
 	m_finished_search = true;
-	std::cout<<"received finishedsearch  is true"<<std::endl;
+	std::cout<<"received finished search  is true"<<std::endl;
       }
       else{
 	m_finished_search = false;

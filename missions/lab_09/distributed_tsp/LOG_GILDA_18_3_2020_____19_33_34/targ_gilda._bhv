@@ -10,8 +10,7 @@ initialize   LOITER  = false
 initialize   REFUEL_NEEDED = false
 initialize   AT_START_PT = false
 // Add search to describe point-to-point search pattern
-initialize   SEARCH = false
-initialize   FINISHED_SEARCH = false	
+initialize   SEARCH = false	
 
 set MODE=ACTIVE {
   DEPLOY=true
@@ -54,7 +53,6 @@ set MODE=SEARCHING {
 	SEARCH=true
 	// Added line to show refuel not needed while searching.
 	REFUEL_NEEDED=false
-	FINISHED_SEARCH = false
 }
 
 //----------------------------------------------
@@ -69,7 +67,7 @@ Behavior = BHV_Loiter
      clockwise = false
         radius = 8.0
      nm_radius = 15.0
-       polygon = radial::$(LOITER_POS), radius=20, pts=8, snap=1, label=$(VNAME)_LOITER
+       polygon = radial::x=0,y=-75, radius=20, pts=8, snap=1, label=gilda_LOITER
 
   visual_hints = nextpt_color=white, nextpt_lcolor=khaki
   visual_hints = edge_color=orange, vertex_color=white
@@ -89,7 +87,7 @@ Behavior = BHV_Waypoint
       speed = 1.3
      radius = 3.0
   nm_radius = 15.0
-     points = $(START_POS)
+     points = 0,0
        lead = 8
 }
 
@@ -142,7 +140,7 @@ Behavior = BHV_Waypoint
 	speed     = 1.2 // Return from Search
 	radius    = 3.0
 	nm_radius = 15.0
-	points    = $(START_POS)
+	points    = 0,0
 	lead      = 8
 }
 	
@@ -193,6 +191,5 @@ Behavior = BHV_Waypoint
   visual_hints = nextpt_color = yellow        // default
   visual_hints = nextpt_lcolor = aqua         // default
   visual_hints = nextpt_vertex_size = 5       // default
-
-	endflag = RETURN = true
 }
+
