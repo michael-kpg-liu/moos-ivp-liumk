@@ -213,7 +213,7 @@ Behavior = BHV_Timer
 	// condition           = MODE == LOITERING // Not activated, since LOITER = false
   condition           = MODE==SEARCHING
 	// duration            = 300 // Loiter Duration
-	duration            = 6000 // 600 // Search Duration
+	duration            = 600 // Search Duration
 	duration_idle_decay = false
 	perpetual           = true
 	endflag             = REFUEL_NEEDED = true

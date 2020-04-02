@@ -1,48 +1,72 @@
 #!/bin/bash 
-
-TIME_WARP=1
-JUST_BUILD="no"
-HOSTNAME=$(hostname -s)
-VNAME=$(id -un)
-MOOS_PORT="9001"
-UDP_LISTEN_PORT="9201"
-SHOREIP="localhost"
-SHORE_LISTEN="9200"
-
 #-------------------------------------------------------
 #  Part 1: Check for and handle command-line arguments
 #-------------------------------------------------------
+TIME_WARP=1
+JUST_MAKE="no"
+HOSTNAME=$(hostname -s)
+VNAME=$(id -un)
+
+IP_ADDR=""
+MOOS_PORT="9001"
+PSHARE_PORT="9301"
+SHORE="localhost:9300"
+GUI="yes"
+
+#-------------------------------------------------------
+#  Part 2: Check for and handle command-line arguments
+#-------------------------------------------------------
 for ARGI; do
     if [ "${ARGI}" = "--help" -o "${ARGI}" = "-h" ] ; then
-	printf "%s [SWITCHES]                           \n" $0
-	printf "  --vname=VEHICLE_NAME                  \n" 
-	printf "  --shore=IP address of shoreside       \n" 
-	printf "  --mport=MOOSDB Port #                 \n" 
-	printf "  --lport=pShare UDPListen Port #       \n" 
-	printf "  --just_build, -j                      \n" 
-	printf "  --help, -h                            \n" 
+	echo "launch_vehicle.sh [SWITCHES]                     "
+	echo "  --help, -h                                     " 
+	echo "    Display this help message                    "
+	echo "  --just_make, -j                                " 
+	echo "    Just make targ files, but do not launch      "
+	echo "                                                 "
+	echo "  --vname=<vname>                                " 
+	echo "    Name of the vehicle being launched           " 
+	echo "                                                 "
+	echo "  --shore=<ipaddr:port>                          "
+	echo "    IP address and pShare port of shoreside      "
+	echo "                                                 "
+	echo "  --mport=<port>                                 "
+	echo "    Port number of this vehicle's MOOSDB port    "
+	echo "                                                 "
+	echo "  --pshare=<port>                                " 
+	echo "    Port number of this vehicle's pShare port    "
+	echo "                                                 "
+	echo "  --ip=<ipaddr>                                  " 
+	echo "    Force pHostInfo to use this IP Address       "
+	echo "                                                 "
+	echo "  --nogui                                        " 
+	echo "    Do not launch pMarineViewer GUI with vehicle "
 	exit 0;
     elif [ "${ARGI//[^0-9]/}" = "$ARGI" -a "$TIME_WARP" = 1 ]; then 
         TIME_WARP=$ARGI
+    elif [ "${ARGI}" = "--just_make" -o "${ARGI}" = "-j" ] ; then
+	JUST_MAKE="yes"
     elif [ "${ARGI:0:8}" = "--shore=" ] ; then
-	SHOREIP="${ARGI#--shore=*}"
+	SHORE="${ARGI#--shore=*}"
+    elif [ "${ARGI:0:5}" = "--ip=" ]; then
+        IP_ADDR="${ARGI#--ip=*}"
     elif [ "${ARGI:0:7}" = "--mport" ] ; then
 	MOOS_PORT="${ARGI#--mport=*}"
-    elif [ "${ARGI:0:7}" = "--lport" ] ; then
-	UDP_LISTEN_PORT="${ARGI#--lport=*}"
+    elif [ "${ARGI:0:8}" = "--pshare" ] ; then
+	PSHARE_PORT="${ARGI#--pshare=*}"
     elif [ "${ARGI:0:7}" = "--vname" ] ; then
 	VNAME="${ARGI#--vname=*}"
-    elif [ "${ARGI}" = "--just_build" -o "${ARGI}" = "-j" ] ; then
-	JUST_BUILD="yes"
+    elif [ "${ARGI}" = "--nogui" ] ; then
+	GUI="no"
     else
-	printf "Bad Argument: %s \n" $ARGI
+	echo "launch_vehicle.sh: Bad Arg: " $ARGI
 	exit 0
     fi
 done
 
 
 #-------------------------------------------------------
-#  Part 2: Create the .moos and .bhv files. 
+#  Part 3: Create the .moos and .bhv files. 
 #-------------------------------------------------------
 
 FULL_VNAME=$VNAME"@"$HOSTNAME
@@ -57,15 +81,15 @@ Y_LOITER_POS=$((($RANDOM % 50) - 125))
 START_POS="$X_START_POS,$Y_START_POS" 
 LOITER_POS="x=$X_LOITER_POS,y=$Y_LOITER_POS" 
 
-nsplug meta_vehicle.moos targ_$FULL_VNAME.moos -f WARP=$TIME_WARP       \
-    VNAME=$FULL_VNAME  VPORT=$MOOS_PORT  SHARE_LISTEN=$UDP_LISTEN_PORT  \
-    START_POS=$START_POS SHOREIP=$SHOREIP SHORE_LISTEN=$SHORE_LISTEN
+nsplug meta_vehicle.moos targ_$FULL_VNAME.moos -f WARP=$TIME_WARP  \
+    VNAME=$FULL_VNAME  VPORT=$MOOS_PORT  PSHARE_PORT=$PSHARE_PORT  \
+    START_POS=$START_POS SHORE=$SHORE IP_ADDR=$IP_ADDR
 
-nsplug meta_vehicle.bhv targ_$FULL_VNAME.bhv -f VNAME=$FULL_VNAME       \
+nsplug meta_vehicle.bhv targ_$FULL_VNAME.bhv -f VNAME=$FULL_VNAME  \
     START_POS=$START_POS LOITER_POS=$LOITER_POS       
    
  
-if [ ${JUST_BUILD} = "yes" ] ; then
+if [ ${JUST_MAKE} = "yes" ] ; then
     exit 0
 fi
 
@@ -78,6 +102,10 @@ pAntler targ_$FULL_VNAME.moos >& /dev/null &
 #-------------------------------------------------------
 #  Part 4: Exiting and/or killing the simulation
 #-------------------------------------------------------
+
+if [ ${GUI} = "no" ] ; then
+    exit 0
+fi
 
 uMAC targ_$FULL_VNAME.moos
 
