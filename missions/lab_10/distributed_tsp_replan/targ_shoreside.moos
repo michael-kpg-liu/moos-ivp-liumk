@@ -2,10 +2,10 @@
 // ShoreSide Configuration File
 
 ServerHost = localhost
-ServerPort = 9000
-Community  = shoreside
+ServerPort = $(VPORT)
+Community  = $(VNAME)
 
-MOOSTimeWarp = 20
+MOOSTimeWarp = 10
 LatOrigin  = 43.825300 
 LongOrigin = -70.330400 
 
@@ -34,7 +34,7 @@ ProcessConfig = pShare
   AppTick    = 2
   CommsTick  = 2
 
-  input = route =  localhost:9300
+  input = route =  localhost:$(SHARE_LISTEN)
 }
 
 
@@ -58,7 +58,7 @@ ProcessConfig = pLogger
   AppTick 	= 10
   CommsTick 	= 10
   
-  File		= LOG_SHORESIDE
+  File		= LOG_%(VNAME)
   PATH		= ./
   AsyncLog 	= true
   FileTimeStamp = true
