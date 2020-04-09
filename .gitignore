@@ -39,6 +39,7 @@
 .DS_Store
 .svn
 
-/bin
-/build
-/lib
+bin/*
+build/*
+lib/*
+LOG_*
