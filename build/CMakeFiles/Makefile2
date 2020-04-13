@@ -71,38 +71,38 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/lib_behaviors-test/all
-src/all: src/pXRelayTest/all
-src/all: src/pExampleApp/all
 src/all: src/pPrimeFactor/all
 src/all: src/pOdometry/all
 src/all: src/pCommunicationAngle_liumk/all
 src/all: src/pPointAssign/all
 src/all: src/pGenPath/all
+src/all: src/lib_behaviors-test/all
+src/all: src/pXRelayTest/all
+src/all: src/pExampleApp/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall: src/lib_behaviors-test/preinstall
-src/preinstall: src/pXRelayTest/preinstall
-src/preinstall: src/pExampleApp/preinstall
 src/preinstall: src/pPrimeFactor/preinstall
 src/preinstall: src/pOdometry/preinstall
 src/preinstall: src/pCommunicationAngle_liumk/preinstall
 src/preinstall: src/pPointAssign/preinstall
 src/preinstall: src/pGenPath/preinstall
+src/preinstall: src/lib_behaviors-test/preinstall
+src/preinstall: src/pXRelayTest/preinstall
+src/preinstall: src/pExampleApp/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/lib_behaviors-test/clean
-src/clean: src/pXRelayTest/clean
-src/clean: src/pExampleApp/clean
 src/clean: src/pPrimeFactor/clean
 src/clean: src/pOdometry/clean
 src/clean: src/pCommunicationAngle_liumk/clean
 src/clean: src/pPointAssign/clean
 src/clean: src/pGenPath/clean
+src/clean: src/lib_behaviors-test/clean
+src/clean: src/pXRelayTest/clean
+src/clean: src/pExampleApp/clean
 
 .PHONY : src/clean
 
@@ -251,87 +251,6 @@ src/pXRelayTest/clean: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
 .PHONY : src/pXRelayTest/clean
 
 #=============================================================================
-# Target rules for target src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir
-
-# All Build rule for target.
-src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all:
-	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/depend
-	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=1,2,3 "Built target BHV_SimpleWaypoint"
-.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all
-
-# Build rule for subdir invocation for target.
-src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
-.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
-
-# Convenience name for target.
-BHV_SimpleWaypoint: src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
-
-.PHONY : BHV_SimpleWaypoint
-
-# clean rule for target.
-src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean:
-	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean
-.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean
-
-#=============================================================================
-# Target rules for target src/pXRelayTest/CMakeFiles/pXRelayTest.dir
-
-# All Build rule for target.
-src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all:
-	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend
-	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=28,29,30,31 "Built target pXRelayTest"
-.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all
-
-# Build rule for subdir invocation for target.
-src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
-.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule
-
-# Convenience name for target.
-pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule
-
-.PHONY : pXRelayTest
-
-# clean rule for target.
-src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean:
-	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
-.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
-
-#=============================================================================
-# Target rules for target src/pExampleApp/CMakeFiles/pExampleApp.dir
-
-# All Build rule for target.
-src/pExampleApp/CMakeFiles/pExampleApp.dir/all:
-	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/depend
-	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=9,10 "Built target pExampleApp"
-.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/all
-
-# Build rule for subdir invocation for target.
-src/pExampleApp/CMakeFiles/pExampleApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/pExampleApp/CMakeFiles/pExampleApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
-.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/rule
-
-# Convenience name for target.
-pExampleApp: src/pExampleApp/CMakeFiles/pExampleApp.dir/rule
-
-.PHONY : pExampleApp
-
-# clean rule for target.
-src/pExampleApp/CMakeFiles/pExampleApp.dir/clean:
-	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/clean
-.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/clean
-
-#=============================================================================
 # Target rules for target src/pPrimeFactor/CMakeFiles/pPrimeFactor.dir
 
 # All Build rule for target.
@@ -465,6 +384,87 @@ pGenPath: src/pGenPath/CMakeFiles/pGenPath.dir/rule
 src/pGenPath/CMakeFiles/pGenPath.dir/clean:
 	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/clean
 .PHONY : src/pGenPath/CMakeFiles/pGenPath.dir/clean
+
+#=============================================================================
+# Target rules for target src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir
+
+# All Build rule for target.
+src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all:
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/depend
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=1,2,3 "Built target BHV_SimpleWaypoint"
+.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all
+
+# Build rule for subdir invocation for target.
+src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
+.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
+
+# Convenience name for target.
+BHV_SimpleWaypoint: src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/rule
+
+.PHONY : BHV_SimpleWaypoint
+
+# clean rule for target.
+src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean:
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean
+.PHONY : src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/clean
+
+#=============================================================================
+# Target rules for target src/pXRelayTest/CMakeFiles/pXRelayTest.dir
+
+# All Build rule for target.
+src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all:
+	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/depend
+	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=28,29,30,31 "Built target pXRelayTest"
+.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all
+
+# Build rule for subdir invocation for target.
+src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/pXRelayTest/CMakeFiles/pXRelayTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
+.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule
+
+# Convenience name for target.
+pXRelayTest: src/pXRelayTest/CMakeFiles/pXRelayTest.dir/rule
+
+.PHONY : pXRelayTest
+
+# clean rule for target.
+src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean:
+	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
+.PHONY : src/pXRelayTest/CMakeFiles/pXRelayTest.dir/clean
+
+#=============================================================================
+# Target rules for target src/pExampleApp/CMakeFiles/pExampleApp.dir
+
+# All Build rule for target.
+src/pExampleApp/CMakeFiles/pExampleApp.dir/all:
+	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/depend
+	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/liumk/moos-ivp-liumk/build/CMakeFiles --progress-num=9,10 "Built target pExampleApp"
+.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/all
+
+# Build rule for subdir invocation for target.
+src/pExampleApp/CMakeFiles/pExampleApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/pExampleApp/CMakeFiles/pExampleApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/liumk/moos-ivp-liumk/build/CMakeFiles 0
+.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/rule
+
+# Convenience name for target.
+pExampleApp: src/pExampleApp/CMakeFiles/pExampleApp.dir/rule
+
+.PHONY : pExampleApp
+
+# clean rule for target.
+src/pExampleApp/CMakeFiles/pExampleApp.dir/clean:
+	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/clean
+.PHONY : src/pExampleApp/CMakeFiles/pExampleApp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

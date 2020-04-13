@@ -111,45 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BHV_SimpleWaypoint
-
-# Build rule for target.
-BHV_SimpleWaypoint: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BHV_SimpleWaypoint
-.PHONY : BHV_SimpleWaypoint
-
-# fast build rule for target.
-BHV_SimpleWaypoint/fast:
-	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
-.PHONY : BHV_SimpleWaypoint/fast
-
-#=============================================================================
-# Target rules for targets named pXRelayTest
-
-# Build rule for target.
-pXRelayTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pXRelayTest
-.PHONY : pXRelayTest
-
-# fast build rule for target.
-pXRelayTest/fast:
-	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
-.PHONY : pXRelayTest/fast
-
-#=============================================================================
-# Target rules for targets named pExampleApp
-
-# Build rule for target.
-pExampleApp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pExampleApp
-.PHONY : pExampleApp
-
-# fast build rule for target.
-pExampleApp/fast:
-	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/build
-.PHONY : pExampleApp/fast
-
-#=============================================================================
 # Target rules for targets named pPrimeFactor
 
 # Build rule for target.
@@ -214,6 +175,45 @@ pGenPath/fast:
 	$(MAKE) -f src/pGenPath/CMakeFiles/pGenPath.dir/build.make src/pGenPath/CMakeFiles/pGenPath.dir/build
 .PHONY : pGenPath/fast
 
+#=============================================================================
+# Target rules for targets named BHV_SimpleWaypoint
+
+# Build rule for target.
+BHV_SimpleWaypoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BHV_SimpleWaypoint
+.PHONY : BHV_SimpleWaypoint
+
+# fast build rule for target.
+BHV_SimpleWaypoint/fast:
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir/build
+.PHONY : BHV_SimpleWaypoint/fast
+
+#=============================================================================
+# Target rules for targets named pXRelayTest
+
+# Build rule for target.
+pXRelayTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pXRelayTest
+.PHONY : pXRelayTest
+
+# fast build rule for target.
+pXRelayTest/fast:
+	$(MAKE) -f src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build.make src/pXRelayTest/CMakeFiles/pXRelayTest.dir/build
+.PHONY : pXRelayTest/fast
+
+#=============================================================================
+# Target rules for targets named pExampleApp
+
+# Build rule for target.
+pExampleApp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pExampleApp
+.PHONY : pExampleApp
+
+# fast build rule for target.
+pExampleApp/fast:
+	$(MAKE) -f src/pExampleApp/CMakeFiles/pExampleApp.dir/build.make src/pExampleApp/CMakeFiles/pExampleApp.dir/build
+.PHONY : pExampleApp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,14 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BHV_SimpleWaypoint"
-	@echo "... pXRelayTest"
-	@echo "... pExampleApp"
 	@echo "... pPrimeFactor"
 	@echo "... pOdometry"
 	@echo "... pCommunicationAngle_liumk"
 	@echo "... pPointAssign"
 	@echo "... pGenPath"
+	@echo "... BHV_SimpleWaypoint"
+	@echo "... pXRelayTest"
+	@echo "... pExampleApp"
 .PHONY : help
 
 
