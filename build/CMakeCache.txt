@@ -17,7 +17,13 @@
 ARCHIVE_OUTPUT_DIRECTORY:PATH=/Users/liumk/moos-ivp-liumk/lib
 
 //Dependencies for the target
+BHV_Pulse_LIB_DEPENDS:STATIC=general;helmivp;general;behaviors;general;ivpbuild;general;logic;general;ivpcore;general;bhvutil;general;mbutil;general;geometry;general;m;
+
+//Dependencies for the target
 BHV_SimpleWaypoint_LIB_DEPENDS:STATIC=general;helmivp;general;behaviors;general;ivpbuild;general;logic;general;ivpcore;general;bhvutil;general;mbutil;general;geometry;general;m;
+
+//Dependencies for the target
+BHV_ZigLeg_LIB_DEPENDS:STATIC=general;helmivp;general;behaviors;general;ivpbuild;general;logic;general;ivpcore;general;bhvutil;general;mbutil;general;geometry;general;m;
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND

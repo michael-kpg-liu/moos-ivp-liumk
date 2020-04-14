@@ -176,6 +176,32 @@ pGenPath/fast:
 .PHONY : pGenPath/fast
 
 #=============================================================================
+# Target rules for targets named BHV_ZigLeg
+
+# Build rule for target.
+BHV_ZigLeg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BHV_ZigLeg
+.PHONY : BHV_ZigLeg
+
+# fast build rule for target.
+BHV_ZigLeg/fast:
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_ZigLeg.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_ZigLeg.dir/build
+.PHONY : BHV_ZigLeg/fast
+
+#=============================================================================
+# Target rules for targets named BHV_Pulse
+
+# Build rule for target.
+BHV_Pulse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BHV_Pulse
+.PHONY : BHV_Pulse
+
+# fast build rule for target.
+BHV_Pulse/fast:
+	$(MAKE) -f src/lib_behaviors-test/CMakeFiles/BHV_Pulse.dir/build.make src/lib_behaviors-test/CMakeFiles/BHV_Pulse.dir/build
+.PHONY : BHV_Pulse/fast
+
+#=============================================================================
 # Target rules for targets named BHV_SimpleWaypoint
 
 # Build rule for target.
@@ -227,6 +253,8 @@ help:
 	@echo "... pCommunicationAngle_liumk"
 	@echo "... pPointAssign"
 	@echo "... pGenPath"
+	@echo "... BHV_ZigLeg"
+	@echo "... BHV_Pulse"
 	@echo "... BHV_SimpleWaypoint"
 	@echo "... pXRelayTest"
 	@echo "... pExampleApp"

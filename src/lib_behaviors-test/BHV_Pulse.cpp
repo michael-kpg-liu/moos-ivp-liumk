@@ -39,7 +39,7 @@ BHV_Pulse::BHV_Pulse(IvPDomain domain) :
   m_domain = subDomain(m_domain, "course,speed");
 
   // Add any variables this behavior needs to subscribe for
-  addInfoVars("NAV_X, NAV_Y, WPT_INDEX");
+  addInfoVars("NAV_X, NAV_Y, WPT_INDEX","no_warning");
 }
 
 //---------------------------------------------------------------

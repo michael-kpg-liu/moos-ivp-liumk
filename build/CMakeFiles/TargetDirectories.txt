@@ -17,6 +17,8 @@
 /Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/rebuild_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/edit_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/pGenPath/CMakeFiles/pGenPath.dir
+/Users/liumk/moos-ivp-liumk/build/src/lib_behaviors-test/CMakeFiles/BHV_ZigLeg.dir
+/Users/liumk/moos-ivp-liumk/build/src/lib_behaviors-test/CMakeFiles/BHV_Pulse.dir
 /Users/liumk/moos-ivp-liumk/build/src/lib_behaviors-test/CMakeFiles/rebuild_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/lib_behaviors-test/CMakeFiles/edit_cache.dir
 /Users/liumk/moos-ivp-liumk/build/src/lib_behaviors-test/CMakeFiles/BHV_SimpleWaypoint.dir

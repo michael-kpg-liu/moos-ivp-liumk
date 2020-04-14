@@ -47,7 +47,7 @@ BHV_ZigLeg::BHV_ZigLeg(IvPDomain domain) :
   m_domain = subDomain(m_domain, "course,speed");
 
   // Add any variables this behavior needs to subscribe for
-  addInfoVars("NAV_X, NAV_Y, WPT_INDEX, NAV_HEADING");
+  addInfoVars("NAV_X, NAV_Y, WPT_INDEX, NAV_HEADING","no_warning");
 }
 
 //---------------------------------------------------------------
