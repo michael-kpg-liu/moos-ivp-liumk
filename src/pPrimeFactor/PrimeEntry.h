@@ -13,7 +13,7 @@
 #include <list>
 #include <algorithm>
 #include <sstream> // Library needed to convert numerical values into strings.ss
-#include "/Users/liumk/moos-ivp/MOOS_Jul0519/MOOSCore/Core/libMOOS/Utils/include/MOOS/libMOOS/Utils/MOOSUtils.h"
+#include "MOOS/libMOOS/Utils/MOOSUtils.h"
 // Library needed for MOOSTime.  Thanks to the TAs for help on this one.
 // It may be helpful to explicitly cite this in the lab.
 
