@@ -1,0 +1,18 @@
+//------------------------------------------
+// pHostInfo configuration block from plugin
+
+ProcessConfig = pEncircle
+{
+    AppTick   = 4
+    CommsTick = 4
+
+    update_parameter=spiral_updates
+    circle_position = x=60,y=-105,radius=30
+    max_speed = 2
+    aggression = 10
+
+    consider_thresh = 50
+    on_circle_thresh = 50
+
+    message_color = dodger_blue // or "off"
+}

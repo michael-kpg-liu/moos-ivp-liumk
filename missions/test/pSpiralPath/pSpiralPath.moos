@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pSpiralPath config block
+
+ProcessConfig = pSpiralPath
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+

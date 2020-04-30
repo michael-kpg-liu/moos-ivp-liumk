@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pVehicleDataExchange config block
+
+ProcessConfig = pVehicleDataExchange
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+
