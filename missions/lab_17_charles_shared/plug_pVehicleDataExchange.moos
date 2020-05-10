@@ -1,0 +1,7 @@
+ProcessConfig = pVehicleDataExchange
+{
+  AppTick    = 4
+  CommsTick  = 4
+
+  vname = $(VNAME)
+}

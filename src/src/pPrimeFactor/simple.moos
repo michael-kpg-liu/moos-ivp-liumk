@@ -1,0 +1,67 @@
+/************************************************************/
+/*    NAME: ruic                                              */
+/*    ORGN: MIT                                             */
+/*    FILE: simple.moos                                          */
+/*    DATE: Feb 20 2020                                     */
+/*    RUN THIS TO TEST pPrimeFactor                          */
+/************************************************************/
+
+ServerHost = localhost
+ServerPort = 9000
+
+MOOSTimeWarp = 1
+
+//------------------------------------------
+// Antler configuration  block
+ProcessConfig = ANTLER
+{
+  MSBetweenLaunches = 200
+
+  Run = MOOSDB		@ NewConsole = false
+  Run = uXMS      @ NewConsole = true
+  Run = pPrimeFactor	@ NewConsole = false
+  Run = uTimerScript @ NewConsole = false
+}
+
+//------------------------------------------
+// uXMS configuration  block
+
+ProcessConfig = uXMS
+ {
+   VAR            = NUM_VALUE, PRIME_RESULT, DB_CLIENTS
+   COLOR_MAP      = NUM_VALUE, red
+   COLOR_MAP      = PRIME_RESULT, green
+   HISTORY_VAR    = PRIME_RESULT
+ }
+
+//-------------------------------------------
+// uTimerScript configuration block
+
+ ProcessConfig = uTimerScript
+ {
+   paused = false
+
+   event  = var=NUM_VALUE, val="354343292314",  time=5.5
+   event  = var=NUM_VALUE, val="2334253473",  time=6.0
+   event  = var=NUM_VALUE, val="10234523452",  time=6.1
+   event  = var=NUM_VALUE, val="134425303",  time=6.5
+   event  = var=NUM_VALUE, val="1003443",  time=6.7
+   event  = var=NUM_VALUE, val="10032421",  time=7.0
+   event  = var=NUM_VALUE, val="100435434",  time=7.5
+   event  = var=NUM_VALUE, val="100234133",  time=8.0
+   event  = var=NUM_VALUE, val="10046457562",  time=8.5
+   event  = var=NUM_VALUE, val="100345324335",  time=9.0
+   event  = var=NUM_VALUE, val="100345246457676",  time=9.5
+   event  = var=NUM_VALUE, val="10034534523243",  time=9.6
+   event  = var=NUM_VALUE, val="1003425343434",  time=10.5
+   event  = var=NUM_VALUE, val="10045234534",  time=10.8
+   event  = var=NUM_VALUE, val="1002345234231",  time=11.0
+   event  = var=NUM_VALUE, val="103443524534",  time=11.5
+   event  = var=NUM_VALUE, val="12305345345423",  time=12.0
+   event  = var=NUM_VALUE, val="1232452452343",  time=12.5
+   
+   reset_max  = nolimit
+   reset_time = all-posted
+ }
+
+

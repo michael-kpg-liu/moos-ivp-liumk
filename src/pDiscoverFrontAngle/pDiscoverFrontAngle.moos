@@ -1,0 +1,9 @@
+//------------------------------------------------
+// pDiscoverFrontAngle config block
+
+ProcessConfig = pDiscoverFrontAngle
+{
+   AppTick   = 4
+   CommsTick = 4
+}
+
